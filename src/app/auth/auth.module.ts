@@ -12,6 +12,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card/card.component';
 import { HotelImagePipe } from './pipes/hotel-image.pipe';
+import { AgenciasComponent } from './pages/agencias/agencias.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HotelImagePipe } from './pipes/hotel-image.pipe';
     LoginComponent,
     InicioComponent,
     CardComponent,
-    HotelImagePipe
+    HotelImagePipe,
+    AgenciasComponent
   ],
   imports: [
     CommonModule,

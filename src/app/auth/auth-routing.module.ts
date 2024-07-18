@@ -7,6 +7,7 @@ import { PaquetesComponent } from './pages/paquetes/paquetes.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { AgenciasComponent } from './pages/agencias/agencias.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
       { path: 'inicio', component: InicioComponent},
+      { path: 'Agencias', component: AgenciasComponent},
       { path: '**', redirectTo: 'inicio'}
     ]
   }
