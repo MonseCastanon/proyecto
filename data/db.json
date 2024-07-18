@@ -1,0 +1,114 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "usuario": "administrador",
+      "email": "admin.agencia@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "museos": [
+    {
+      "id": "m-independencia",
+      "nombre": "Independecia",
+      "descripcion": "Exhibe objetos y documentos relacionados con el movimiento independentista en México, en especial de su principal representante, don Miguel Hidalgo y Costilla, así como una serie de piezas de arte popular.",
+      "direccion": "Calle: Zacatecas 6, Zona Centro"
+    },
+    {
+      "id": "m-josealfredo",
+      "nombre": "Jose Alfredo Jimenez",
+      "descripcion": "El museo presenta, de manera cronológica y temática, un recorrido por los diversos periodos y aspectos de la vida y obra de José Alfredo.",
+      "direccion": "Calle: Guanajuato 13, Zona Centro"
+    },
+    {
+      "id": "m-bicentenario",
+      "nombre": "Bicentenario",
+      "descripcion": "El Museo Bicentenario cuenta con un total de 827 piezas de la celebración del primer centenario de la Independencia, entre las que destacan joyas, armas, música, retratos, fotografías de edificios y uniformes.",
+      "direccion": "Calle: Zacatecas s/n, Zona Centro"
+    },
+    {
+      "id": "m-vino",
+      "nombre": "Vino",
+      "descripcion": "En este lugar podrás conocer la historia del vino y el proceso de elaboración de los vinos que ofrecen los productores del Valle de la Independencia.",
+      "direccion": "Calle: Hidalgo 12, Zona Centro"
+    }
+  ],
+  "hoteles": [
+    {
+      "id": "h-relicario",
+      "nombre": "El Relicario",
+      "descripcion": "Bienvenido a El Relicario De La Patria Hotel, una fantástica opción para viajeros como tú.",
+      "direccion": "Calle: Calzada de los Heroes 12"
+    },
+    {
+      "id": "h-casamia",
+      "nombre": "CasaMia",
+      "descripcion": "El Hotel CasaMia en Dolores Hidalgo es un encantador hotel de dos estrellas que combina la arquitectura colonial con un ambiente moderno y acogedor.",
+      "direccion": "Calle: San Luis Potosi 9-B casi esq. Oaxaca"
+    },
+    {
+      "id": "h-anber",
+      "nombre": "Anber",
+      "descripcion": "La búsqueda del hotel pequeño ideal en Dolores Hidalgo no tiene por qué ser difícil. Bienvenido a Hotel Anber, una fantástica opción para viajeros como tú.",
+      "direccion": "Calle: Av. Guanajuato 9"
+    },
+    {
+      "id": "h-aberdeen",
+      "nombre": "Vino",
+      "descripcion": "Este hotel de 4 estrellas ofrece recepción 24 horas y servicio de habitaciones. El hotel dispone de habitaciones familiares.",
+      "direccion": "Calle: Calzada de los Heroes 22"
+    }
+  ],
+  "restaurantes": [
+    {
+      "id": "r-elfruty",
+      "nombre": "El Fruty Restaurante",
+      "descripcion": "Disfruta de la asombrosa comida que sirven en este restaurante.",
+      "direccion": "Calle: Miguel Hidalgo 2, Zona Centro"
+    },
+    {
+      "id": "r-carnitasvicente",
+      "nombre": "Carnitas Vicente",
+      "descripcion": "Las carnitas de tradición en Dolores Hidalgo, con el estilo de la casa jugosas y con un buen sabor.",
+      "direccion": "Calle: Avenida Norte 65B"
+    },
+    {
+      "id": "r-tororojoarrecheria",
+      "nombre": "Toro Rojo Arrecheria",
+      "descripcion": "Este lugar es una excelente opción en relación calidad, precio. Tiene barra de ensaladas, postres, la carne es de calidad y sabor aceptable.",
+      "direccion": "Calle: Calzada de los Heroes 104, Colonia: Los Pinos"
+    },
+    {
+      "id": "r-mostacho",
+      "nombre": "Mostacho 28",
+      "descripcion": "Muy buena opción para desayunar y estar en familia muy buen servicio. Las opciones de desayuno y la variedad de jugos naturales complementan una buena oferta.",
+      "direccion": "Plaza Principal 27, Zona Centro"
+    }
+  ],
+  "paquetes": [
+    {
+      "id": "paq-1",
+      "nombre": "Vitivinicola",
+      "descripcion": "Paquete de vinos.",
+      "direccion": "Zona Centro"
+    },
+    {
+      "id": "paq-2",
+      "nombre": "Nieves",
+      "descripcion": "Paquete de nieves con un buen sabor.",
+      "direccion": "Zona Centro"
+    },
+    {
+      "id": "paq-3",
+      "nombre": "Romantico",
+      "descripcion": "Paquete con paseos por lugares romaticos.",
+      "direccion": "Zona Centro"
+    },
+    {
+      "id": "paq-4",
+      "nombre": "Cultural",
+      "descripcion": "Paquete con paradas culturales en Dolores Hidalgo.",
+      "direccion": "Zona Centro"
+    }
+  ]
+}

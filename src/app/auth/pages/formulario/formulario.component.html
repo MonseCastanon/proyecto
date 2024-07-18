@@ -1,0 +1,83 @@
+
+<!-- Selección -->
+
+<div class="container">
+  <h1>Formulario de Paquete Turístico</h1>
+  <form action="/submit" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Teléfono:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <p>Seleccione los servicios que desea incluir en su paquete:</p>
+      <div class="checkbox-group">
+          <label>
+          <input type="checkbox" id="hotel" name="services" value="hotel">
+            Hotel 1
+          </label>
+          <label>
+            <input type="checkbox" id="hotel" name="services" value="hotel">
+              Hotel 2
+            </label>
+            <label>
+              <input type="checkbox" id="hotel" name="services" value="hotel">
+                Hotel 3
+              </label>
+
+          <label>
+          <input type="checkbox" id="tour" name="services" value="tour">
+              Museo 1
+          </label>
+          <label>
+            <input type="checkbox" id="tour" name="services" value="tour">
+                Museo 2
+            </label>
+            <label>
+              <input type="checkbox" id="tour" name="services" value="tour">
+                  Museo 3
+              </label>
+
+          <label>
+              <input type="checkbox" id="food" name="services" value="food">
+              Restaurante 1
+          </label>
+          <label>
+            <input type="checkbox" id="food" name="services" value="food">
+            Restaurante 2
+        </label>
+        <label>
+          <input type="checkbox" id="food" name="services" value="food">
+          Restaurante 3
+      </label>
+
+          <label>
+              <input type="checkbox" id="transport" name="services" value="transport">
+              Transporte
+          </label>
+      </div>
+
+      <p>Seleccione una agencia de viajes:</p>
+        <div class="radio-group">
+            <label>
+                <input type="radio" id="agency1" name="agency" value="agency1" required>
+                Agencia de Viajes 1
+            </label>
+
+            <label>
+                <input type="radio" id="agency2" name="agency" value="agency2">
+                Agencia de Viajes 2
+            </label>
+
+            <label>
+                <input type="radio" id="agency3" name="agency" value="agency3">
+                Agencia de Viajes 3
+            </label>
+        </div>
+
+      <input type="submit" value="Enviar">
+  </form>
+</div>
