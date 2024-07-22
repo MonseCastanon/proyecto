@@ -2,9 +2,9 @@
   <!-- Editar / Agregar
   Hotel
   <small>Relicario</small> -->
-  {{ currentHotel.id ? 'Editar' : 'Agregar' }}
+  {{ currentRestaurante.id ? 'Editar' : 'Agregar' }}
   Hotel
-  <small *ngIf="currentHotel.id">{{ currentHotel.nombre }}</small>
+  <small *ngIf="currentRestaurante.id">{{ currentRestaurante.nombre }}</small>
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>
@@ -13,7 +13,7 @@
   <div class="col-12 sm:col-6">
     <mat-card>
       <mat-card-content>
-        <form class="grid" [formGroup]="hotelForm" (ngSubmit)="onSubmit()">
+        <form class="grid" [formGroup]="restauranteForm" (ngSubmit)="onSubmit()">
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Nombre</mat-label>
             <input
@@ -63,7 +63,7 @@
               formControlName="accesibilidad"/>
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6" >
-            <mat-label>Número de habitaciones</mat-label>
+            <mat-label>Infraestructura</mat-label>
             <input
               matInput
               type="text"
@@ -121,8 +121,8 @@
         </form>
         <div class="flex justify-content-between">
           <button
-            *ngIf="currentHotel.id"
-            (click) = "onDeleteHotel()"
+            *ngIf="currentRestaurante.id"
+            (click) = "onDeleteRestaurante()"
             mat-flat-button
           >
             Borrar
@@ -140,7 +140,7 @@
   </div>
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img mat-card-image [src]="currentHotel | hotelImage" alt="imagen del hoteles" >
+      <img mat-card-image [src]="currentRestaurante | restauranteImage" alt="imagen del restaurante">
     </mat-card>
   </div>
 
