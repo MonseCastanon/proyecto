@@ -4,11 +4,11 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { NuevoComponent } from './pages/nuevo/nuevo.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { ListadoComponent } from './pages/listado/listado.component';
-import { InformacionComponent } from './pages/informacion/informacion.component';
 import { NuevoresComponent } from './pages/nuevores/nuevores.component';
 import { BuscarresComponent } from './pages/buscarres/buscarres.component';
 import { ListresComponent } from './pages/listres/listres.component';
 import { InforesComponent } from './pages/infores/infores.component';
+import { InformacionComponent } from './pages/informacion/informacion.component';
 
 const routes: Routes = [
   {
@@ -23,8 +23,8 @@ const routes: Routes = [
       { path: 'buscar', component: BuscarComponent },
       { path: 'listado', component: ListadoComponent },
       { path: 'editar/:id', component: NuevoComponent },
-      { path: ':id', component: InformacionComponent },
-      { path: ':id', component: InforesComponent },
+      { path: 'restaurantes/:id', component: InforesComponent },
+      { path: 'hoteles/:id', component: InformacionComponent },
       { path: '**', redirectTo: 'listado' },
     ]
   }

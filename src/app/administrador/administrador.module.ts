@@ -6,7 +6,6 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { NuevoComponent } from './pages/nuevo/nuevo.component';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
-import { InformacionComponent } from './pages/informacion/informacion.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card/card.component';
 import { HotelImagePipe } from './pipes/hotel-image.pipe';
@@ -18,6 +17,7 @@ import { ListresComponent } from './pages/listres/listres.component';
 import { NuevoresComponent } from './pages/nuevores/nuevores.component';
 import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
+import { InformacionComponent } from './pages/informacion/informacion.component';
 
 
 @NgModule({
