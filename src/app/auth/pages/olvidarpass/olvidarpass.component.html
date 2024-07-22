@@ -1,0 +1,54 @@
+<!-- Inicia Login -->
+<br>
+<br>
+<br>
+<br>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <h1 style="align-content: center;">Recuperar contraseña</h1>
+                <br>
+            </div>
+            <h2>Ingresar tu correo</h2>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Correo" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <title>Captcha</title>
+            <html>
+
+            <head>
+                <title>reCAPTCHA demo: Simple page</title>
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            </head>
+
+            <body>
+                <form action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    <br />
+                    <input type="button" class="submit" value="Confirmar">
+                </form>
+            </body>
+
+            </html>
+            <br>
+            <br>
+
+            <h2>Ingresa el código de recuperación</h2>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Código">
+                <i class="bx bx-user"></i>
+            </div>
+            <br>
+            
+
+            <div class="input-field">
+                <input type="button" class="submit" value="Cambiar contraseña" routerLink="../nuevapass/nuevapass.component.html">
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Termina Login -->
