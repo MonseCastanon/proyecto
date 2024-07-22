@@ -1,20 +1,20 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title> {{ hotel.nombre }} </mat-card-title>
+    <mat-card-title> {{ restaurante.nombre }} </mat-card-title>
     <!-- <mat-card-subtitle> {{ hotel.categoria }} </mat-card-subtitle> -->
   </mat-card-header>
 
-  <img mat-card-image [src]="hotel | hotelImage" [alt]="hotel.nombre">
+  <img mat-card-image [src]="restaurante | restauranteImage" [alt]="restaurante.nombre">
 
 
   <mat-card-content class="mt-2">
-    <h4> {{ hotel.localizacion }} </h4>
+    <h4> {{ restaurante.localizacion }} </h4>
     <p>
-      <strong>Descripción</strong> {{ hotel.descripcion }}
+      <strong>Descripción</strong> {{ restaurante.descripcion }}
       <br>
       <mat-chip-listbox>
         <mat-chip *ngFor="let name of
-        hotel.nombre.split(',') | slice:0:3">
+        restaurante.nombre.split(',') | slice:0:3">
         {{ name }}
         </mat-chip>
       </mat-chip-listbox>
@@ -27,14 +27,14 @@
     <button mat-button
     mat-raised
     color="primary"
-    [routerLink]="['/administrador/editar',hotel.id]">
+    [routerLink]="['/administrador/editarres',restaurante.id]">
     <mat-icon>edit</mat-icon>
     Editar
     </button>
     <span class="spacer"></span>
     <button mat-button
     mat-raised
-    [routerLink]="['/administrador',hotel.id]">
+    [routerLink]="['/administrador',restaurante.id]">
     <mat-icon>more_horiz</mat-icon>
     Más
     </button>
