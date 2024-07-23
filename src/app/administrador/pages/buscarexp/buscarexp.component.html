@@ -1,6 +1,6 @@
 <div class="flex flex-column p-2">
 
-  <h3>Buscador de Hoteles</h3>
+  <h3>Buscador de Experiencias</h3>
 
   <mat-form-field>
       <mat-label>Buscador</mat-label>
@@ -8,7 +8,7 @@
       type="text"
       matInput
       [formControl]="searchInput"
-      (input)="searchHotel()"
+      (input)="searchExperiencias()"
       [matAutocomplete]="auto"
       />
 
@@ -16,19 +16,16 @@
   #auto="matAutocomplete"
   (optionSelected)="onSelectedOption( $event )"
   >
-  <mat-option *ngFor="let hotel of hoteles" [value]="hotel">
-      {{ hotel.nombre}}
+  <mat-option *ngFor="let experiencia of experiencias" [value]="experiencia">
+      {{ experiencia.nombre}}
   </mat-option>
 
   <mat-option
-  *ngIf="hoteles.length === 0 && searchInput.value && searchInput.value.length>0"
+  *ngIf="experiencias.length === 0 && searchInput.value && searchInput.value.length>0"
   value="">
   No se encontro nada con el termino {{searchInput.value}}
 </mat-option>
- <!--{{ searchInput.value | json}}
-  {{searchInput.touched | json}}
-  {{searchInput.pristine | json}}-->
 </mat-autocomplete>
 </mat-form-field>
-{{ selectedHotel | json}}
+{{ selectedExperiencia | json}}
 </div>

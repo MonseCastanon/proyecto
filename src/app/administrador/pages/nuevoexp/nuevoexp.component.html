@@ -2,9 +2,9 @@
   <!-- Editar / Agregar
   Restaurante
   <small>Relicario</small> -->
-  {{ currentRestaurante.id ? 'Editar' : 'Agregar' }}
-  Restaurante
-  <small *ngIf="currentRestaurante.id">{{ currentRestaurante.nombre }}</small>
+  {{ currentExperiencia.id ? 'Editar' : 'Agregar' }}
+  Experiencia
+  <small *ngIf="currentExperiencia.id">{{ currentExperiencia.nombre }}</small>
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>
@@ -13,7 +13,7 @@
   <div class="col-12 sm:col-6">
     <mat-card>
       <mat-card-content>
-        <form class="grid" [formGroup]="restauranteForm" (ngSubmit)="onSubmit()">
+        <form class="grid" [formGroup]="experienciaForm" (ngSubmit)="onSubmit()">
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Nombre</mat-label>
             <input
@@ -23,38 +23,6 @@
               formControlName="nombre"/>
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6">
-            <mat-label>Categoria</mat-label>
-            <input
-              matInput
-              type="text"
-              required
-              formControlName="categoria" />
-          </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6" >
-            <mat-label>Tipologia</mat-label>
-            <input
-              matInput
-              type="text"
-              required
-              formControlName="tipologia"/>
-          </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
-            <mat-label>Localizacion</mat-label>
-            <input
-              matInput
-              type="text"
-              required
-              formControlName="localizacion"/>
-          </mat-form-field>
-          <mat-form-field class="col-12">
-            <mat-label>Descripcion</mat-label>
-            <input
-              matInput
-              type="text"
-              required
-              formControlName="descripcion"/>
-          </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
             <mat-label>Accesibilidad</mat-label>
             <input
               matInput
@@ -62,13 +30,13 @@
               required
               formControlName="accesibilidad"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6" >
-            <mat-label>Infraestructura</mat-label>
+          <mat-form-field class="col-12">
+            <mat-label>Descripcion</mat-label>
             <input
               matInput
               type="text"
               required
-              formControlName="infraestructura"/>
+              formControlName="descripcion" />
           </mat-form-field>
           <mat-form-field class="col-12">
             <mat-label>Servicio</mat-label>
@@ -105,8 +73,8 @@
         </form>
         <div class="flex justify-content-between">
           <button
-            *ngIf="currentRestaurante.id"
-            (click) = "onDeleteRestaurante()"
+            *ngIf="currentExperiencia.id"
+            (click) = "onDeleteExperiencia()"
             mat-flat-button
           >
             Borrar
@@ -124,7 +92,7 @@
   </div>
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img mat-card-image [src]="currentRestaurante | restauranteImage" alt="imagen del restaurante">
+      <img mat-card-image [src]="currentExperiencia | expImage" alt="imagen del experiencia">
     </mat-card>
   </div>
 

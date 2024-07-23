@@ -70,7 +70,7 @@ export class NuevoresComponent implements OnInit{
     }
     this.restaurantesService.addRestaurante( this.currentRestaurante )
     .subscribe( restaurante => {
-      // TODO: mostrar snackbar y navegar a administrador/editar/hotel.id
+      // TODO: mostrar snackbar y navegar a administrador/editar/restaurante.id
       this.router.navigate(['/administrador/editarres', restaurante.id]);
       this.showSnackbar(`${ restaurante.nombre } created`);
     });

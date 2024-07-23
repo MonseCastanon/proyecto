@@ -136,6 +136,7 @@
       "categoria": "categoria r-2",
       "tipologia": "tipologia r-2",
       "localizacion": "Calle: Avenida Norte 65B",
+      "infraestructura": "Infraestructura r-2",
       "descripcion": "Las carnitas de tradición en Dolores Hidalgo, con el estilo de la casa jugosas y con un buen sabor.",
       "accesibilidad": "Accesibilidad r-2",
       "servicio": "Servicio r-2",
@@ -148,6 +149,7 @@
       "categoria": "categoria r-3",
       "tipologia": "tipologia r-3",
       "localizacion": "Calle: Calzada de los Heroes 104, Colonia: Los Pinos",
+      "infraestructura": "Infraestructura r-3",
       "descripcion": "Este lugar es una excelente opción en relación calidad, precio. Tiene barra de ensaladas, postres, la carne es de calidad y sabor aceptable.",
       "accesibilidad": "Accesibilidad r-3",
       "servicio": "Servicio r-3",
@@ -160,6 +162,7 @@
       "categoria": "categoria r-4",
       "tipologia": "tipologia r-4",
       "localizacion": "Plaza Principal 27, Zona Centro",
+      "infraestructura": "Infraestructura r-4",
       "descripcion": "Muy buena opción para desayunar y estar en familia muy buen servicio. Las opciones de desayuno y la variedad de jugos naturales complementan una buena oferta.",
       "accesibilidad": "Accesibilidad r-4",
       "servicio": "Servicio r-4",
@@ -209,14 +212,17 @@
     {
       "id": "exp-1",
       "nombre": "Feria de las nieves 1",
+      "descripcion": "Descripcion exp-1",
       "accesibilidad": "Accesibilidad exp-1",
       "servicio": "Servicios exp-1",
       "contacto": "Contacto exp-1",
-      "costo": "Costo exp-1"
+      "costo": "Costo exp-1",
+      "alt_img": null
     },
     {
       "id": "exp-2",
       "nombre": "Feria de las nieves 2",
+      "descripcion": "Descripcion exp-2",
       "accesibilidad": "Accesibilidad exp-2",
       "servicio": "Servicios exp-2",
       "contacto": "Contacto exp-2",
@@ -225,6 +231,7 @@
     {
       "id": "exp-3",
       "nombre": "Feria de las nieves 3",
+      "descripcion": "Descripcion exp-3",
       "accesibilidad": "Accesibilidad exp-3",
       "servicio": "Servicios exp-3",
       "contacto": "Contacto exp-3",
@@ -233,6 +240,7 @@
     {
       "id": "exp-4",
       "nombre": "Feria de las nieves 4",
+      "descripcion": "Descripcion exp-4",
       "accesibilidad": "Accesibilidad exp-4",
       "servicio": "Servicios exp-4",
       "contacto": "Contacto exp-4",
