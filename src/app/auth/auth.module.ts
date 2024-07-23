@@ -14,6 +14,9 @@ import { CardComponent } from './components/card/card/card.component';
 import { HotelImagePipe } from './pipes/hotel-image.pipe';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
+import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
+import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
+import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component'
     CardComponent,
     HotelImagePipe,
     AgenciasComponent,
-    OlvidarpassComponent
+    OlvidarpassComponent,
+    RestauranteComponent,
+    RestauranteImagePipe,
+    InfoatraComponent
   ],
   imports: [
     CommonModule,
