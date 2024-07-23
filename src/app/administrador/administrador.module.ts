@@ -17,11 +17,17 @@ import { RestauranteComponent } from './components/card/restaurante/restaurante.
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
 import { InformacionComponent } from './pages/informacion/informacion.component';
 import { ListadoComponent } from './pages/listado/listado.component';
-import { BuscarexpComponent } from './pages/buscarexp/buscarexp.component';
 import { NuevoexpComponent } from './pages/nuevoexp/nuevoexp.component';
 import { ExperieciaComponent } from './components/card/experiecia/experiecia.component';
 import { ExpImagePipe } from './pipes/exp-image.pipe';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
+import { BuscarexpComponent } from './pages/buscarexp/buscarexp.component';
+import { BuscarpaqComponent } from './pages/buscarpaq/buscarpaq.component';
+import { InfopaqComponent } from './pages/infopaq/infopaq.component';
+import { ListpaqComponent } from './pages/listpaq/listpaq.component';
+import { NuevopaqComponent } from './pages/nuevopaq/nuevopaq.component';
+import { PaqueteImagePipe } from './pipes/paquete-image.pipe';
+import { PaqueteComponent } from './components/card/paquete/paquete.component';
 
 
 @NgModule({
@@ -44,6 +50,12 @@ import { InfoexpComponent } from './pages/infoexp/infoexp.component';
     NuevoexpComponent,
     ExperieciaComponent,
     ExpImagePipe,
+    BuscarpaqComponent,
+    InfopaqComponent,
+    ListpaqComponent,
+    NuevopaqComponent,
+    PaqueteImagePipe,
+    PaqueteComponent,
   ],
   imports: [
     CommonModule,

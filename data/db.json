@@ -98,6 +98,24 @@
       "segmento_mercado_potencial": "segmento_mercado_potencial h-4",
       "costo": "costo h-4",
       "contacto": "Contacto h-4"
+    },
+    {
+      "id": "h-1",
+      "nombre": "jcxkjbnx",
+      "categoria": "ksjK",
+      "tipologia": "jdfnBJ",
+      "localizacion": "jdFNb",
+      "descripcion": "ljdnb",
+      "accesibilidad": "jsFN",
+      "num_habitaciones": "kjsg",
+      "actividades": "jvsjan",
+      "num_visitante_ideal": "kjadf",
+      "fecha_ideal_visita": "kvsk",
+      "segmento_mercado_potencial": "kjdfkjdf",
+      "contacto": "sfkbfe",
+      "alt_img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/7a/19/36d3e3c7b233c04bda20618a7aef3f6691cb23f0859f8c797301cad9875d.jpeg",
+      "costo": "123"
+
     }
   ],
   "restaurantes": [
@@ -156,7 +174,7 @@
   ],
   "paquetes": [
     {
-      "id": "paq-1",
+      "id": "Imagen1",
       "nombre": "Vitivinicola",
       "descripcion": "Paquete de vinos.",
       "hotel": "Hotel paquete 1",
@@ -165,7 +183,7 @@
       "actividad": "Actividades paquete 1"
     },
     {
-      "id": "paq-2",
+      "id": "Imagen2",
       "nombre": "Nieves",
       "descripcion": "Paquete de nieves con un buen sabor.",
       "hotel": "Hotel paquete 2",
@@ -174,16 +192,16 @@
       "actividad": "Actividades paquete 2"
     },
     {
-      "id": "paq-3",
-      "nombre": "Romantico",
-      "descripcion": "Paquete con paseos por lugares romaticos.",
+      "id": "Imagen3",
+      "nombre": "Aventura",
+      "descripcion": "Paquete con paseos por lugares aventurezcos.",
       "hotel": "Hotel paquete 3",
       "restaurante": "Restaurante paquete 3",
       "experiencia": "Experiencia paquete 3",
       "actividad": "Actividades paquete 3"
     },
     {
-      "id": "paq-4",
+      "id": "Imagen1",
       "nombre": "Cultural",
       "descripcion": "Paquete con paradas culturales en Dolores Hidalgo.",
       "hotel": "Hotel paquete 4",
@@ -240,33 +258,6 @@
       "experiencia": "per-1",
       "servicio": "Servicios per-1",
       "costo": "Costo per-1"
-    },
-    {
-      "id": "per-2",
-      "nombre": "per-2",
-      "hotel": "per-2",
-      "restaurante": "per-2",
-      "experiencia": "per-2",
-      "servicio": "Servicios per-2",
-      "costo": "Costo per-2"
-    },
-    {
-      "id": "per-3",
-      "nombre": "per-3",
-      "hotel": "per-3",
-      "restaurante": "per-3",
-      "experiencia": "per-3",
-      "servicio": "Servicios per-3",
-      "costo": "Costo per-3"
-    },
-    {
-      "id": "per-4",
-      "nombre": "per-4",
-      "hotel": "per-4",
-      "restaurante": "per-4",
-      "experiencia": "per-4",
-      "servicio": "Servicios per-4",
-      "costo": "Costo per-4"
     }
   ],
   "itinerario": [
