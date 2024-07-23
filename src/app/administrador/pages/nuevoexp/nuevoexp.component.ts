@@ -45,12 +45,12 @@ export class NuevoexpComponent implements OnInit{
     this.activatedRoute.params
     .pipe(
       switchMap( ({ id }) => this.experienciasService.getExperienciaById( id) ),
-    ).subscribe(restaurante =>{
+    ).subscribe(experiencia =>{
 
-      if ( !restaurante ) {
+      if ( !experiencia ) {
         return this.router.navigateByUrl('/');
       }
-      this.experienciaForm.reset( restaurante );
+      this.experienciaForm.reset( experiencia );
       return;
     });
 
@@ -90,7 +90,7 @@ export class NuevoexpComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/restaurantes'])
+          this.router.navigate(['/experiencias'])
        })
   }
 

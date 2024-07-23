@@ -9,8 +9,12 @@ import { InforesComponent } from './pages/infores/infores.component';
 import { InformacionComponent } from './pages/informacion/informacion.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { NuevoexpComponent } from './pages/nuevoexp/nuevoexp.component';
-import { BuscarexpComponent } from './pages/buscarexp/buscarexp.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
+import { BuscarexpComponent } from './pages/buscarexp/buscarexp.component';
+import { ListpaqComponent } from './pages/listpaq/listpaq.component';
+import { NuevopaqComponent } from './pages/nuevopaq/nuevopaq.component';
+import { BuscarpaqComponent } from './pages/buscarpaq/buscarpaq.component';
+import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 
 const routes: Routes = [
   {
@@ -18,6 +22,12 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children:[
       { path: 'listado', component: ListadoComponent },
+      { path: 'listpaq', component: ListpaqComponent },
+
+      { path: 'nuevopaq', component: NuevopaqComponent },
+      { path: 'buscarpaq', component: BuscarpaqComponent },
+      { path: 'editarpaq/:id', component: NuevopaqComponent },
+      { path: 'paquetes/:id', component: InfopaqComponent },
 
       { path: 'nuevores', component: NuevoresComponent },
       { path: 'buscarres', component: BuscarresComponent },
