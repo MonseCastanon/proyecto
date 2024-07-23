@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
+import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children:[
       { path: 'atractivos', component: AtractivosComponent},
+      { path: 'restaurantes/:id', component: InfoatraComponent },
       { path: 'experiencias', component: ExperienciasComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
