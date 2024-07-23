@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Restaurante } from '../../../interfaces/restaurante.interface';
 
 @Component({
@@ -6,7 +6,7 @@ import { Restaurante } from '../../../interfaces/restaurante.interface';
   templateUrl: './restaurante.component.html',
   styles: ``
 })
-export class RestauranteComponent {
+export class RestauranteComponent implements OnInit {
 
   @Input()
   public restaurante!: Restaurante;

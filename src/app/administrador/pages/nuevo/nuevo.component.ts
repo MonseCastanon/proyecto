@@ -28,6 +28,7 @@ export class NuevoComponent implements OnInit{
     num_visitante_ideal: new FormControl<string>(''),
     fecha_ideal_visita: new FormControl<string>(''),
     segmento_mercado_potencial: new FormControl<string>(''),
+    costo: new FormControl<string>(''),
     contacto: new FormControl<string>(''),
     alt_img: new FormControl<string>(''),});
   constructor(

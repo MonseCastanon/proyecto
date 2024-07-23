@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LayoutPageComponent {
   public sidebarItem=[
-    {label:'Listado Hoteles', icon:'label', url:'./listado'},
+    {label:'Listado', icon:'label', url:'./listado'},
     {label:'Añadir Hoteles', icon:'add', url:'./nuevo'},
     {label:'Buscar Hoteles', icon:'search', url:'./buscar'},
-    {label:'Listado Restaurantes', icon:'label', url:'./listres'},
     {label:'Añadir Restaurantes', icon:'add', url:'./nuevores'},
     {label:'Buscar Restaurantes', icon:'search', url:'./buscarres'},
+    {label:'Añadir Experiencia', icon:'add', url:'./nuevoexp'},
+    {label:'Buscar Experiencia', icon:'search', url:'./buscarexp'},
   ]
 }
