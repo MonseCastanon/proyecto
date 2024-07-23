@@ -5,10 +5,10 @@
   </mat-card-header>
 
   <img mat-card-image [src]="hotel | hotelImage" [alt]="hotel.nombre">
-  
+
 
   <mat-card-content class="mt-2">
-    <h4> {{ hotel.direccion }} </h4>
+    <h4> {{ hotel.localizacion }} </h4>
     <p>
       <strong>Descripción</strong> {{ hotel.descripcion }}
       <br>
@@ -27,14 +27,14 @@
     <button mat-button
     mat-raised
     color="primary"
-    [routerLink]="['/',hotel.id]">
+    [routerLink]="['/administrador/editar',hotel.id]">
     <mat-icon>edit</mat-icon>
     Editar
     </button>
     <span class="spacer"></span>
     <button mat-button
     mat-raised
-    [routerLink]="['/hoteles',hotel.id]">
+    [routerLink]="['/administrador/hoteles',hotel.id]">
     <mat-icon>more_horiz</mat-icon>
     Más
     </button>

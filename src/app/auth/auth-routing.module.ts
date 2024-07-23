@@ -20,7 +20,7 @@ const routes: Routes = [
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
       { path: 'inicio', component: InicioComponent},
-      { path: 'Agencias', component: AgenciasComponent},
+      { path: 'agencias', component: AgenciasComponent},
       { path: '**', redirectTo: 'inicio'}
     ]
   }
