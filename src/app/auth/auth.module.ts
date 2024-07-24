@@ -17,6 +17,7 @@ import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component'
 import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { InfoatraComponent } from './pages/infoatra/infoatra.component';
     OlvidarpassComponent,
     RestauranteComponent,
     RestauranteImagePipe,
-    InfoatraComponent
+    InfoatraComponent,
+    NuevapassComponent
   ],
   imports: [
     CommonModule,
