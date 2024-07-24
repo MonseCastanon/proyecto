@@ -9,6 +9,7 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'olvidarpass', component: OlvidarpassComponent},
       { path: 'inicio', component: InicioComponent},
       { path: 'agencias', component: AgenciasComponent},
       { path: '**', redirectTo: 'inicio'}
