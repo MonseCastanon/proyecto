@@ -10,6 +10,8 @@ import { ExperienciasService } from '../../services/experiencias.service';
 })
 export class ExperienciasComponent implements OnInit {
   public experiencias: Experiencia[] = [];
+hoteles: any;
+restaurantes: any;
 
 
   constructor(

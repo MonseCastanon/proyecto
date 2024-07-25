@@ -12,6 +12,7 @@ import { RestaurantesService } from '../../services/restaurante.service';
 export class AtractivosComponent implements OnInit {
   public hoteles: Hotel[] = [];
   public restaurantes: Restaurante[] = [];
+experiencias: any;
 
   constructor(
     private hotelesService: HotelesService,
