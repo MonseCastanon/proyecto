@@ -9,9 +9,7 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
-import { InfopaqComponent } from './pages/infopaq/infopaq.component';
-import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
-import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
+import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 
 const routes: Routes = [
   {
@@ -20,17 +18,14 @@ const routes: Routes = [
     children:[
       { path: 'atractivos', component: AtractivosComponent},
       { path: 'restaurantes/:id', component: InfoatraComponent },
-      { path: 'paquetes/:id', component: InfopaqComponent },
       { path: 'experiencias', component: ExperienciasComponent },
+      { path: 'experiencias/:id', component: InfoexpComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'olvidarpass', component: OlvidarpassComponent},
-      { path: 'nuevapass', component: NuevapassComponent},
       { path: 'inicio', component: InicioComponent},
       { path: 'agencias', component: AgenciasComponent},
       { path: '**', redirectTo: 'inicio'}
-
     ]
   }
 ];
