@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './layout-page.component.html',
   styleUrl: './layout-page.component.css',
 })
+
 export class LayoutPageComponent {
+openDialog(arg0: string,arg1: string) {
+throw new Error('Method not implemented.');
+}
   public sidebarItem=[
     {label:'Listado', icon:'label', url:'./listado'},
     {label:'Paquetes/Itinerarios', icon:'label', url:'./listpaq'},
@@ -21,3 +25,4 @@ export class LayoutPageComponent {
     // {label:'Buscar Experiencia', icon:'search', url:'./buscarexp'},
   ]
 }
+

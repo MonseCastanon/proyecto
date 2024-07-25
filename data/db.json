@@ -103,7 +103,7 @@
       "nombre": "jcxkjbnx",
       "categoria": "ksjK",
       "tipologia": "jdfnBJ",
-      "localizacion": "jdFNb",
+      "localizacion": "jdFN",
       "descripcion": "ljdnb",
       "accesibilidad": "jsFN",
       "num_habitaciones": "kjsg",
@@ -321,58 +321,58 @@
   ],
   "guias": [
     {
-    "id": "G-1",
-    "nombre:": "ALICIA GUTIÉRREZ CRUCES",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-1",
+      "nombre:": "ALICIA GUTIÉRREZ CRUCES",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-2",
-    "nombre:": "ANA LUISA FONSECA GUTIÉRREZ",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-2",
+      "nombre:": "ANA LUISA FONSECA GUTIÉRREZ",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-3",
-    "nombre:": "GERARDO HERNANDEZ PICON",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-3",
+      "nombre:": "GERARDO HERNANDEZ PICON",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-4",
-    "nombre:": "JOSÉ ALAMILLA RIOS",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-4",
+      "nombre:": "JOSÉ ALAMILLA RIOS",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-5",
-    "nombre:": "JUAN JOSÉ ROMÁN GODÍNEZ RAMOS",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-5",
+      "nombre:": "JUAN JOSÉ ROMÁN GODÍNEZ RAMOS",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-6",
-    "nombre:": "MARIBEL JIMÉNEZ GALVÁN",
-    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
-    "contacto": ""
+      "id": "G-6",
+      "nombre:": "MARIBEL JIMÉNEZ GALVÁN",
+      "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+      "contacto": ""
     },
     {
-    "id": "G-7",
-    "nombre:": "MIGUEL GALLEGOS RAMIREZ",
-    "especializacion": "Guía de turista general",
-    "contacto": ""
+      "id": "G-7",
+      "nombre:": "MIGUEL GALLEGOS RAMIREZ",
+      "especializacion": "Guía de turista general",
+      "contacto": ""
     },
     {
-    "id": "G-8",
-    "nombre:": "RAFAEL GUTIERREZ GARCIA",
-    "especializacion": "Guía de turista general",
-    "contacto": "418 1176973"
+      "id": "G-8",
+      "nombre:": "RAFAEL GUTIERREZ GARCIA",
+      "especializacion": "Guía de turista general",
+      "contacto": "418 1176973"
     },
     {
-    "id": "G-9",
-    "nombre:": "SANDRO “COMACORAN”",
-    "especializacion": "Guía de turista general",
-    "contacto": "418 104 1623"
+      "id": "G-9",
+      "nombre:": "SANDRO “COMACORAN”",
+      "especializacion": "Guía de turista general",
+      "contacto": "418 104 1623"
     }
   ]
 }
