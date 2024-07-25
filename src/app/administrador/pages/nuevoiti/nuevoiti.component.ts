@@ -88,7 +88,7 @@ export class NuevoitiComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/itinerarios'])
+          this.router.navigate(['administrador/listpaq'])
        })
   }
 

@@ -90,7 +90,7 @@ export class NuevoexpComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/experiencias'])
+          this.router.navigate(['administrador/listado'])
        })
   }
 

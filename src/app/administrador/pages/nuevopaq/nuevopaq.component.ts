@@ -90,7 +90,7 @@ export class NuevopaqComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/paquetes'])
+          this.router.navigate(['administrador/listpaq'])
        })
   }
 
