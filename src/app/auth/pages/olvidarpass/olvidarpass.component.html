@@ -1,38 +1,35 @@
-<!-- Inicia Login -->
-<br>
-<br>
-<br>
-<br>
-
 <body>
+    <button routerLink="/auth/login" mat-raised-button style="margin-left: 30px; margin-top: 30px;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 3px; margin-top: 3px; margin-right: 10px;"
+            width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+        <a>Volver</a>
+    </button>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <div class="box">
         <div class="container">
             <div class="top-header">
-                <h1 style="align-content: center;">Recuperar contraseña</h1>
+                <h1>Recuperar contraseña</h1>
+                <i class="bi bi-arrow-left"></i>
                 <br>
             </div>
+
             <h2>Ingresar tu correo</h2>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Correo" required>
+                <input type="email" class="input" placeholder="Correo Electrónico" required>
                 <i class="bx bx-user"></i>
             </div>
-            <title>Captcha</title>
-            <html>
+            <div class="input-field">
+                <button href="-- link del código de verificación xd --" mat-raised-button class="button">Enviar
+                    código</button>
+            </div>
 
-            <head>
-                <title>reCAPTCHA demo: Simple page</title>
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            </head>
+            <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6Lcz_hYqAAAAAKVUpIyR3c6OlJgeR8FjDf3OU_3q"></div>
+            </div>
 
-            <body>
-                <form action="?" method="POST">
-                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                    <br />
-                    <input type="button" class="submit" value="Confirmar">
-                </form>
-            </body>
-
-            </html>
             <br>
             <br>
 
@@ -42,13 +39,7 @@
                 <i class="bx bx-user"></i>
             </div>
             <br>
-            
 
             <div class="input-field">
-                <input type="button" class="submit" value="Cambiar contraseña" routerLink="../nuevapass/nuevapass.component.html">
+                <button routerLink="/auth/nuevapass" mat-raised-button class="button">Cambiar contraseña</button>
             </div>
-        </div>
-    </div>
-</body>
-
-<!-- Termina Login -->

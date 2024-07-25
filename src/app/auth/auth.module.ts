@@ -21,7 +21,7 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
 import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
-
+import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 
 
 @NgModule({
@@ -44,7 +44,8 @@ import { PersonalizadoRestauranteComponent } from './components/card/personaliza
     PersonalizadoRestauranteComponent,
     PaqueteImagePipe,
     PaqueteComponent,
-    InfopaqComponent
+    InfopaqComponent,
+    NuevapassComponent
   ],
   imports: [
     CommonModule,
