@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { AtractivosComponent } from './pages/atractivos/atractivos.component';
@@ -17,6 +16,11 @@ import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component'
 import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { PaqueteImagePipe } from './pipes/paquete-image.pipe';
+import { PaqueteComponent } from './components/card/paquete/paquete.component';
+import { InfopaqComponent } from './pages/infopaq/infopaq.component';
+import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
+import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
 import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 
 
@@ -36,6 +40,11 @@ import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
     RestauranteComponent,
     RestauranteImagePipe,
     InfoatraComponent,
+    PersonalizadoHotelComponent,
+    PersonalizadoRestauranteComponent,
+    PaqueteImagePipe,
+    PaqueteComponent,
+    InfopaqComponent,
     NuevapassComponent
   ],
   imports: [
