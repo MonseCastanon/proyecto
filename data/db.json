@@ -48,8 +48,7 @@
       "fecha_ideal_visita": "fecha_ideal_visita h-1",
       "segmento_mercado_potencial": "segmento_mercado_potencial h-1",
       "costo": "costo h-1",
-      "contacto": "Contacto h-1",
-      "alt_img": null
+      "contacto": "Contacto h-1"
     },
     {
       "id": "h-casamia",
@@ -115,7 +114,6 @@
       "contacto": "sfkbfe",
       "alt_img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/7a/19/36d3e3c7b233c04bda20618a7aef3f6691cb23f0859f8c797301cad9875d.jpeg",
       "costo": "123"
-
     }
   ],
   "restaurantes": [
@@ -218,8 +216,7 @@
       "accesibilidad": "Accesibilidad exp-1",
       "servicio": "Servicios exp-1",
       "contacto": "Contacto exp-1",
-      "costo": "Costo exp-1",
-      "alt_img": null
+      "costo": "Costo exp-1"
     },
     {
       "id": "exp-2",
@@ -249,7 +246,7 @@
       "costo": "Costo exp-4"
     }
   ],
-  "personalizado": [
+  "personalizados": [
     {
       "id": "per-1",
       "nombre": "per-1",
@@ -260,34 +257,122 @@
       "costo": "Costo per-1"
     }
   ],
-  "itinerario": [
+  "itinerarios": [
     {
-      "id": "i-1",
+      "id": "Imagen1",
       "nombre": "nombre i-1",
       "dia": "dia i-1",
       "hora": "hora i-1",
-      "actividad": "actividad i-1"
+      "actividades": "actividad i-1"
     },
     {
-      "id": "i-2",
+      "id": "Imagen11",
       "nombre": "nombre i-2",
       "dia": "dia i-2",
       "hora": "hora i-2",
-      "actividad": "actividad i-2"
+      "actividades": "actividad i-2"
     },
     {
-      "id": "i-2",
+      "id": "Imagen12",
       "nombre": "nombre i-2",
       "dia": "dia i-2",
       "hora": "hora i-2",
-      "actividad": "actividad i-2"
+      "actividades": "actividad i-2"
     },
     {
-      "id": "i-3",
+      "id": "Imagen1",
       "nombre": "nombre i-3",
       "dia": "dia i-3",
       "hora": "hora i-3",
-      "actividad": "actividad i-3"
+      "actividades": "actividad i-3"
+    }
+  ],
+  "agencias": [
+    {
+      "id": "A-1",
+      "nombre": "Turismo Gilca",
+      "tipo": "Agencia minorista autorizada por SECTUR",
+      "lugar": "Dolores Hidalgo, CIN. Gto.",
+      "direccion": "Yucatán 20 centro",
+      "contactos": "4181822986 / 4181845804",
+      "red_social": "https://www.facebook.com › tgilca",
+      "correo": ""
+    },
+    {
+      "id": "A-2",
+      "nombre": "Eskapate Corporativo Viajero",
+      "tipo": "Agencia minorista autorizada por SECTUR",
+      "lugar": "San Luis Potosi, S.L.P. ",
+      "direccion": "coronel Romero 2100 instalaciones de CANACO",
+      "contactos": "4443172663",
+      "red_social": "https://www.facebook.com › tgilca",
+      "correo": "eskapatecorporativo@hotmail.com"
+    },
+    {
+      "id": "A-3",
+      "nombre": "Independencia Touristic Services ",
+      "tipo": "Agencia minorista autorizada por SECTUR",
+      "lugar": "Dolores Hidalgo, CIN. Gto.",
+      "direccion": "Calle Querétaro #16, zona centro",
+      "contactos": "4181501008",
+      "red_social": "https://www.facebook.com/IndependenciaTouristicServicestouristicservicesindependencia.com",
+      "correo": "independenciatouristicservices@gmail.com"
+    }
+  ],
+  "guias": [
+    {
+    "id": "G-1",
+    "nombre:": "ALICIA GUTIÉRREZ CRUCES",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-2",
+    "nombre:": "ANA LUISA FONSECA GUTIÉRREZ",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-3",
+    "nombre:": "GERARDO HERNANDEZ PICON",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-4",
+    "nombre:": "JOSÉ ALAMILLA RIOS",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-5",
+    "nombre:": "JUAN JOSÉ ROMÁN GODÍNEZ RAMOS",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-6",
+    "nombre:": "MARIBEL JIMÉNEZ GALVÁN",
+    "especializacion": "Guía especializado en un tema o localidad especifica de carácter cultural",
+    "contacto": ""
+    },
+    {
+    "id": "G-7",
+    "nombre:": "MIGUEL GALLEGOS RAMIREZ",
+    "especializacion": "Guía de turista general",
+    "contacto": ""
+    },
+    {
+    "id": "G-8",
+    "nombre:": "RAFAEL GUTIERREZ GARCIA",
+    "especializacion": "Guía de turista general",
+    "contacto": "418 1176973"
+    },
+    {
+    "id": "G-9",
+    "nombre:": "SANDRO “COMACORAN”",
+    "especializacion": "Guía de turista general",
+    "contacto": "418 104 1623"
     }
   ]
 }

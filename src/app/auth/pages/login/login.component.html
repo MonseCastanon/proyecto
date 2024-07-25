@@ -1,31 +1,29 @@
 <!-- Inicia Login -->
+
 <body>
     <div class="box">
         <div class="container">
             <div class="top-header">
                 <header>Iniciar Sesión</header>
-                
+
             </div>
 
             <div class="input-field">
                 <input type="text" class="input" placeholder="Usuario" required>
-                <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
                 <input type="password" class="input" placeholder="Contraseña" required>
                 <i class="bx bx-lock-alt"></i>
             </div>
-            <div class="input-field">
-                <input type="submit" class="submit" value="Iniciar Sesión">
-            </div>
+            <button mat-raised-button class="button" routerLink="/administrador/listado">Iniciar sesión</button>
 
             <div class="bottom">
                 <div class="left">
-                  <input class="form-check-input" type="checkbox" value="" id="form" checked />
-                  <label class="form-check-label" for="form">Recordar contraseña </label>
+                    <input class="form-check-input" type="checkbox" value="" id="form" checked />
+                    <label class="form-check-label" for="form">Recordar contraseña </label>
                 </div>
                 <div class="right">
-                    <a routerLink="./auth/olvidarpass">¿Olvidaste la contraseña?</a>
+                    <a href="./auth/olvidarpass">¿Olvidaste la contraseña?</a>
                 </div>
             </div>
         </div>

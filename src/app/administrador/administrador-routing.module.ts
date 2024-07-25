@@ -15,6 +15,9 @@ import { ListpaqComponent } from './pages/listpaq/listpaq.component';
 import { NuevopaqComponent } from './pages/nuevopaq/nuevopaq.component';
 import { BuscarpaqComponent } from './pages/buscarpaq/buscarpaq.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
+import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
+import { BuscaritiComponent } from './pages/buscariti/buscariti.component';
+import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 
 const routes: Routes = [
   {
@@ -23,6 +26,11 @@ const routes: Routes = [
     children:[
       { path: 'listado', component: ListadoComponent },
       { path: 'listpaq', component: ListpaqComponent },
+
+      { path: 'nuevoiti', component: NuevoitiComponent },
+      { path: 'buscariti', component: BuscaritiComponent },
+      { path: 'editariti/:id', component: NuevoitiComponent },
+      { path: 'itinerarios/:id', component: InfoitiComponent },
 
       { path: 'nuevopaq', component: NuevopaqComponent },
       { path: 'buscarpaq', component: BuscarpaqComponent },

@@ -186,6 +186,14 @@ body {
     top: 50%;
     left: 10px;
     transform: translate(0, -50%);
+
   }
   
-  
+  /* Fondo de icono*/
+  .button {
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;;
+  }

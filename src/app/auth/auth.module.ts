@@ -16,9 +16,12 @@ import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component'
 import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
-import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
-import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
-import { InfoexpComponent } from './pages/infoexp/infoexp.component';
+import { PaqueteImagePipe } from './pipes/paquete-image.pipe';
+import { PaqueteComponent } from './components/card/paquete/paquete.component';
+import { InfopaqComponent } from './pages/infopaq/infopaq.component';
+import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
+import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
+import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 
 
 @NgModule({
@@ -37,9 +40,12 @@ import { InfoexpComponent } from './pages/infoexp/infoexp.component';
     RestauranteComponent,
     RestauranteImagePipe,
     InfoatraComponent,
-    ExperienciaImagePipe,
-    ExperienciaComponent,
-    InfoexpComponent,
+    PersonalizadoHotelComponent,
+    PersonalizadoRestauranteComponent,
+    PaqueteImagePipe,
+    PaqueteComponent,
+    InfopaqComponent,
+    NuevapassComponent
   ],
   imports: [
     CommonModule,
