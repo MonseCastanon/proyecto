@@ -248,30 +248,39 @@
     {
       "id": "Imagen1",
       "nombre": "nombre i-1",
-      "dia": "dia i-1",
-      "hora": "hora i-1",
-      "actividades": "actividad i-1"
+      "dia_1": "dia1 i-1",
+      "actividades_dia_1": "actividad1 i-1",
+      "dia_2": "dia2 i-1",
+      "actividades_dia_2": "actividad2 i-1",
+      "dia_3": "dia3 i-1",
+      "actividades_dia_3": "actividad3 i-1",
+      "dia_4": "dia i-1",
+      "actividades_dia_4": "actividad4 i-1",
+      "alt_img": null
     },
     {
       "id": "Imagen11",
       "nombre": "nombre i-2",
-      "dia": "dia i-2",
-      "hora": "hora i-2",
-      "actividades": "actividad i-2"
+      "dia_1": "dia1 i-2",
+      "actividades_dia_1": "actividad1 i-2",
+      "dia_2": "dia2 i-2",
+      "actividades_dia_2": "actividad2 i-2",
+      "dia_3": "dia3 i-2",
+      "actividades_dia_3": "actividad3 i-2",
+      "dia_4": "dia i-2",
+      "actividades_dia_4": "actividad4 i-2"
     },
     {
       "id": "Imagen12",
-      "nombre": "nombre i-2",
-      "dia": "dia i-2",
-      "hora": "hora i-2",
-      "actividades": "actividad i-2"
-    },
-    {
-      "id": "Imagen1",
       "nombre": "nombre i-3",
-      "dia": "dia i-3",
-      "hora": "hora i-3",
-      "actividades": "actividad i-3"
+      "dia_1": "dia1 i-3",
+      "actividades_dia_1": "actividad1 i-3",
+      "dia_2": "dia2 i-1",
+      "actividades_dia_2": "actividad2 i-3",
+      "dia_3": "dia3 i-1",
+      "actividades_dia_3": "actividad3 i-3",
+      "dia_4": "dia i-1",
+      "actividades_dia_4": "actividad4 i-3"
     }
   ],
   "agencias": [
