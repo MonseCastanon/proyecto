@@ -25,6 +25,7 @@ export class NuevoComponent implements OnInit{
     accesibilidad: new FormControl<string>(''),
     num_habitaciones: new FormControl<string>(''),
     actividades: new FormControl<string>(''),
+    servicios: new FormControl<string>(''),
     num_visitante_ideal: new FormControl<string>(''),
     fecha_ideal_visita: new FormControl<string>(''),
     segmento_mercado_potencial: new FormControl<string>(''),
