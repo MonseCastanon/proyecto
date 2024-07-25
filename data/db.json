@@ -1,36 +1,9 @@
 {
-  "admin": [
+  "administradores": [
     {
       "id": "1",
       "usuario": "administrador",
-      "email": "admin.agencia@gmail.com",
       "password": "12345"
-    }
-  ],
-  "museos": [
-    {
-      "id": "m-independencia",
-      "nombre": "Independecia",
-      "descripcion": "Exhibe objetos y documentos relacionados con el movimiento independentista en México, en especial de su principal representante, don Miguel Hidalgo y Costilla, así como una serie de piezas de arte popular.",
-      "direccion": "Calle: Zacatecas 6, Zona Centro"
-    },
-    {
-      "id": "m-josealfredo",
-      "nombre": "Jose Alfredo Jimenez",
-      "descripcion": "El museo presenta, de manera cronológica y temática, un recorrido por los diversos periodos y aspectos de la vida y obra de José Alfredo.",
-      "direccion": "Calle: Guanajuato 13, Zona Centro"
-    },
-    {
-      "id": "m-bicentenario",
-      "nombre": "Bicentenario",
-      "descripcion": "El Museo Bicentenario cuenta con un total de 827 piezas de la celebración del primer centenario de la Independencia, entre las que destacan joyas, armas, música, retratos, fotografías de edificios y uniformes.",
-      "direccion": "Calle: Zacatecas s/n, Zona Centro"
-    },
-    {
-      "id": "m-vino",
-      "nombre": "Vino",
-      "descripcion": "En este lugar podrás conocer la historia del vino y el proceso de elaboración de los vinos que ofrecen los productores del Valle de la Independencia.",
-      "direccion": "Calle: Hidalgo 12, Zona Centro"
     }
   ],
   "hoteles": [
