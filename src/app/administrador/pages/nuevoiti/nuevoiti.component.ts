@@ -18,9 +18,14 @@ export class NuevoitiComponent implements OnInit{
   public itinerarioForm = new FormGroup({
     id: new FormControl<string>(''),
     nombre: new FormControl<string>(''),
-    dia: new FormControl<string>(''),
-    hora: new FormControl<string>(''),
-    actividades: new FormControl<string>(''),
+    dia_1: new FormControl<string>(''),
+    actividades_dia_1: new FormControl<string>(''),
+    dia_2: new FormControl<string>(''),
+    actividades_dia_2: new FormControl<string>(''),
+    dia_3: new FormControl<string>(''),
+    actividades_dia_3: new FormControl<string>(''),
+    dia_4: new FormControl<string>(''),
+    actividades_dia_4: new FormControl<string>(''),
     alt_img: new FormControl<string>(''),
   });
   constructor(
@@ -88,7 +93,7 @@ export class NuevoitiComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/itinerarios'])
+          this.router.navigate(['administrador/listpaq'])
        })
   }
 

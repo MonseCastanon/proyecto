@@ -8,6 +8,7 @@ export interface Hotel {
   accesibilidad:string;
   num_habitaciones:string;
   actividades:string;
+  servicios:string;
   num_visitante_ideal:string;
   fecha_ideal_visita:string;
   segmento_mercado_potencial:string;

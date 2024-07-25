@@ -2,7 +2,7 @@
   <!-- Editar / Agregar
   Restaurante
   <small>Relicario</small> -->
-  {{ currentRestaurante.id ? 'Editar' : 'Agregar' }}
+  {{ currentRestaurante.id ? 'Editar' : 'Añadir' }}
   Restaurante
   <small *ngIf="currentRestaurante.id">{{ currentRestaurante.nombre }}</small>
 </h1>
@@ -76,7 +76,7 @@
               matInput
               type="text"
               required
-              formControlName="servicio"/>
+              formControlName="servicios"/>
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Costo</mat-label>
