@@ -24,7 +24,7 @@ export class NuevoresComponent implements OnInit{
     descripcion: new FormControl<string>(''),
     infraestructura: new FormControl<string>(''),
     accesibilidad: new FormControl<string>(''),
-    servicio: new FormControl<string>(''),
+    servicios: new FormControl<string>(''),
     costo: new FormControl<string>(''),
     contacto: new FormControl<string>(''),
     alt_img: new FormControl<string>(''),
@@ -64,7 +64,7 @@ export class NuevoresComponent implements OnInit{
     if ( this.currentRestaurante.id) {
       this.restaurantesService.updateRestaurante( this.currentRestaurante )
       .subscribe( restaurante => {
-        this.showSnackbar(`${ restaurante.nombre } updated`);
+        this.showSnackbar(`${ restaurante.nombre } editado`);
       } );
       return;
     }
@@ -72,12 +72,12 @@ export class NuevoresComponent implements OnInit{
     .subscribe( restaurante => {
       // TODO: mostrar snackbar y navegar a administrador/editar/restaurante.id
       this.router.navigate(['/administrador/editarres', restaurante.id]);
-      this.showSnackbar(`${ restaurante.nombre } created`);
+      this.showSnackbar(`${ restaurante.nombre } añadido`);
     });
 
   }
   showSnackbar(message: string ):void{
-    this.snackbar.open( message, 'done',{
+    this.snackbar.open( message, 'listo',{
       duration: 2500,
     })
   }
@@ -94,7 +94,7 @@ export class NuevoresComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/restaurantes'])
+          this.router.navigate(['/administrador/listado'])
        })
   }
 

@@ -96,7 +96,7 @@ export class NuevoComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/hoteles'])
+          this.router.navigate(['administrador/listado'])
        })
   }
 
