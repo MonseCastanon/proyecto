@@ -1,1 +1,9 @@
-<p>experiencias works!</p>
+<h1>Listado de Experiencias</h1>
+<mat-divider></mat-divider>
+<div class="grid bm-8">
+  <div *ngFor="let experiencia of experiencias"
+  class="col-12 sm:col-4 md:col-3 xl:col-2">
+   <experiencias-experiencia-card [experiencia]="experiencia"></experiencias-experiencia-card>
+<!-- Llama al card.component.ts -->
+  </div>
+</div>

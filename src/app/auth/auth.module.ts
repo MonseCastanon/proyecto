@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { AtractivosComponent } from './pages/atractivos/atractivos.component';
@@ -17,6 +16,9 @@ import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component'
 import { RestauranteComponent } from './components/card/restaurante/restaurante.component';
 import { RestauranteImagePipe } from './pipes/restaurante-image.pipe';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
+import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 
 
 @NgModule({
@@ -34,7 +36,10 @@ import { InfoatraComponent } from './pages/infoatra/infoatra.component';
     OlvidarpassComponent,
     RestauranteComponent,
     RestauranteImagePipe,
-    InfoatraComponent
+    InfoatraComponent,
+    ExperienciaImagePipe,
+    ExperienciaComponent,
+    InfoexpComponent,
   ],
   imports: [
     CommonModule,

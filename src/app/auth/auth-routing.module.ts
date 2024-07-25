@@ -9,6 +9,7 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'atractivos', component: AtractivosComponent},
       { path: 'restaurantes/:id', component: InfoatraComponent },
       { path: 'experiencias', component: ExperienciasComponent },
+      { path: 'experiencias/:id', component: InfoexpComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
