@@ -22,6 +22,9 @@ import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
 import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
 import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
+import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
+import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 
 
 @NgModule({
@@ -40,6 +43,9 @@ import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
     RestauranteComponent,
     RestauranteImagePipe,
     InfoatraComponent,
+    ExperienciaImagePipe,
+    ExperienciaComponent,
+    InfoexpComponent,
     PersonalizadoHotelComponent,
     PersonalizadoRestauranteComponent,
     PaqueteImagePipe,

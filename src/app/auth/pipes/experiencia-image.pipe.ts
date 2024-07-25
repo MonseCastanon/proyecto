@@ -16,5 +16,4 @@ export class ExperienciaImagePipe implements PipeTransform {
     return `assets/experiencias/${ experiencia.id }.jpg`;
 
   }
-
 }
