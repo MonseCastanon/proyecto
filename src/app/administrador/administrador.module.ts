@@ -28,6 +28,11 @@ import { ListpaqComponent } from './pages/listpaq/listpaq.component';
 import { NuevopaqComponent } from './pages/nuevopaq/nuevopaq.component';
 import { PaqueteImagePipe } from './pipes/paquete-image.pipe';
 import { PaqueteComponent } from './components/card/paquete/paquete.component';
+import { BuscaritiComponent } from './pages/buscariti/buscariti.component';
+import { InfoitiComponent } from './pages/infoiti/infoiti.component';
+import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
+import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
+import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 
 
 @NgModule({
@@ -56,6 +61,11 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
     NuevopaqComponent,
     PaqueteImagePipe,
     PaqueteComponent,
+    BuscaritiComponent,
+    InfoitiComponent,
+    NuevoitiComponent,
+    ItinerarioComponent,
+    ItinerarioImagePipe,
   ],
   imports: [
     CommonModule,
