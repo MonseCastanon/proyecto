@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Hotel } from '../../interfaces/hotel.interface';
-import { HotelesService } from '../../services/hotel.service';
-import { Restaurante } from '../../interfaces/restaurante.interface';
-import { RestaurantesService } from '../../services/restaurante.service';
+import { Natural } from '../../interfaces/natural.interface';
+import { NaturalesService } from '../../services/natural.service';
+import { Cultural } from '../../interfaces/cultural.interface';
+import { CulturalesService } from '../../services/cultural.service';
 
 @Component({
   selector: 'app-atractivos',
@@ -10,19 +10,21 @@ import { RestaurantesService } from '../../services/restaurante.service';
   styles: ``
 })
 export class AtractivosComponent implements OnInit {
-  public hoteles: Hotel[] = [];
-  public restaurantes: Restaurante[] = [];
-experiencias: any;
+
+  public naturales: Natural [] = [];
+  public culturales: Cultural [] = [];
+
 
   constructor(
-    private hotelesService: HotelesService,
-    private restaurantesService: RestaurantesService
+    private naturalesService: NaturalesService,
+    private culturalesService: CulturalesService,
   ){}
   ngOnInit(): void {
-    this.hotelesService.getHoteles()
-    .subscribe(hoteles => this.hoteles = hoteles);
+    this.naturalesService.getNaturales()
+    .subscribe(naturales => this.naturales = naturales);
 
-    this.restaurantesService.getRestaurantes()
-    .subscribe(restaurantes => this.restaurantes = restaurantes);
+    this.culturalesService.getCulturales()
+    .subscribe(culturales => this.culturales = culturales);
+
   }
 }

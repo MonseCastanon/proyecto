@@ -10,6 +10,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
+import { InfohotelComponent } from './pages/infohotel/infohotel.component';
+import { InfonatComponent } from './pages/infonat/infonat.component';
+import { InfoculComponent } from './pages/infocul/infocul.component';
 
 const routes: Routes = [
   {
@@ -17,9 +20,12 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children:[
       { path: 'atractivos', component: AtractivosComponent},
-      { path: 'restaurantes/:id', component: InfoatraComponent },
       { path: 'experiencias', component: ExperienciasComponent },
+      { path: 'restaurantes/:id', component: InfoatraComponent },
       { path: 'experiencias/:id', component: InfoexpComponent },
+      { path: 'naturales/:id', component: InfonatComponent },
+      { path: 'culturales/:id', component: InfoculComponent },
+      { path: 'hoteles/:id', component: InfohotelComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },

@@ -1,0 +1,46 @@
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<div *ngIf="natural; else divLoading" class="grid p-2">
+<!--{{ hotel | json }}-->
+    <mat-card class="col-12 sm:col-6">
+        <mat-card-header>
+          <mat-card-title>{{ natural.nombre }}</mat-card-title>
+          <mat-card-subtitle> {{natural.categoria }}</mat-card-subtitle>
+        </mat-card-header>
+
+       <img [src]="natural | naturalImage" [alt]="natural.nombre" mat-card-image />
+
+    </mat-card>
+    <mat-card class="col-12 sm:col-6">
+          <mat-card-header>
+            <mat-card-title>Información</mat-card-title>
+            <mat-card-subtitle>{{natural.categoria}}</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <mat-list>
+                <mat-list-item>{{natural.descripcion}}</mat-list-item>
+                <mat-list-item>{{natural.direccion}}</mat-list-item>
+                <mat-list-item>{{natural.accesibilidad}}</mat-list-item>
+                <mat-list-item>{{natural.servicio}}</mat-list-item>
+                <mat-list-item>{{natural.contacto}}</mat-list-item>
+                <mat-list-item>{{natural.costo}}</mat-list-item>
+            </mat-list>
+
+            <button
+              mat-button
+              color="warning"
+              (click)="goBack()"
+              >
+              Regresar
+            </button>
+          </mat-card-content>
+    </mat-card>
+</div>
+
