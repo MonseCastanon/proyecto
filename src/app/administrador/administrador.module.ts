@@ -33,6 +33,12 @@ import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
 import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
+import { AgenciaComponent } from './components/card/agencia/agencia.component';
+import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
+import { BuscarageComponent } from './pages/buscarage/buscarage.component';
+import { InfoageComponent } from './pages/infoage/infoage.component';
+import { ListageComponent } from './pages/listage/listage.component';
+import { NuevoageComponent } from './pages/nuevoage/nuevoage.component';
 
 
 @NgModule({
@@ -66,6 +72,12 @@ import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
     NuevoitiComponent,
     ItinerarioComponent,
     ItinerarioImagePipe,
+    AgenciaComponent,
+    AgenciaImagePipe,
+    BuscarageComponent,
+    InfoageComponent,
+    ListageComponent,
+    NuevoageComponent,
   ],
   imports: [
     CommonModule,
