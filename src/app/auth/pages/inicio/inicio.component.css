@@ -68,3 +68,9 @@ body {
 .galeria-item img:hover {
   transform: scale(1.05);
 }
+
+.carousel-inner img {
+  width: 100%;
+  height: 900px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Ajusta esta propiedad según tus necesidades (cover, contain, fill, etc.) */
+}
