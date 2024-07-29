@@ -37,15 +37,6 @@ body {
   object-fit: cover; /* Asegurar que las imágenes se ajusten */
   margin-bottom: 10%; /*Espacio en el margen inferior*/
 }
-  margin-top: -15px;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin-left: 30px;
-  margin-right: 30px;
-  font-family: 'Courier New', Courier, monospace;
-}
 
 /* Estilos para la sección de galería */
 .galeria {
