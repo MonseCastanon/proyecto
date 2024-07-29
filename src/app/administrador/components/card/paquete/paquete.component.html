@@ -1,4 +1,4 @@
-<mat-card>
+<!-- <mat-card>
   <mat-card-header>
     <mat-card-title> {{ paquete.nombre }} </mat-card-title>
   </mat-card-header>
@@ -6,7 +6,6 @@
   <img mat-card-image [src]="paquete | paqueteImage" [alt]="paquete.nombre" />
 
   <mat-card-content class="mt-2">
-    <!-- <h4> {{ paquete.contacto }} </h4> -->
     <p>
       <strong>Descripción</strong> {{ paquete.descripcion }}
       <br />
@@ -34,6 +33,43 @@
     <button
       mat-button
       mat-raised
+      [routerLink]="['/administrador/paquetes', paquete.id]">
+      <mat-icon>more_horiz</mat-icon>
+      Más
+    </button>
+  </mat-card-actions>
+</mat-card> -->
+
+<mat-card class="agency-card">
+  <mat-card-header class="agency-card-header">
+    <mat-card-title class="agency-card-title">{{ paquete.nombre }}</mat-card-title>
+  </mat-card-header>
+
+  <img mat-card-image [src]="paquete | paqueteImage" [alt]="paquete.nombre" class="agency-card-image" />
+
+  <mat-card-content class="agency-card-content">
+    <strong>Descripción:</strong> {{ paquete.descripcion }}
+    <br />
+    <div class="agency-chip-list">
+      <mat-chip *ngFor="let name of paquete.nombre.split(',') | slice:0:3" class="agency-chip">
+        {{ name }}
+      </mat-chip>
+    </div>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+  <mat-card-actions class="agency-card-actions">
+    <button
+      mat-stroked-button
+      class="agency-card-button"
+      [routerLink]="['/administrador/editarpaq', paquete.id]">
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+    <span class="spacer"></span>
+    <button
+      mat-stroked-button
+      class="agency-card-button"
       [routerLink]="['/administrador/paquetes', paquete.id]">
       <mat-icon>more_horiz</mat-icon>
       Más

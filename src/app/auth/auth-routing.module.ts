@@ -13,6 +13,7 @@ import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 import { InfohotelComponent } from './pages/infohotel/infohotel.component';
 import { InfonatComponent } from './pages/infonat/infonat.component';
 import { InfoculComponent } from './pages/infocul/infocul.component';
+import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,7 @@ const routes: Routes = [
       { path: 'naturales/:id', component: InfonatComponent },
       { path: 'culturales/:id', component: InfoculComponent },
       { path: 'hoteles/:id', component: InfohotelComponent },
+      { path: 'paquetes/:id', component: InfopaqComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },

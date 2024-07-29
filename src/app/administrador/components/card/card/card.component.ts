@@ -4,7 +4,7 @@ import { Hotel } from '../../../interfaces/hotel.interface';
 @Component({
   selector: 'hoteles-hotel-card',
   templateUrl: './card.component.html',
-  styles: ``
+  styleUrl: './card.component.css'
 })
 export class CardComponent implements OnInit {
 

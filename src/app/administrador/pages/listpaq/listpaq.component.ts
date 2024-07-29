@@ -7,7 +7,7 @@ import { ItinerariosService } from '../../services/itinerario.service';
 @Component({
   selector: 'app-listpaq',
   templateUrl: './listpaq.component.html',
-  styles: ``
+  styleUrl: './listpaq.component.css'
 })
 export class ListpaqComponent implements OnInit {
   public paquetes: Paquete[] = [];

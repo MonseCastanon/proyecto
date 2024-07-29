@@ -7,7 +7,6 @@
 </ng-template>
 
 <div *ngIf="hotel; else divLoading" class="grid p-2">
-<!--{{ hotel | json }}-->
     <mat-card class="col-12 sm:col-6">
         <mat-card-header>
           <mat-card-title>{{ hotel.nombre }}</mat-card-title>
@@ -25,27 +24,22 @@
 
           <mat-card-content>
             <mat-list>
-                <mat-list-item>{{hotel.tipologia}}</mat-list-item>
-                <mat-list-item>{{hotel.localizacion}}</mat-list-item>
-                <mat-list-item>{{hotel.descripcion}}</mat-list-item>
-                <mat-list-item>{{hotel.accesibilidad}}</mat-list-item>
-                <mat-list-item>{{hotel.num_habitaciones}}</mat-list-item>
-                <mat-list-item>{{hotel.actividades}}</mat-list-item>
-                <mat-list-item>{{hotel.servicios}}</mat-list-item>
-                <mat-list-item>{{hotel.num_visitante_ideal}}</mat-list-item>
-                <mat-list-item>{{hotel.fecha_ideal_visita}}</mat-list-item>
-                <mat-list-item>{{hotel.segmento_mercado_potencial}}</mat-list-item>
-                <mat-list-item>{{hotel.costo}}</mat-list-item>
-                <mat-list-item>{{hotel.contacto}}</mat-list-item>
+                <p>Tipología</p><mat-list-item>{{hotel.tipologia}}</mat-list-item>
+                <p>Localización</p><mat-list-item>{{hotel.localizacion}}</mat-list-item>
+                <p>Descripción</p><mat-list-item>{{hotel.descripcion}}</mat-list-item>
+                <p>Accesibilidad</p><mat-list-item>{{hotel.accesibilidad}}</mat-list-item>
+                <p>Número de habitaciones</p><mat-list-item>{{hotel.num_habitaciones}}</mat-list-item>
+                <p>Actividades</p><mat-list-item>{{hotel.actividades}}</mat-list-item>
+                <p>Servicios</p><mat-list-item>{{hotel.servicios}}</mat-list-item>
+                <p>Número de visitantes ideal</p><mat-list-item>{{hotel.num_visitante_ideal}}</mat-list-item>
+                <p>Fechas de visita ideal</p><mat-list-item>{{hotel.fecha_ideal_visita}}</mat-list-item>
+                <p>Segmento de mercado potencial</p><mat-list-item>{{hotel.segmento_mercado_potencial}}</mat-list-item>
+                <p>Costo</p><mat-list-item>{{hotel.costo}}</mat-list-item>
+                <p>Contacto</p><mat-list-item>{{hotel.contacto}}</mat-list-item>
             </mat-list>
 
-            <button
-              mat-button
-              color="warning"
-              (click)="goBack()"
-              >
-              Regresar
-            </button>
+            <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+
           </mat-card-content>
     </mat-card>
 </div>

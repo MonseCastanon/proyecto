@@ -4,7 +4,7 @@ import { Itinerario } from '../../../interfaces/itinerario.interface';
 @Component({
   selector: 'itinerarios-itinerario-card',
   templateUrl: './itinerario.component.html',
-  styles: ``
+  styleUrl: './itinerario.component.css'
 })
 export class ItinerarioComponent implements OnInit {
 

@@ -25,23 +25,18 @@
 
           <mat-card-content>
             <mat-list>
-                <mat-list-item>{{itinerario.dia_1}}</mat-list-item>
-                <mat-list-item>{{itinerario.actividades_dia_1}}</mat-list-item>
-                <mat-list-item>{{itinerario.dia_2}}</mat-list-item>
-                <mat-list-item>{{itinerario.actividades_dia_2}}</mat-list-item>
-                <mat-list-item>{{itinerario.dia_3}}</mat-list-item>
-                <mat-list-item>{{itinerario.actividades_dia_3}}</mat-list-item>
-                <mat-list-item>{{itinerario.dia_4}}</mat-list-item>
-                <mat-list-item>{{itinerario.actividades_dia_4}}</mat-list-item>
+              <p>Día</p><mat-list-item>{{itinerario.dia_1}}</mat-list-item>
+              <p>Hora y Actividades</p><mat-list-item>{{itinerario.actividades_dia_1}}</mat-list-item>
+              <p>Día</p><mat-list-item>{{itinerario.dia_2}}</mat-list-item>
+              <p>Hora y Actividades</p><mat-list-item>{{itinerario.actividades_dia_2}}</mat-list-item>
+              <p>Día</p><mat-list-item>{{itinerario.dia_3}}</mat-list-item>
+              <p>Hora y Actividades</p><mat-list-item>{{itinerario.actividades_dia_3}}</mat-list-item>
+              <p>Día</p><mat-list-item>{{itinerario.dia_4}}</mat-list-item>
+              <p>Hora y Actividades</p><mat-list-item>{{itinerario.actividades_dia_4}}</mat-list-item>
             </mat-list>
 
-            <button
-              mat-button
-              color="warning"
-              (click)="goBack()"
-              >
-              Regresar
-            </button>
+            <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+            
           </mat-card-content>
     </mat-card>
 </div>

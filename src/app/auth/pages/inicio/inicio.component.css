@@ -6,25 +6,39 @@ body {
   padding: 0;
 }
 
-.introduccion, .presentacion {
-  box-sizing: border-box;
-}
-
-.introduccion p, .presentacion p {
-  margin: 0;
-  padding: 0;
-}
-
 .introduccion {
-  background-color: #f8f9fa;
-  padding: 20px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 15px;
+  padding: 20px; /*Espacio en los costados*/
+  text-align: center; /*Alineación del texto*/
+  font-size: 40px; /*Tamaño de letra*/
+  font-weight: bold; /*Modifica el texto*/
+  margin-top: 15px; /*Espacio en el margen superior*/
+  font-family: Constantia; /*Estilo del texto*/
 }
 
 .presentacion {
+  margin-top: -15px; /*Distancia del navbar*/
+  padding: 10px; /*Espacio en los costados*/
+  font-size: 16px; /*Tamaño de letra*/
+  line-height: 1.5; /*Espaciado entre renglones*/
+  color: #333; /*Color del texto*/
+  margin-left: 5px; /*Espacio en el margen izquierdo*/
+  margin-right: 5px; /*Espacio en el margen derecho*/
+  font-family: 'Constantia'; /*Estilo del texto*/
+  text-align: justify; /*Alineación del texto*/
+}
+
+/* Modificaciones del carrusel */
+.carousel-container {
+  width: 80%; /* Ajusta el tamaño del carrusel */
+  max-width: 100px; /* Tamaño máximo del carrusel */
+  margin-left: 50%; /*Espacio en el margen izquierdo*/
+  margin: 0 auto; /* Centrar el carrusel */
+}
+.carousel-inner img {
+  height: 550px; /* Altura fija de las imágenes */
+  object-fit: cover; /* Asegurar que las imágenes se ajusten */
+  margin-bottom: 10%; /*Espacio en el margen inferior*/
+}
   margin-top: -15px;
   padding: 20px;
   font-size: 16px;
