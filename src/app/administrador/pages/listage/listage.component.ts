@@ -5,7 +5,7 @@ import { AgenciasService } from '../../services/agencia.service';
 @Component({
   selector: 'app-listage',
   templateUrl: './listage.component.html',
-  styles: ``
+  styleUrl: './listage.component.css'
 })
 export class ListageComponent implements OnInit {
   public agencias: Agencia[] = [];

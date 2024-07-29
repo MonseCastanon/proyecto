@@ -7,7 +7,6 @@
 </ng-template>
 
 <div *ngIf="restaurante; else divLoading" class="grid p-2">
-<!--{{ hotel | json }}-->
     <mat-card class="col-12 sm:col-6">
         <mat-card-header>
           <mat-card-title>{{ restaurante.nombre }}</mat-card-title>
@@ -25,23 +24,18 @@
 
           <mat-card-content>
             <mat-list>
-                <mat-list-item>{{restaurante.tipologia}}</mat-list-item>
-                <mat-list-item>{{restaurante.localizacion}}</mat-list-item>
-                <mat-list-item>{{restaurante.descripcion}}</mat-list-item>
-                <mat-list-item>{{restaurante.accesibilidad}}</mat-list-item>
-                <mat-list-item>{{restaurante.infraestructura}}</mat-list-item>
-                <mat-list-item>{{restaurante.servicios}}</mat-list-item>
-                <mat-list-item>{{restaurante.costo}}</mat-list-item>
-                <mat-list-item>{{restaurante.contacto}}</mat-list-item>
+              <p>Tipología</p><mat-list-item>{{restaurante.tipologia}}</mat-list-item>
+              <p>Localización</p><mat-list-item>{{restaurante.localizacion}}</mat-list-item>
+              <p>Descripción</p><mat-list-item>{{restaurante.descripcion}}</mat-list-item>
+              <p>Accesibilidad</p><mat-list-item>{{restaurante.accesibilidad}}</mat-list-item>
+              <p>Infraestructura</p><mat-list-item>{{restaurante.infraestructura}}</mat-list-item>
+              <p>Servicios</p><mat-list-item>{{restaurante.servicios}}</mat-list-item>
+              <p>Costo</p><mat-list-item>{{restaurante.costo}}</mat-list-item>
+              <p>Contacto</p><mat-list-item>{{restaurante.contacto}}</mat-list-item>
             </mat-list>
 
-            <button
-              mat-button
-              color="warning"
-              (click)="goBack()"
-              >
-              Regresar
-            </button>
+            <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+
           </mat-card-content>
     </mat-card>
 </div>

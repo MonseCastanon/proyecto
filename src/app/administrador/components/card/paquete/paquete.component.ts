@@ -4,7 +4,7 @@ import { Paquete } from '../../../interfaces/paquete.interface';
 @Component({
   selector: 'paquetes-paquete-card',
   templateUrl: './paquete.component.html',
-  styles: ``
+  styleUrl: './paquete.component.css'
 })
 export class PaqueteComponent implements OnInit {
 

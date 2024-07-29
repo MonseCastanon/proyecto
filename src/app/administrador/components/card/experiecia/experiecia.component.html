@@ -1,7 +1,6 @@
-<mat-card>
+<!-- <mat-card>
   <mat-card-header>
     <mat-card-title> {{ experiencia.nombre }} </mat-card-title>
-    <!-- <mat-card-subtitle> {{ experiencia.categoria }} </mat-card-subtitle> -->
   </mat-card-header>
 
   <img mat-card-image [src]="experiencia | expImage" [alt]="experiencia.nombre">
@@ -40,4 +39,37 @@
     </button>
   </mat-card-actions>
 </mat-card>
+ -->
 
+ <mat-card class="agency-card">
+  <mat-card-header class="agency-card-header">
+    <mat-card-title class="agency-card-title">{{ experiencia.nombre }}</mat-card-title>
+    <!-- <mat-card-subtitle>{{ experiencia.categoria }}</mat-card-subtitle> -->
+  </mat-card-header>
+
+  <img mat-card-image [src]="experiencia | expImage" [alt]="experiencia.nombre" class="agency-card-image">
+
+  <mat-card-content class="agency-card-content">
+    <h4 class="agency-card-type">{{ experiencia.contacto }}</h4>
+    <strong>Descripción:</strong> {{ experiencia.descripcion }}
+    <br>
+    <div class="agency-chip-list">
+      <mat-chip *ngFor="let name of experiencia.nombre.split(',') | slice:0:3" class="agency-chip">
+        {{ name }}
+      </mat-chip>
+    </div>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+  <mat-card-actions class="agency-card-actions">
+    <button mat-stroked-button class="agency-card-button" [routerLink]="['/administrador/editarexp', experiencia.id]">
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+    <span class="spacer"></span>
+    <button mat-stroked-button class="agency-card-button" [routerLink]="['/administrador/experiencias', experiencia.id]">
+      <mat-icon>more_horiz</mat-icon>
+      Más
+    </button>
+  </mat-card-actions>
+</mat-card>

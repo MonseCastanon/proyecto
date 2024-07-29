@@ -30,7 +30,7 @@ export class BuscarageComponent {
       this.selectedAgencia = undefined;
       return;
     }
-
+    
       const agencia: Agencia = event.option.value;
       this.searchInput.setValue( agencia.nombre );
 
