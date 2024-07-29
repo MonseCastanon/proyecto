@@ -1,65 +1,98 @@
-<div class="introduccion">
-  <p>CONOCE LA CIUDAD DE DOLORES HIDALGO C.I.N.</p>
+<div class="inicio">
+  <body>
+    <div class="introduccion">
+      <p>CONOCE LA CIUDAD DE DOLORES HIDALGO C.I.N.</p>
+    </div>
+
+    <div class="presentacion">
+      <p>
+        ESTE PUEBLO MÁGICO ES PATRIMONIO HISTÓRICO Y CUNA DE LA INDEPENDENCIA. PRESERVA SECRETOS, COMO LA CATEDRAL,
+        TESTIGO SILENCIOSO QUE GUARDA ENTRE SUS MUROS EL SONIDO DE LA VOZ DEL CURA MIGUEL HIDALGO CUANDO DIÓ EL GRITO
+        DE INDEPENDENCIA. MIENTRAS CAMINAS POR ESTE ENCANTADOR E INTERESANTE PUEBLO, LLENO DE MUSEOS Y MONUMENTOS QUE
+        NARRAN LA HISTORIA DE MÉXICO, DEJATE CAUTIVAR POR ESTE LUGAR REPLETO DE TRADICIONES Y CULTURA, DONDE CADA RINCÓN
+        TE TRANSPORTA A ÉPOCAS PASADAS Y TE INVITA A DESCUBRIR LOS DETALLES DE UNA HERENCIA QUE SIGUE VIVA EN EL
+        PRESENTE.
+      </p>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.debate.com.mx/__export/1713879000193/sites/debate/img/2024/04/22/nieves_dolores.jpg_1597830298.jpg"
+            class="d-block w-100" alt="..."> <!--El alt es un texto alternativo por sino funciona el carrusel-->
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.telemundochicago.com/2023/09/tlmd-dolores-hidalgo-mexico-1.jpg?quality=85&strip=all&fit=3600%2C2025"
+            class="d-block w-100" alt="..."> <!--El alt es un texto alternativo por sino funciona el carrusel-->
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.gob.mx/cms/uploads/article/main_image/85557/Dolores-Hidalgo_Guanajuato-Jardi_n-Independencia-web.jpg"
+            class="d-block w-100" alt="..."> <!--El alt es un texto alternativo por sino funciona el carrusel-->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.gob.mx/cms/uploads/article/main_image/85557/Dolores-Hidalgo_Guanajuato-Jardi_n-Independencia-web.jpg"
+            alt="Los Angeles" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.telemundochicago.com/2023/09/tlmd-dolores-hidalgo-mexico-1.jpg?quality=85&strip=all&fit=3600%2C2025"
+            alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.debate.com.mx/__export/1713879000193/sites/debate/img/2024/04/22/nieves_dolores.jpg_1597830298.jpg"
+            alt="New York" class="d-block" style="width:100%">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Carousel Example</h3>
+      <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
+  </body>
 </div>
-
-<div class="presentacion">
-  <p>
-    ESTE PUEBLO MÁGICO ES PATRIMONIO HISTÓRICO Y CUNA DE LA INDEPENDENCIA. PRESERVA SECRETOS, COMO LA CATEDRAL,
-    TESTIGO SILENCIOSO QUE GUARDA ENTRE SUS MUROS EL SONIDO DE LA VOZ DEL CURA MIGUEL HIDALGO CUANDO DIÓ EL GRITO
-    DE INDEPENDENCIA. MIENTRAS CAMINAS POR ESTE ENCANTADOR E INTERESANTE PUEBLO, LLENO DE MUSEOS Y MONUMENTOS QUE
-    NARRAN LA HISTORIA DE MÉXICO, DEJATE CAUTIVAR POR ESTE LUGAR REPLETO DE TRADICIONES Y CULTURA, DONDE CADA RINCÓN
-    TE TRANSPORTA A ÉPOCAS PASADAS Y TE INVITA A DESCUBRIR LOS DETALLES DE UNA HERENCIA QUE SIGUE VIVA EN EL PRESENTE.
-  </p>
-</div>
-
-<!--Galería de Imágenes-->
-<div class="galeria">
-  <div class="galeria-grid">
-    <div class="galeria-item">
-      <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/GVMD-Guanajuato-Dolores-Hidalgo-parroquia-Nuestra-senora-de-Dolores-DPG_md-ok.jpg" alt="Catedral de Dolores Hidalgo">
-    </div>
-    <div class="galeria-item">
-      <img src="https://media.telemundochicago.com/2023/09/tlmd-dolores-hidalgo-mexico-1.jpg?quality=85&strip=all&fit=3600%2C2025" alt="Imagen 1">
-    </div>
-    <div class="galeria-item">
-      <img src="https://www.gob.mx/cms/uploads/article/main_image/85557/Dolores-Hidalgo_Guanajuato-Jardi_n-Independencia-web.jpg" alt="Imagen 2">
-    </div>
-    <div class="galeria-item">
-      <img src="https://www.elsoldepuebla.com.mx/circulos/turismo/n7o8qu-panoramica-de-dolores-hidalgo.jpg/ALTERNATES/LANDSCAPE_1140/Panor%C3%A1mica%20de%20Dolores%20Hidalgo.jpg" alt="Imagen 3">
-    </div>
-    <div class="galeria-item">
-      <img src="https://www.unionguanajuato.mx/wp-content/uploads/2020/12/dolores_hidalgo_f.jpg" alt="Imagen 4">
-    </div>
-    <div class="galeria-item">
-      <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/GVMD-Guanajuato-Dolores-Hidalgo-parroquia-Nuestra-senora-de-Dolores-DPG_md-ok.jpg" alt="Imagen 5">
-    </div>
-    <!-- Aqui se añaden mas imagenes -->
-  </div>
-</div>
-
-<!--Inicia carousel-->
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://img.freepik.com/foto-gratis/fondo-pantalla-arbol-luna-arte-digital_23-2150918811.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg" class="d-block w-100" alt="...">
-     </div>
-    <div class="carousel-item">
-      <img src="https://cdn.shopify.com/s/files/1/0229/0839/files/bancos_de_imagenes_gratis.jpg?v=1630420628" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!--Termina carousel-->
-
-
-
