@@ -184,10 +184,49 @@
       "actividad": "Actividades paquete 4"
     }
   ],
+  "culturales": [
+    {
+      "id": "cul-1",
+      "nombre": "Museo del Vino",
+      "descripcion": "El museo de vino logra de forma simple y extraordinaria explicar la historia de la vid y el vino en la Nueva España, el cultivo y la vinificación de la uva lo logra para todo tipo de audiencia en un ámbito acogedor y amigable este museo logra cerrar la brecha de nuestro vacío histórico y cultural del cultivo de la vida.",
+      "accesibilidad": "Accesibilidad mus-1",
+      "servicio": "Servicios mus-1",
+      "contacto": "Contacto mus-1",
+      "costo": "Costo mus-1"
+    },
+    {
+      "id": "cul-2",
+      "nombre": "Museos 2",
+      "descripcion": "Descripcion mus-2",
+      "accesibilidad": "Accesibilidad mus-2",
+      "servicio": "Servicios mus-2",
+      "contacto": "Contacto mus-2",
+      "costo": "Costo mus-2"
+    },
+    {
+      "id": "cul-3",
+      "nombre": "Museos 3",
+      "descripcion": "Descripcion mus-3",
+      "accesibilidad": "Accesibilidad mus-3",
+      "servicio": "Servicios mus-3",
+      "contacto": "Contacto mus-3",
+      "costo": "Costo mus-3"
+    },
+    {
+      "id": "cul-4",
+      "nombre": "Museos 4",
+      "descripcion": "Descripcion mus-4",
+      "accesibilidad": "Accesibilidad mus-4",
+      "servicio": "Servicios mus-4",
+      "contacto": "Contacto mus-4",
+      "costo": "Costo mus-4"
+    }
+  ],
   "experiencias": [
     {
       "id": "exp-1",
       "nombre": "Feria de las nieves 1",
+      "descripcion": "Descripcion exp-1",
       "accesibilidad": "Accesibilidad exp-1",
       "servicio": "Servicios exp-1",
       "contacto": "Contacto exp-1",
@@ -196,6 +235,7 @@
     {
       "id": "exp-2",
       "nombre": "Feria de las nieves 2",
+      "descripcion": "Descripcion exp-2",
       "accesibilidad": "Accesibilidad exp-2",
       "servicio": "Servicios exp-2",
       "contacto": "Contacto exp-2",
@@ -204,6 +244,7 @@
     {
       "id": "exp-3",
       "nombre": "Feria de las nieves 3",
+      "descripcion": "Descripcion exp-3",
       "accesibilidad": "Accesibilidad exp-3",
       "servicio": "Servicios exp-3",
       "contacto": "Contacto exp-3",
@@ -212,10 +253,49 @@
     {
       "id": "exp-4",
       "nombre": "Feria de las nieves 4",
+      "descripcion": "Descripcion exp-4",
       "accesibilidad": "Accesibilidad exp-4",
       "servicio": "Servicios exp-4",
       "contacto": "Contacto exp-4",
       "costo": "Costo exp-4"
+    }
+  ],
+  "naturales": [
+    {
+      "id": "nat-1",
+      "nombre": "Viñedo y Hacienda San Bernardino ",
+      "descripcion": "Hacienda San Bernardino es un viñedo familiar dedicada a su tradición vitivinícola, ubicada en el corazón de la región productora de uva y vino más antigua de México. ",
+      "accesibilidad": "Accesibilidad lug-1",
+      "servicio": "Servicios lug-1",
+      "contacto": "Contacto lug-1",
+      "costo": "Costo lug-1"
+    },
+    {
+      "id": "nat-2",
+      "nombre": "Lugar 2",
+      "descripcion": "Descripcion lug-2",
+      "accesibilidad": "Accesibilidad lug-2",
+      "servicio": "Servicios lug-2",
+      "contacto": "Contacto lug-2",
+      "costo": "Costo lug-2"
+    },
+    {
+      "id": "nat-3",
+      "nombre": "Lugar 3",
+      "descripcion": "Descripcion lug-3",
+      "accesibilidad": "Accesibilidad lug-3",
+      "servicio": "Servicios lug-3",
+      "contacto": "Contacto lug-3",
+      "costo": "Costo lug-3"
+    },
+    {
+      "id": "nat-4",
+      "nombre": "Lugar 3",
+      "descripcion": "Descripcion lug-4",
+      "accesibilidad": "Accesibilidad lug-4",
+      "servicio": "Servicios lug-4",
+      "contacto": "Contacto lug-4",
+      "costo": "Costo lug-4"
     }
   ],
   "personalizado": [

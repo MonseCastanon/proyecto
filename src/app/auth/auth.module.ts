@@ -25,6 +25,14 @@ import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
 import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
+import { NaturalImagePipe } from './pipes/natural-image.pipe';
+import { NaturalComponent } from './components/card/natural/natural.component';
+import { CulturalComponent } from './components/card/cultural/cultural.component';
+import { CulturalImagePipe } from './pipes/cultural-image.pipe';
+import { InforesComponent } from './pages/infores/infores.component';
+import { InfohotelComponent } from './pages/infohotel/infohotel.component';
+import { InfonatComponent } from './pages/infonat/infonat.component';
+import { InfoculComponent } from './pages/infocul/infocul.component';
 
 
 @NgModule({
@@ -51,7 +59,15 @@ import { InfoexpComponent } from './pages/infoexp/infoexp.component';
     PaqueteImagePipe,
     PaqueteComponent,
     InfopaqComponent,
-    NuevapassComponent
+    NuevapassComponent,
+    NaturalImagePipe,
+    NaturalComponent,
+    CulturalComponent,
+    CulturalImagePipe,
+    InforesComponent,
+    InfohotelComponent,
+    InfonatComponent,
+    InfoculComponent,
   ],
   imports: [
     CommonModule,

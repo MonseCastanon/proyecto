@@ -73,7 +73,8 @@
       "fecha_ideal_visita": "fecha_ideal_visita h-4",
       "segmento_mercado_potencial": "segmento_mercado_potencial h-4",
       "costo": "costo h-4",
-      "contacto": "Contacto h-4"
+      "contacto": "Contacto h-4",
+      "alt_img": null
     },
     {
       "id": "h-1",
@@ -90,7 +91,8 @@
       "segmento_mercado_potencial": "kjdfkjdf",
       "contacto": "sfkbfe",
       "alt_img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/7a/19/36d3e3c7b233c04bda20618a7aef3f6691cb23f0859f8c797301cad9875d.jpeg",
-      "costo": "123"
+      "costo": "123",
+      "servicios": "klskls"
     }
   ],
   "restaurantes": [
@@ -105,7 +107,8 @@
       "accesibilidad": "Accesibilidad r-1",
       "servicios": "Servicio r-1",
       "costo": "Costo r-1",
-      "contacto": "Contacto r-1"
+      "contacto": "Contacto r-1",
+      "alt_img": null
     },
     {
       "id": "r-carnitasvicente",
@@ -183,6 +186,54 @@
       "restaurante": "Restaurante paquete 4",
       "experiencia": "Experiencia paquete 4",
       "actividad": "Actividades paquete 4"
+    },
+    {
+      "id": "",
+      "nombre": "Nombre",
+      "descripcion": "Descripcion",
+      "hotel": "Hotel",
+      "restaurante": "Restaurante",
+      "experiencia": "Experiencia",
+      "actividad": "Actividades",
+      "alt_img": "https://i.ytimg.com/vi/9RinIXTFqDQ/hqdefault.jpg"
+    }
+  ],
+  "culturales": [
+    {
+      "id": "cul-1",
+      "nombre": "Museo del Vino",
+      "descripcion": "El museo de vino logra de forma simple y extraordinaria explicar la historia de la vid y el vino en la Nueva España, el cultivo y la vinificación de la uva lo logra para todo tipo de audiencia en un ámbito acogedor y amigable este museo logra cerrar la brecha de nuestro vacío histórico y cultural del cultivo de la vida.",
+      "accesibilidad": "Accesibilidad mus-1",
+      "servicio": "Servicios mus-1",
+      "contacto": "Contacto mus-1",
+      "costo": "Costo mus-1"
+    },
+    {
+      "id": "cul-2",
+      "nombre": "Museos 2",
+      "descripcion": "Descripcion mus-2",
+      "accesibilidad": "Accesibilidad mus-2",
+      "servicio": "Servicios mus-2",
+      "contacto": "Contacto mus-2",
+      "costo": "Costo mus-2"
+    },
+    {
+      "id": "cul-3",
+      "nombre": "Museos 3",
+      "descripcion": "Descripcion mus-3",
+      "accesibilidad": "Accesibilidad mus-3",
+      "servicio": "Servicios mus-3",
+      "contacto": "Contacto mus-3",
+      "costo": "Costo mus-3"
+    },
+    {
+      "id": "cul-4",
+      "nombre": "Museos 4",
+      "descripcion": "Descripcion mus-4",
+      "accesibilidad": "Accesibilidad mus-4",
+      "servicio": "Servicios mus-4",
+      "contacto": "Contacto mus-4",
+      "costo": "Costo mus-4"
     }
   ],
   "experiencias": [
@@ -223,6 +274,44 @@
       "costo": "Costo exp-4"
     }
   ],
+  "naturales": [
+    {
+      "id": "nat-1",
+      "nombre": "Viñedo y Hacienda San Bernardino ",
+      "descripcion": "Hacienda San Bernardino es un viñedo familiar dedicada a su tradición vitivinícola, ubicada en el corazón de la región productora de uva y vino más antigua de México. ",
+      "accesibilidad": "Accesibilidad lug-1",
+      "servicio": "Servicios lug-1",
+      "contacto": "Contacto lug-1",
+      "costo": "Costo lug-1"
+    },
+    {
+      "id": "nat-2",
+      "nombre": "Lugar 2",
+      "descripcion": "Descripcion lug-2",
+      "accesibilidad": "Accesibilidad lug-2",
+      "servicio": "Servicios lug-2",
+      "contacto": "Contacto lug-2",
+      "costo": "Costo lug-2"
+    },
+    {
+      "id": "nat-3",
+      "nombre": "Lugar 3",
+      "descripcion": "Descripcion lug-3",
+      "accesibilidad": "Accesibilidad lug-3",
+      "servicio": "Servicios lug-3",
+      "contacto": "Contacto lug-3",
+      "costo": "Costo lug-3"
+    },
+    {
+      "id": "nat-4",
+      "nombre": "Lugar 3",
+      "descripcion": "Descripcion lug-4",
+      "accesibilidad": "Accesibilidad lug-4",
+      "servicio": "Servicios lug-4",
+      "contacto": "Contacto lug-4",
+      "costo": "Costo lug-4"
+    }
+  ],
   "personalizados": [
     {
       "id": "per-1",
@@ -245,8 +334,7 @@
       "dia_3": "dia3 i-1",
       "actividades_dia_3": "actividad3 i-1",
       "dia_4": "dia i-1",
-      "actividades_dia_4": "actividad4 i-1",
-      "alt_img": null
+      "actividades_dia_4": "actividad4 i-1"
     },
     {
       "id": "Imagen11",
@@ -282,7 +370,8 @@
       "direccion": "Yucatán 20 centro",
       "contactos": "4181822986 / 4181845804",
       "red_social": "https://www.facebook.com › tgilca",
-      "correo": ""
+      "correo": "",
+      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYYu7xXKEZ3eJDb2v1xD03UFOSCE0kxnTmAQ&s"
     },
     {
       "id": "A-2",
@@ -292,7 +381,8 @@
       "direccion": "coronel Romero 2100 instalaciones de CANACO",
       "contactos": "4443172663",
       "red_social": "https://www.facebook.com › tgilca",
-      "correo": "eskapatecorporativo@hotmail.com"
+      "correo": "eskapatecorporativo@hotmail.com",
+      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1_V4ZwjZJk6Xz_Zb6HgBKnMtXvHB52vGRJg&s"
     },
     {
       "id": "A-3",
@@ -302,7 +392,8 @@
       "direccion": "Calle Querétaro #16, zona centro",
       "contactos": "4181501008",
       "red_social": "https://www.facebook.com/IndependenciaTouristicServicestouristicservicesindependencia.com",
-      "correo": "independenciatouristicservices@gmail.com"
+      "correo": "independenciatouristicservices@gmail.com",
+      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMPAa4y3slsy6dnLGuWQ_1ExJDew_UF1WMw&s"
     }
   ],
   "guias": [

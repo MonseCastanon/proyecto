@@ -18,6 +18,10 @@ import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
 import { BuscaritiComponent } from './pages/buscariti/buscariti.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
+import { ListageComponent } from './pages/listage/listage.component';
+import { NuevoageComponent } from './pages/nuevoage/nuevoage.component';
+import { BuscarageComponent } from './pages/buscarage/buscarage.component';
+import { InfoageComponent } from './pages/infoage/infoage.component';
 
 const routes: Routes = [
   {
@@ -26,6 +30,12 @@ const routes: Routes = [
     children:[
       { path: 'listado', component: ListadoComponent },
       { path: 'listpaq', component: ListpaqComponent },
+      { path: 'listage', component: ListageComponent },
+
+      { path: 'nuevoage', component: NuevoageComponent },
+      { path: 'buscarage', component: BuscarageComponent },
+      { path: 'editarage/:id', component: NuevoageComponent },
+      { path: 'agencias/:id', component: InfoageComponent },
 
       { path: 'nuevoiti', component: NuevoitiComponent },
       { path: 'buscariti', component: BuscaritiComponent },
