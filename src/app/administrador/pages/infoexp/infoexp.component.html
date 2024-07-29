@@ -25,20 +25,15 @@
 
           <mat-card-content>
             <mat-list>
-                <mat-list-item>{{experiencia.descripcion}}</mat-list-item>
-                <mat-list-item>{{experiencia.accesibilidad}}</mat-list-item>
-                <mat-list-item>{{experiencia.servicio}}</mat-list-item>
-                <mat-list-item>{{experiencia.costo}}</mat-list-item>
-                <mat-list-item>{{experiencia.contacto}}</mat-list-item>
+              <p>Descripción</p><mat-list-item>{{experiencia.descripcion}}</mat-list-item>
+              <p>Accesibilidad</p><mat-list-item>{{experiencia.accesibilidad}}</mat-list-item>
+              <p>Servicio</p><mat-list-item>{{experiencia.servicio}}</mat-list-item>
+              <p>Costo</p><mat-list-item>{{experiencia.costo}}</mat-list-item>
+              <p>Contacto</p><mat-list-item>{{experiencia.contacto}}</mat-list-item>
             </mat-list>
 
-            <button
-              mat-button
-              color="warning"
-              (click)="goBack()"
-              >
-              Regresar
-            </button>
+            <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+
           </mat-card-content>
     </mat-card>
 </div>

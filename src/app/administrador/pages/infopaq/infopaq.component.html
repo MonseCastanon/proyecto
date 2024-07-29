@@ -25,20 +25,15 @@
 
           <mat-card-content>
             <mat-list>
-                <mat-list-item>{{paquete.descripcion}}</mat-list-item>
-                <mat-list-item>{{paquete.hotel}}</mat-list-item>
-                <mat-list-item>{{paquete.restaurante}}</mat-list-item>
-                <mat-list-item>{{paquete.experiencia}}</mat-list-item>
-                <mat-list-item>{{paquete.actividad}}</mat-list-item>
+              <p>Descripción</p><mat-list-item>{{paquete.descripcion}}</mat-list-item>
+              <p>Hotel</p><mat-list-item>{{paquete.hotel}}</mat-list-item>
+              <p>Restaurante</p><mat-list-item>{{paquete.restaurante}}</mat-list-item>
+              <p>Experiencia</p><mat-list-item>{{paquete.experiencia}}</mat-list-item>
+              <p>Actividad</p><mat-list-item>{{paquete.actividad}}</mat-list-item>
             </mat-list>
 
-            <button
-              mat-button
-              color="warning"
-              (click)="goBack()"
-              >
-              Regresar
-            </button>
+            <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+            
           </mat-card-content>
     </mat-card>
 </div>

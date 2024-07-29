@@ -4,7 +4,7 @@ import { Agencia } from '../../../interfaces/agencia.interface';
 @Component({
   selector: 'agencias-agencia-card',
   templateUrl: './agencia.component.html',
-  styles: ``
+  styleUrl: './agencia.component.css'
 })
 export class AgenciaComponent implements OnInit {
 
