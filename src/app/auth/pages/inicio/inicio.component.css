@@ -1,7 +1,9 @@
 /* Estilos generales de la página */
 body {
-  background-color: linear-gradient(10deg, #ffd698, #ffecd0); /*Color del fondo de la página*/
-  background-attachment: fixed; /*Fijar el color de fondo*/
+  font-family: Arial, sans-serif;
+  background-color: #f41f1f;
+  margin: 0;
+  padding: 0;
 }
 
 .introduccion {
