@@ -1,5 +1,4 @@
 /* Color de fondo del cuerpo */
-
 body {
     background: linear-gradient(10deg, #9059ba, #d0bbf1);
     background-attachment: fixed;

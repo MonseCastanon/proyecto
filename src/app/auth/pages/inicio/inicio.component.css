@@ -1,9 +1,7 @@
 /* Estilos generales de la página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f41f1f;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(10deg, #ffd698, #ffecd0); /*Color del fondo de la página*/
+  background-attachment: fixed; /*Fijar el color de fondo*/
 }
 
 .introduccion {
@@ -38,15 +36,6 @@ body {
   height: 550px; /* Altura fija de las imágenes */
   object-fit: cover; /* Asegurar que las imágenes se ajusten */
   margin-bottom: 10%; /*Espacio en el margen inferior*/
-}
-  margin-top: -15px;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin-left: 30px;
-  margin-right: 30px;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Estilos para la sección de galería */
@@ -85,6 +74,9 @@ body {
 
 .carousel-inner img {
   width: 100%;
-  height: 900px; /* Ajusta la altura según tus necesidades */
+  height: 600px; /* Ajusta la altura según tus necesidades */
   object-fit: cover; /* Ajusta esta propiedad según tus necesidades (cover, contain, fill, etc.) */
+}
+.inicio{
+  margin-top: -20px;
 }
