@@ -1,6 +1,6 @@
 /* Estilos generales de la página */
 body {
-  background-color: linear-gradient(10deg, #ffd698, #ffecd0); /*Color del fondo de la página*/
+  background: linear-gradient(10deg, #ffd698, #ffecd0); /*Color del fondo de la página*/
   background-attachment: fixed; /*Fijar el color de fondo*/
 }
 
@@ -76,4 +76,7 @@ body {
   width: 100%;
   height: 600px; /* Ajusta la altura según tus necesidades */
   object-fit: cover; /* Ajusta esta propiedad según tus necesidades (cover, contain, fill, etc.) */
+}
+.inicio{
+  margin-top: -20px;
 }
