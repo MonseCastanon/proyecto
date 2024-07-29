@@ -7,7 +7,7 @@ import { CulturalesService } from '../../services/cultural.service';
 @Component({
   selector: 'app-atractivos',
   templateUrl: './atractivos.component.html',
-  styles: ``
+  styleUrl: './atractivos.component.css'
 })
 export class AtractivosComponent implements OnInit {
 
