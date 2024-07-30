@@ -349,7 +349,7 @@
       "nombre": "Turismo Gilca",
       "tipo": "Agencia minorista autorizada por SECTUR",
       "ubicacion": "Dolores Hidalgo, CIN. Gto.",
-      "direccion": "Yucatán 20 centro",
+      "direccion": "Yucatán # 20 centro",
       "contactos": "4181822986 / 4181845804",
       "red_social": "https://www.facebook.com › tgilca",
       "correo": "",
@@ -376,6 +376,17 @@
       "red_social": "https://www.facebook.com/IndependenciaTouristicServicestouristicservicesindependencia.com",
       "correo": "independenciatouristicservices@gmail.com",
       "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMPAa4y3slsy6dnLGuWQ_1ExJDew_UF1WMw&s"
+    },
+    {
+      "id": "prueba",
+      "nombre": "Tu Pvta Madre",
+      "tipo": "Agencia",
+      "ubicacion": "Mi casa",
+      "direccion": "La casa del mencho",
+      "contactos": "000000000",
+      "red_social": "instagram",
+      "correo": "ejemplo@supvtamadre.com",
+      "alt_img": "https://i1.sndcdn.com/avatars-000073010001-joo1m3-t240x240.jpg"
     }
   ],
   "guias": [

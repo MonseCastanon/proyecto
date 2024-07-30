@@ -33,6 +33,11 @@ import { InforesComponent } from './pages/infores/infores.component';
 import { InfohotelComponent } from './pages/infohotel/infohotel.component';
 import { InfonatComponent } from './pages/infonat/infonat.component';
 import { InfoculComponent } from './pages/infocul/infocul.component';
+import { AgenciaComponent } from './components/card/agencia/agencia.component';
+import { InfoageComponent } from './pages/infoage/infoage.component';
+import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
+import { PersonalizadoCulturalComponent } from './components/card/perzonalizado-cultural/Personalizado-cultural.component';
+import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
 
 
 @NgModule({
@@ -56,6 +61,8 @@ import { InfoculComponent } from './pages/infocul/infocul.component';
     InfoexpComponent,
     PersonalizadoHotelComponent,
     PersonalizadoRestauranteComponent,
+    PersonalizadoCulturalComponent,
+    PersonalizadoAgenciaComponent,
     PaqueteImagePipe,
     PaqueteComponent,
     InfopaqComponent,
@@ -65,9 +72,14 @@ import { InfoculComponent } from './pages/infocul/infocul.component';
     CulturalComponent,
     CulturalImagePipe,
     InforesComponent,
+    AgenciasComponent,
     InfohotelComponent,
     InfonatComponent,
     InfoculComponent,
+    AgenciaComponent,
+    InfoageComponent,
+    AgenciaImagePipe,
+
   ],
   imports: [
     CommonModule,
