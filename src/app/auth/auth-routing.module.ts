@@ -15,7 +15,6 @@ import { InfonatComponent } from './pages/infonat/infonat.component';
 import { InfoculComponent } from './pages/infocul/infocul.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
-import { NuevapassComponent } from './pages/nuevapass/nuevapass.component';
 
 const routes: Routes = [
   {
@@ -32,7 +31,6 @@ const routes: Routes = [
       { path: 'paquetes/:id', component: InfopaqComponent },
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'olvidarpass', component: OlvidarpassComponent},
-      { path: 'nuevapass', component: NuevapassComponent},
       { path: 'formulario', component: FormularioComponent },
       { path: 'login', component: LoginComponent },
       { path: 'inicio', component: InicioComponent},
