@@ -64,32 +64,6 @@ body {
   color: white;
 }
 
-.imagen {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.imagen img {
-  max-width: 80%;
-  max-height: 60%;
-  height: auto;
-  display: block;
-  /* Asegura que la imagen se muestre como bloque */
-  border-radius: 25px;
-}
-
-/* Cambiar letras Span*/
-span{
-  color: #fff;
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 15px 0;
-}
-
 /* Texto de Iniciar Sesión */
 header{
   color: black;
@@ -118,13 +92,6 @@ header{
   padding: 0 0 0 32px;
   background: rgba(255,255,255,0.6);
   border: solid 1px #828282;
-}
-
-i{
-  position: relative;
-  top: -31px;
-  left: 17px;
-  color: #000000;
 }
 
 /* Letra contenedor */
