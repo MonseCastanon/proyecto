@@ -69,17 +69,14 @@
           </mat-form-field>
         </form>
         <div class="flex justify-content-between">
-          <button
-            *ngIf="currentPaquete.id"
+          <button *ngIf="currentPaquete.id"
             (click) = "onDeletePaquete()"
-            mat-flat-button
-          >
+            mat-flat-button color="primary">
             Borrar
           </button>
           <button
             mat-fab extended
-            (click)="onSubmit()"
-            >
+            (click)="onSubmit()">
               <mat-icon>save</mat-icon>
               Guardar
           </button>

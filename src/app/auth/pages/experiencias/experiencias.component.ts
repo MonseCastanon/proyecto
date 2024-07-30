@@ -10,7 +10,7 @@ import { RestaurantesService } from '../../services/restaurante.service';
 @Component({
   selector: 'app-experiencias',
   templateUrl: './experiencias.component.html',
-  styles: ``
+  styleUrl: './experiencias.component.css'
 })
 export class ExperienciasComponent implements OnInit {
   public hoteles: Hotel[] = [];

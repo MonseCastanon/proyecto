@@ -1,6 +1,6 @@
 <br /><br /><br />
 
-<body>
+
 <div class="container">
   <h1>Formulario de Paquete Turístico Personalizado</h1>
   <form action="/submit" method="post">
@@ -20,7 +20,23 @@
     </div>
     <hr>
 
+    <p>Seleccione los atractivos culturales que desea incluir en su paquete:</p>
+    <div class="grid bm-8">
+      <div *ngFor="let cultural of culturales" class="card-column">
+        <culturales-cultural-card [cultural]="cultural"></culturales-cultural-card>
+      </div>
+    </div>
+    <hr>
+
+    <p>Seleccione los atractivos culturales que desea incluir en su paquete:</p>
+    <div class="grid bm-8">
+      <div *ngFor="let agencia of agencias" class="card-column">
+        <personalizado-agencia-card [agencia]="agencia"></personalizado-agencia-card>
+      </div>
+    </div>
+    <hr>
+
     <input type="submit" value="Enviar" class="submit-button">
   </form>
 </div>
-</body>
+

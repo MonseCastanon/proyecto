@@ -1,14 +1,8 @@
-body {
-  background-color: linear-gradient(10deg, #9059ba, #d0bbf1);
-  background-attachment: fixed;
-}
-
-/* Contenedor principal del formulario */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f99b;
+  background-color: #d2d1d19b;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +30,8 @@ body {
 /* Botón de envío */
 .submit-button {
   display: block;
-  width: 100%;
+  margin: auto;
+  width: 35%;
   padding: 15px;
   font-size: 16px;
   color: #fff;
@@ -51,7 +46,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Separador */
 hr {
   border: 0;
   height: 1px;
