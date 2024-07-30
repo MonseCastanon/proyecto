@@ -95,6 +95,11 @@ export class NuevoageComponent implements OnInit{
        })
   }
 
+
+  goBack():void{
+    this.router.navigateByUrl('administrador/listage')
+  }
+
 }
 
 

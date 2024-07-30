@@ -94,6 +94,11 @@ export class NuevoexpComponent implements OnInit{
        })
   }
 
+
+  goBack():void{
+    this.router.navigateByUrl('administrador/listado')
+  }
+
 }
 
 

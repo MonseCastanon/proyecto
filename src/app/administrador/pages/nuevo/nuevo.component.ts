@@ -101,4 +101,9 @@ export class NuevoComponent implements OnInit{
        })
   }
 
+
+  goBack():void{
+    this.router.navigateByUrl('administrador/listado')
+  }
+
 }

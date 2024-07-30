@@ -94,6 +94,10 @@ export class NuevopaqComponent implements OnInit{
        })
   }
 
+  goBack():void{
+    this.router.navigateByUrl('administrador/listpaq')
+  }
+
 }
 
 
