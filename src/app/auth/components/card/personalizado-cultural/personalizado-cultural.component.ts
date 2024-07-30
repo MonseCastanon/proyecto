@@ -3,8 +3,8 @@ import { Cultural } from '../../../interfaces/cultural.interface';
 
 
 @Component({
-  selector: 'culturales-cultural-card',
-  templateUrl: './Personalizado-cultural.component.html',
+  selector: 'personalizado-cultural-card',
+  templateUrl: './personalizado-cultural.component.html',
   styles: ``
 })
 export class PersonalizadoCulturalComponent implements OnInit {
