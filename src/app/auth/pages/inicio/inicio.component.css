@@ -1,6 +1,6 @@
 /* Estilos generales de la página */
 body {
-  background: linear-gradient(10deg, #ffd698, #ffecd0); /*Color del fondo de la página*/
+  background: linear-gradient(10deg, #ffd698, #ffefd6); /*Color del fondo de la página*/
   background-attachment: fixed; /*Fijar el color de fondo*/
 }
 
