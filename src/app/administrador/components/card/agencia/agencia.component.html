@@ -1,4 +1,4 @@
-<!-- <mat-card>
+<mat-card>
   <mat-card-header>
     <mat-card-title> {{ agencia.nombre }} </mat-card-title>
   </mat-card-header>
@@ -39,70 +39,4 @@
     </button>
   </mat-card-actions>
 </mat-card>
- -->
-
- <!-- <mat-card class="custom-card">
-  <div class="custom-card-header">
-    <mat-card-title class="custom-card-title">{{ agencia.nombre }}</mat-card-title>
-  </div>
-
-  <img mat-card-image [src]="agencia | agenciaImage" [alt]="agencia.nombre" class="custom-card-image">
-
-  <mat-card-content class="custom-card-content">
-    <h4 class="custom-card-type">{{ agencia.tipo }}</h4>
-    <p>
-      <strong>Descripción:</strong> {{ agencia.ubicacion }}
-      <br>
-      <mat-chip class="custom-chip-list">
-        <mat-chip *ngFor="let name of agencia.nombre.split(',') | slice:0:3" class="custom-chip">
-          {{ name }}
-        </mat-chip>
-      </mat-chip>
-    </p>
-  </mat-card-content>
-
-  <mat-divider></mat-divider>
-  <mat-card-actions class="custom-card-actions">
-    <button mat-stroked-button color="primary" [routerLink]="['/administrador/editarage', agencia.id]" class="custom-button">
-      <mat-icon>edit</mat-icon>
-      Editar
-    </button>
-    <span class="spacer"></span>
-    <button mat-stroked-button color="accent" [routerLink]="['/administrador/agencias', agencia.id]" class="custom-button">
-      <mat-icon>more_horiz</mat-icon>
-      Más
-    </button>
-  </mat-card-actions>
-</mat-card> -->
-
-<mat-card class="agency-card">
-  <mat-card-header class="agency-card-header">
-    <mat-card-title class="agency-card-title">{{ agencia.nombre }}</mat-card-title>
-  </mat-card-header>
-
-  <img mat-card-image [src]="agencia | agenciaImage" [alt]="agencia.nombre" class="agency-card-image">
-
-  <mat-card-content class="agency-card-content">
-    <h4 class="agency-card-type">{{ agencia.tipo }}</h4>
-    <strong>Descripción:</strong> {{ agencia.ubicacion }}
-    <br>
-    <div class="agency-chip-list">
-      <mat-chip *ngFor="let name of agencia.nombre.split(',') | slice:0:3" class="agency-chip">
-        {{ name }}
-      </mat-chip>
-    </div>
-  </mat-card-content>
-
-  <mat-divider></mat-divider>
-  <mat-card-actions class="agency-card-actions">
-    <button mat-stroked-button class="agency-card-button" [routerLink]="['/administrador/editarage', agencia.id]">
-      <mat-icon>edit</mat-icon>
-      Editar
-    </button>
-    <span class="spacer"></span>
-    <button mat-stroked-button class="agency-card-button" [routerLink]="['/administrador/agencias', agencia.id]">
-      <mat-icon>more_horiz</mat-icon>
-      Más
-    </button>
-  </mat-card-actions>
-</mat-card>
+ 

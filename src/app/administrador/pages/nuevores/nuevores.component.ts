@@ -98,6 +98,10 @@ export class NuevoresComponent implements OnInit{
        })
   }
 
+  goBack():void{
+    this.router.navigateByUrl('administrador/listado')
+  }
+
 }
 
 

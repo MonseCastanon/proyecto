@@ -4,7 +4,7 @@ import { Experiencia } from '../../../interfaces/experiencia.interface';
 @Component({
   selector: 'experiencias-experiencia-card',
   templateUrl: './experiecia.component.html',
-  styleUrl: './experiencia.component.css'
+  styleUrl: './experiecia.component.css'
 })
 export class ExperieciaComponent implements OnInit {
 
