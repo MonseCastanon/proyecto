@@ -22,6 +22,9 @@ import { ListageComponent } from './pages/listage/listage.component';
 import { NuevoageComponent } from './pages/nuevoage/nuevoage.component';
 import { BuscarageComponent } from './pages/buscarage/buscarage.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
+import { NuevoatraComponent } from './pages/nuevoatra/nuevoatra.component';
+import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
+import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 
 const routes: Routes = [
   {
@@ -46,6 +49,11 @@ const routes: Routes = [
       { path: 'buscarpaq', component: BuscarpaqComponent },
       { path: 'editarpaq/:id', component: NuevopaqComponent },
       { path: 'paquetes/:id', component: InfopaqComponent },
+
+      { path: 'nuevoatra', component: NuevoatraComponent },
+      { path: 'buscaratra', component: BuscaratraComponent },
+      { path: 'editaratra/:id', component: NuevoatraComponent },
+      { path: 'atractivos/:id', component: InfoatraComponent },
 
       { path: 'nuevores', component: NuevoresComponent },
       { path: 'buscarres', component: BuscarresComponent },

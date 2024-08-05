@@ -37,8 +37,13 @@ import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { BuscarageComponent } from './pages/buscarage/buscarage.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
-import { ListageComponent } from './pages/listage/listage.component';
 import { NuevoageComponent } from './pages/nuevoage/nuevoage.component';
+import { ListageComponent } from './pages/listage/listage.component';
+import { NuevoatraComponent } from './pages/nuevoatra/nuevoatra.component';
+import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
+import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
+import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
 
 
 @NgModule({
@@ -76,8 +81,13 @@ import { NuevoageComponent } from './pages/nuevoage/nuevoage.component';
     AgenciaImagePipe,
     BuscarageComponent,
     InfoageComponent,
-    ListageComponent,
     NuevoageComponent,
+    ListageComponent,
+    NuevoatraComponent,
+    InfoatraComponent,
+    BuscaratraComponent,
+    AtractivoImagePipe,
+    AtractivoComponent,
   ],
   imports: [
     CommonModule,

@@ -7,6 +7,7 @@
 </ng-template>
 
 <div *ngIf="agencia; else divLoading" class="grid p-2">
+ <!-- {{ agencia | json }}-->
 
     <mat-card class="col-12 sm:col-6">
         <mat-card-header>
@@ -32,7 +33,7 @@
               <p>Redes Sociales</p><mat-list-item>{{agencia.red_social}}</mat-list-item>
               <p>Correo</p><mat-list-item>{{agencia.correo}}</mat-list-item>
             </mat-list>
-            
+
             <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
 
           </mat-card-content>

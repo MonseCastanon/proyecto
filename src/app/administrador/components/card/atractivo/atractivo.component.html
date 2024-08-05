@@ -1,18 +1,19 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title> {{ itinerario.nombre }} </mat-card-title>
+    <mat-card-title> {{ atractivo.nombre }} </mat-card-title>
   </mat-card-header>
 
-  <img mat-card-image [src]="itinerario | itinerarioImage" [alt]="itinerario.nombre">
+  <img mat-card-image [src]="atractivo | atractivoImage" [alt]="atractivo.nombre">
 
 
   <mat-card-content class="mt-2">
+    <h4> {{ atractivo.localizacion }} </h4>
     <p>
-      <strong>Nombre</strong> {{ itinerario.nombre }}
+      <strong>Descripción</strong> {{ atractivo.descripcion }}
       <br>
       <mat-chip-listbox>
         <mat-chip *ngFor="let name of
-        itinerario.nombre.split(',') | slice:0:3">
+        atractivo.nombre.split(',') | slice:0:3">
         {{ name }}
         </mat-chip>
       </mat-chip-listbox>
@@ -25,14 +26,14 @@
     <button mat-button
     mat-raised
     color="primary"
-    [routerLink]="['/administrador/editariti',itinerario.id]">
+    [routerLink]="['/administrador/editaratra',atractivo.id]">
     <mat-icon>edit</mat-icon>
     Editar
     </button>
     <span class="spacer"></span>
     <button mat-button
     mat-raised
-    [routerLink]="['/administrador/itinerarios',itinerario.id]">
+    [routerLink]="['/administrador/atractivos',atractivo.id]">
     <mat-icon>more_horiz</mat-icon>
     Más
     </button>

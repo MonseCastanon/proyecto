@@ -14,7 +14,7 @@ export class AgenciasService {    /*Recuerden que lleva 2 "S" */
     return this.httpClient.get<Agencia[]>(`${this.baseUrl}/agencias`);
   }
   getAgenciaById( id: string): Observable<Agencia|undefined>{
-    return this.httpClient.get<Agencia>(`${ this.baseUrl}/agencias/${ id }`)
+    return this.httpClient.get<Agencia>(`${ this.baseUrl }/agencias/${ id }`)
     .pipe(
       catchError( error=> of(undefined))
     );

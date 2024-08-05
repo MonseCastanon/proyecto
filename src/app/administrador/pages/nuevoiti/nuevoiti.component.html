@@ -1,6 +1,6 @@
 <h1>
   {{ currentItinerario.id ? 'Editar' : 'Añadir' }}
-  Itinerario de los paquetes
+  Itinerario
   <small *ngIf="currentItinerario.id">{{ currentItinerario.nombre }}</small>
 </h1>
 
@@ -19,7 +19,7 @@
               required"
               formControlName="nombre"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Día 1</mat-label>
             <input
               matInput
@@ -27,7 +27,7 @@
               required"
               formControlName="dia_1"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Actividades del día 1</mat-label>
             <input
               matInput
@@ -35,7 +35,7 @@
               required"
               formControlName="actividades_dia_1" />
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Día 2</mat-label>
             <input
               matInput
@@ -43,7 +43,7 @@
               required"
               formControlName="dia_2"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Actividades del día 2</mat-label>
             <input
               matInput
@@ -51,7 +51,7 @@
               required"
               formControlName="actividades_dia_2" />
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Día 3</mat-label>
             <input
               matInput
@@ -59,7 +59,7 @@
               required"
               formControlName="dia_3"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Actividades del día 3</mat-label>
             <input
               matInput
@@ -67,7 +67,7 @@
               required"
               formControlName="actividades_dia_3" />
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Día 4</mat-label>
             <input
               matInput
@@ -75,7 +75,7 @@
               required"
               formControlName="dia_4"/>
           </mat-form-field>
-          <mat-form-field class="col-12 sm:col-6">
+          <mat-form-field class="col-12">
             <mat-label>Actividades del día 4</mat-label>
             <input
               matInput
