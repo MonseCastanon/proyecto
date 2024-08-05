@@ -14,6 +14,7 @@ import { InfohotelComponent } from './pages/infohotel/infohotel.component';
 import { InfonatComponent } from './pages/infonat/infonat.component';
 import { InfoculComponent } from './pages/infocul/infocul.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
+import { InfoageComponent } from './pages/infoage/infoage.component';
 import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'culturales/:id', component: InfoculComponent },
       { path: 'hoteles/:id', component: InfohotelComponent },
       { path: 'paquetes/:id', component: InfopaqComponent },
+      { path: 'agencias/:id', component: InfoageComponent},
       { path: 'paquetes', component: PaquetesComponent },
       { path: 'olvidarpass', component: OlvidarpassComponent},
       { path: 'formulario', component: FormularioComponent },
