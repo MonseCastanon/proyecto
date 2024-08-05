@@ -1,6 +1,6 @@
 /* Estilos generales de la página */
 body {
-  background: linear-gradient(10deg, #ffd698, #ffefd6); /*Color del fondo de la página*/
+  background: linear-gradient(10deg, #92d3ff, #d9f0ff); /*Color del fondo de la página*/
   background-attachment: fixed; /*Fijar el color de fondo*/
 }
 
@@ -19,8 +19,8 @@ body {
   font-size: 16px; /*Tamaño de letra*/
   line-height: 1.5; /*Espaciado entre renglones*/
   color: #333; /*Color del texto*/
-  margin-left: 5px; /*Espacio en el margen izquierdo*/
-  margin-right: 5px; /*Espacio en el margen derecho*/
+  margin-left: 10%; /*Espacio en el margen izquierdo*/
+  margin-right: 10%; /*Espacio en el margen derecho*/
   font-family: 'Constantia'; /*Estilo del texto*/
   text-align: justify; /*Alineación del texto*/
 }
