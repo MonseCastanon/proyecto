@@ -7,6 +7,7 @@ import { AgenciasService } from '../../services/agencia.service';
   templateUrl: './listage.component.html',
   styleUrl: './listage.component.css'
 })
+
 export class ListageComponent implements OnInit {
   public agencias: Agencia[] = [];
 

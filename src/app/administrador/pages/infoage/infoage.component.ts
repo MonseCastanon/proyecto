@@ -25,11 +25,17 @@ export class InfoageComponent implements OnInit{
         if ( !agencia) return this.router.navigate(['/administrador/listage']);
 
         this.agencia = agencia;
+        // console.log('dato typescript',agencia);
         console.log(agencia);
+        // console.log(this.agencia.nombre);
         return;
+
+
       })
   }
+
   goBack():void{
     this.router.navigateByUrl('administrador/listage')
   }
+
 }
