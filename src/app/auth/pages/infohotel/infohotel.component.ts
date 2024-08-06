@@ -22,7 +22,7 @@ export class InfohotelComponent implements  OnInit{
         switchMap(({ id }) => this.hotelesService.getHotelById(id) ),
       )
       .subscribe( hotel => {
-        if ( !hotel) return this.router.navigate(['/auth/experiencias']);
+        if ( !hotel) return this.router.navigate(['/auth/atractivos']);
 
         this.hotel =hotel;
         console.log(hotel);
@@ -30,7 +30,7 @@ export class InfohotelComponent implements  OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('auth/experiencias')
+    this.router.navigateByUrl('auth/atractivos')
   }
 
 

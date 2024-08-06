@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { AuthRoutingModule } from './auth-routing.module';
-import { AtractivosComponent } from './pages/atractivos/atractivos.component';
 import { ExperienciasComponent } from './pages/experiencias/experiencias.component';
 import { PaquetesComponent } from './pages/paquetes/paquetes.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
@@ -30,19 +29,19 @@ import { CulturalComponent } from './components/card/cultural/cultural.component
 import { CulturalImagePipe } from './pipes/cultural-image.pipe';
 import { InforesComponent } from './pages/infores/infores.component';
 import { InfohotelComponent } from './pages/infohotel/infohotel.component';
-import { InfonatComponent } from './pages/infonat/infonat.component';
-import { InfoculComponent } from './pages/infocul/infocul.component';
 import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
-import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/Personalizado-cultural.component';
+import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/personalizado-cultural.component';
+import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
+import { AtractivosComponent } from './pages/atractivos/atractivos.component';
+import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 
 
 @NgModule({
   declarations: [
     LayoutPageComponent,
-    AtractivosComponent,
     ExperienciasComponent,
     PaquetesComponent,
     FormularioComponent,
@@ -72,12 +71,12 @@ import { PersonalizadoCulturalComponent } from './components/card/personalizado-
     InforesComponent,
     AgenciasComponent,
     InfohotelComponent,
-    InfonatComponent,
-    InfoculComponent,
     AgenciaComponent,
     InfoageComponent,
     AgenciaImagePipe,
-
+    AtractivoImagePipe,
+    AtractivosComponent,
+    InfoitiComponent,
   ],
   imports: [
     CommonModule,

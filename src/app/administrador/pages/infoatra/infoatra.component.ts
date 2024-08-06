@@ -22,7 +22,7 @@ export class InfoatraComponent implements OnInit{
         switchMap(({ id }) => this.atractivosService.getAtractivoById(id) ),
       )
       .subscribe( atractivo => {
-        if ( !atractivo) return this.router.navigate(['/administrador/listado']);
+        if ( !atractivo) return this.router.navigate(['/administrador/listatra']);
 
         this.atractivo = atractivo;
         console.log(atractivo);
@@ -30,6 +30,6 @@ export class InfoatraComponent implements OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('administrador/listado')
+    this.router.navigateByUrl('administrador/listatra')
   }
 }
