@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LayoutPageComponent {
   public sidebarItem=[
     {label:'Inicio', icon:'home', url:'./inicio'},
-    {label:'Atractivos', icon:'stars', url:'./atractivos'},
+    {label:'Lugares', icon:'stars', url:'./atractivos'},
     {label:'Experiencias', icon:'stars', url:'./experiencias'},
     {label:'Paquetes', icon:'folder', url:'./paquetes'},
     {label:'Paquete personalizado', icon:'folder_open', url:'./formulario'},

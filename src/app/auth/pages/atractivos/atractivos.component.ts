@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Natural } from '../../interfaces/natural.interface';
-import { NaturalesService } from '../../services/natural.service';
-import { Cultural } from '../../interfaces/cultural.interface';
-import { CulturalesService } from '../../services/cultural.service';
+import { Component, OnInit } from "@angular/core";
+import { Experiencia } from "../../interfaces/experiencia.interface";
+import { Hotel } from "../../interfaces/hotel.interface";
+import { Restaurante } from "../../interfaces/restaurante.interface";
+import { ExperienciasService } from "../../services/experiencias.service";
+import { HotelesService } from "../../services/hotel.service";
+import { RestaurantesService } from "../../services/restaurante.service";
+
 
 @Component({
   selector: 'app-atractivos',
@@ -10,21 +13,30 @@ import { CulturalesService } from '../../services/cultural.service';
   styleUrl: './atractivos.component.css'
 })
 export class AtractivosComponent implements OnInit {
+  public hoteles: Hotel[] = [];
+  public restaurantes: Restaurante[] = [];
+  public experiencias: Experiencia[] = [];
 
-  public naturales: Natural [] = [];
-  public culturales: Cultural [] = [];
 
 
   constructor(
-    private naturalesService: NaturalesService,
-    private culturalesService: CulturalesService,
+    private hotelesService: HotelesService,
+    private restaurantesService: RestaurantesService,
+    private experienciasService: ExperienciasService,
   ){}
   ngOnInit(): void {
-    this.naturalesService.getNaturales()
-    .subscribe(naturales => this.naturales = naturales);
 
-    this.culturalesService.getCulturales()
-    .subscribe(culturales => this.culturales = culturales);
+    this.hotelesService.getHoteles()
+    .subscribe(hoteles => this.hoteles = hoteles);
+
+    this.restaurantesService.getRestaurantes()
+    .subscribe(restaurantes => this.restaurantes = restaurantes);
+
+    this.experienciasService.getExperiencias()
+    .subscribe(experiencias => this.experiencias = experiencias);
+    //Add 'implements OnInit' to the class.
+
 
   }
+
 }

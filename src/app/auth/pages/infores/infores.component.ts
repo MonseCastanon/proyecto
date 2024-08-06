@@ -22,7 +22,7 @@ export class InforesComponent implements OnInit{
         switchMap(({ id }) => this.restaurantesService.getRestauranteById(id) ),
       )
       .subscribe( restaurante => {
-        if ( !restaurante) return this.router.navigate(['auth/experiencias']);
+        if ( !restaurante) return this.router.navigate(['/auth/atractivos']);
 
         this.restaurante = restaurante;
         console.log(restaurante);
@@ -30,7 +30,7 @@ export class InforesComponent implements OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('/auth/experiencias')
+    this.router.navigateByUrl('auth/atractivos')
   }
 
 }

@@ -9,29 +9,7 @@ import { switchMap } from 'rxjs';
   templateUrl: './infoatra.component.html',
   styles: ``
 })
-export class InfoatraComponent implements OnInit{
-  public restaurante?: Restaurante;
-  constructor(
-    private restaurantesService:RestaurantesService,
-    private activateRoute: ActivatedRoute,
-    private router:Router,
-  ){}
-    ngOnInit(): void {
-      this.activateRoute.params
-      .pipe(
-        switchMap(({ id }) => this.restaurantesService.getRestauranteById(id) ),
-      )
-      .subscribe( restaurante => {
-        if ( !restaurante) return this.router.navigate(['/auth/atractivos']);
-
-        this.restaurante = restaurante;
-        console.log(restaurante);
-        return;
-      })
-  }
-  goBack():void{
-    this.router.navigateByUrl('auth/atractivos')
-  }
+export class InfoatraComponent {
 
 }
 

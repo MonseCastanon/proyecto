@@ -18,11 +18,13 @@ export class NuevopaqComponent implements OnInit{
   public paqueteForm = new FormGroup({
     id: new FormControl<string>(''),
     nombre: new FormControl<string>(''),
-    descripcion: new FormControl<string>(''),
+    incluye: new FormControl<string>(''),
+    tiempo: new FormControl<string>(''),
     hotel: new FormControl<string>(''),
     restaurante: new FormControl<string>(''),
     experiencia: new FormControl<string>(''),
     actividad: new FormControl<string>(''),
+    costo: new FormControl<string>(''),
     alt_img: new FormControl<string>(''),
   });
   constructor(

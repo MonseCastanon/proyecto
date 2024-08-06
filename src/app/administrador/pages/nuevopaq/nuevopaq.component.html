@@ -20,12 +20,20 @@
               formControlName="nombre"/>
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6">
-            <mat-label>Descripcion</mat-label>
+            <mat-label>Incluye</mat-label>
             <input
               matInput
               type="text
               required"
-              formControlName="descripcion" />
+              formControlName="incluye" />
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Tiempo</mat-label>
+            <input
+              matInput
+              type="text
+              required"
+              formControlName="tiempo" />
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Hotel</mat-label>
@@ -58,6 +66,14 @@
               type="text
               required"
               formControlName="actividad"/>
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Costo</mat-label>
+            <input
+              matInput
+              type="text
+              required"
+              formControlName="costo"/>
           </mat-form-field>
 
           <mat-form-field class="col-12">

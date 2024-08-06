@@ -25,6 +25,7 @@ import { InfoageComponent } from './pages/infoage/infoage.component';
 import { NuevoatraComponent } from './pages/nuevoatra/nuevoatra.component';
 import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
+import { ListatraComponent } from './pages/listatra/listatra.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,7 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children:[
       { path: 'listado', component: ListadoComponent },
+      { path: 'listatra', component: ListatraComponent },
       { path: 'listpaq', component: ListpaqComponent },
       { path: 'listage', component: ListageComponent },
 

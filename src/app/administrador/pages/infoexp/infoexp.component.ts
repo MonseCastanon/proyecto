@@ -22,7 +22,7 @@ export class InfoexpComponent implements OnInit{
         switchMap(({ id }) => this.experienciasService.getExperienciaById(id) ),
       )
       .subscribe( experiencia => {
-        if ( !experiencia) return this.router.navigate(['/administrador/listado']);
+        if ( !experiencia) return this.router.navigate(['/administrador/listatra']);
 
         this.experiencia = experiencia;
         console.log(experiencia);
@@ -30,6 +30,6 @@ export class InfoexpComponent implements OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('administrador/listado')
+    this.router.navigateByUrl('administrador/listatra')
   }
 }

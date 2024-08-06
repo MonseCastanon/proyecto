@@ -7,7 +7,7 @@ export interface Restaurante {
   descripcion:string;
   infraestructura:string;
   accesibilidad:string;
-  servicio:string;
+  servicios:string;
   costo:string;
   contacto:string;
   alt_img?:string;

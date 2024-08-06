@@ -44,6 +44,7 @@ import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
+import { ListatraComponent } from './pages/listatra/listatra.component';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import { AtractivoComponent } from './components/card/atractivo/atractivo.compon
     BuscaratraComponent,
     AtractivoImagePipe,
     AtractivoComponent,
+    ListatraComponent,
   ],
   imports: [
     CommonModule,
