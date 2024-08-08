@@ -14,4 +14,7 @@ fecha_ideal_visita:string;
 segmento_mercado_potencial:string;
 costo:string;
 contacto:string;
-alt_img?:string;}
+alt_img?:string;
+selected?: boolean; // Propiedad opcional para manejar la selección
+
+}

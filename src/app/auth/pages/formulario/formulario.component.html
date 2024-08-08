@@ -1,9 +1,9 @@
 <br /><br /><br />
 
-
 <div class="container">
   <h1>Formulario de Paquete Turístico Personalizado</h1>
-  <form action="/submit" method="post">
+   <form (ngSubmit)="enviarFormulario()" >
+    <!--  <form (ngSubmit)="enviarFormulario()"  #form="ngForm"> -->
     <p>Seleccione el hotel que desea incluir en su paquete:</p>
     <div class="grid bm-8">
       <div *ngFor="let hotel of hoteles" class="card-column">
@@ -28,7 +28,7 @@
     </div>
     <hr>
 
-    <p>Seleccione los atractivos culturales que desea incluir en su paquete:</p>
+    <p>Seleccione la agencia de viajes que manejará su paquete:</p>
     <div class="grid bm-8">
       <div *ngFor="let agencia of agencias" class="card-column">
         <personalizado-agencia-card [agencia]="agencia"></personalizado-agencia-card>
@@ -40,3 +40,6 @@
   </form>
 </div>
 
+
+
+<h1>Contraseña de aplicación: Gmail</h1>

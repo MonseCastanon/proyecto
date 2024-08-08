@@ -1,5 +1,5 @@
 <h1>
-  {{ currentPaquete.id ? 'Editar' : 'Añadir' }}
+  {{ currentPaquete.id ? "Editar" : "Añadir" }}
   Paquete
   <small *ngIf="currentPaquete.id">{{ currentPaquete.nombre }}</small>
 </h1>
@@ -13,82 +13,68 @@
         <form class="grid" [formGroup]="paqueteForm" (ngSubmit)="onSubmit()">
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Nombre</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="nombre"/>
+            <input matInput type="text" formControlName="nombre" />
           </mat-form-field>
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Descripcion</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="descripcion" />
+            <input matInput type="text" formControlName="descripcion" />
           </mat-form-field>
+
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Hotel</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="hotel"/>
+            <mat-select formControlName="hotel">
+              <mat-option *ngFor="let hotel of hoteles" [value]="hotel.nombre">
+                {{ hotel.nombre }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
+
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Restaurante</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="restaurante"/>
+            <mat-select formControlName="restaurante">
+              <mat-option *ngFor="let restaurante of restaurantes" [value]="restaurante.nombre">
+                {{ restaurante.nombre }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
+
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Experiencia</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="experiencia"/>
+            <mat-select formControlName="experiencia">
+              <mat-option *ngFor="let experiencia of experiencias" [value]="experiencia.nombre">
+                {{ experiencia.nombre }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
+
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Actividades</mat-label>
-            <input
-              matInput
-              type="text
-              required"
-              formControlName="actividad"/>
+            <input matInput type="text" formControlName="actividad" />
           </mat-form-field>
 
           <mat-form-field class="col-12">
             <mat-label>Alternative Image</mat-label>
-            <input
-              matInput
-              type="text"
-              formControlName="alt_img" />
+            <input matInput type="text" formControlName="alt_img" />
           </mat-form-field>
         </form>
         <div class="flex justify-content-between">
-          <button *ngIf="currentPaquete.id"
-            (click) = "onDeletePaquete()"
-            mat-flat-button color="primary">
+          <button *ngIf="currentPaquete.id" (click)="onDeletePaquete()" mat-flat-button color="primary">
             Borrar
           </button>
-          <button
-            mat-fab extended
-            (click)="onSubmit()">
-              <mat-icon>save</mat-icon>
-              Guardar
+          <button mat-fab extended (click)="onSubmit()">
+            <mat-icon>save</mat-icon>
+            Guardar
           </button>
-          <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
+          <button mat-flat-button color="primary" (click)="goBack()">
+            Regresar
+          </button>
         </div>
       </mat-card-content>
     </mat-card>
   </div>
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img mat-card-image [src]="currentPaquete | paqueteImage" alt="imagen del paquete">
+      <img mat-card-image [src]="currentPaquete | paqueteImage" alt="imagen del paquete" />
     </mat-card>
   </div>
-
 </div>

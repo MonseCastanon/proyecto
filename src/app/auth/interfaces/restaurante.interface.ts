@@ -11,4 +11,5 @@ export interface Restaurante {
   costo:string;
   contacto:string;
   alt_img?:string;
+  selected?: boolean; // Propiedad opcional para manejar la selección
 }

@@ -36,7 +36,8 @@ import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
-import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/Personalizado-cultural.component';
+import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/personalizado-cultural.component';
+
 
 
 @NgModule({
