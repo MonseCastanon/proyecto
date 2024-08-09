@@ -12,7 +12,8 @@ throw new Error('Method not implemented.');
 }
   public sidebarItem=[
     {label:'Agencias', icon:'label', url:'./listage'},
-    {label:'Listado', icon:'label', url:'./listado'},
+    {label:'Lugares', icon:'label', url:'./listado'},
+    {label:'Atractivos', icon:'label', url:'./listatra'},
     {label:'Paquetes/Itinerarios', icon:'label', url:'./listpaq'},
     {label:'Añadir Agencia', icon:'add', url:'./nuevoage'},
     // {label:'Buscar Agencia', icon:'search', url:'./buscarage'},

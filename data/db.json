@@ -57,24 +57,6 @@
       "segmento_mercado_potencial": "segmento_mercado_potencial h-3",
       "costo": "costo h-3",
       "contacto": "Contacto h-3"
-    },
-    {
-      "id": "h-aberdeen",
-      "nombre": "Aberdeen",
-      "categoria": "categoria h-4",
-      "tipologia": "tipologia h-4",
-      "localizacion": "Calle: Calzada de los Heroes 22",
-      "descripcion": "Este hotel de 4 estrellas ofrece recepción 24 horas y servicio de habitaciones. El hotel dispone de habitaciones familiares.",
-      "accesibilidad": "accesibilidad h-4",
-      "num_habitaciones": "Num_habitaciones h-4",
-      "actividades": "Actividades h-4",
-      "servicios": "Servicios h-4",
-      "num_visitante_ideal": "num_visitante_ideal h-4",
-      "fecha_ideal_visita": "fecha_ideal_visita h-4",
-      "segmento_mercado_potencial": "segmento_mercado_potencial h-4",
-      "costo": "costo h-4",
-      "contacto": "Contacto h-4",
-      "alt_img": null
     }
   ],
   "restaurantes": [
@@ -117,67 +99,41 @@
       "servicios": "Servicio r-3",
       "costo": "Costo r-3",
       "contacto": "Contacto r-3"
-    },
-    {
-      "id": "r-mostacho",
-      "nombre": "Mostacho 28",
-      "categoria": "categoria r-4",
-      "tipologia": "tipologia r-4",
-      "localizacion": "Plaza Principal 27, Zona Centro",
-      "infraestructura": "Infraestructura r-4",
-      "descripcion": "Muy buena opción para desayunar y estar en familia muy buen servicio. Las opciones de desayuno y la variedad de jugos naturales complementan una buena oferta.",
-      "accesibilidad": "Accesibilidad r-4",
-      "servicios": "Servicio r-4",
-      "costo": "Costo r-4",
-      "contacto": "Contacto r-4"
     }
   ],
   "paquetes": [
     {
-      "id": "Imagen1",
-      "nombre": "Vitivinicola",
-      "descripcion": "Paquete de vinos.",
-      "hotel": "Hotel paquete 1",
-      "restaurante": "Restaurante paquete 1",
-      "experiencia": "Experiencia paquete 1",
-      "actividad": "Actividades paquete 1"
-    },
-    {
       "id": "Imagen2",
       "nombre": "Nieves",
-      "descripcion": "Paquete de nieves con un buen sabor.",
+      "incluye": "Paquete de nieves con un buen sabor.",
+      "tiempo": "tiempo",
       "hotel": "Hotel paquete 2",
       "restaurante": "Restaurante paquete 2",
       "experiencia": "Experiencia paquete 2",
-      "actividad": "Actividades paquete 2"
+      "actividad": "Actividades paquete 2",
+      "costo": "costo"
     },
     {
       "id": "Imagen3",
       "nombre": "Aventura",
-      "descripcion": "Paquete con paseos por lugares aventurezcos.",
+      "incluye": "Paquete con paseos por lugares aventurezcos.",
+      "tiempo": "tiempo",
       "hotel": "Hotel paquete 3",
       "restaurante": "Restaurante paquete 3",
       "experiencia": "Experiencia paquete 3",
-      "actividad": "Actividades paquete 3"
+      "actividad": "Actividades paquete 3",
+      "costo": "costo"
     },
     {
       "id": "Imagen1",
       "nombre": "Cultural",
-      "descripcion": "Paquete con paradas culturales en Dolores Hidalgo.",
+      "incluye": "Paquete con paradas culturales en Dolores Hidalgo.",
+      "tiempo": "tiempo",
       "hotel": "Hotel paquete 4",
       "restaurante": "Restaurante paquete 4",
       "experiencia": "Experiencia paquete 4",
-      "actividad": "Actividades paquete 4"
-    },
-    {
-      "id": "",
-      "nombre": "Nombre",
-      "descripcion": "Descripcion",
-      "hotel": "Hotel",
-      "restaurante": "Restaurante",
-      "experiencia": "Experiencia",
-      "actividad": "Actividades",
-      "alt_img": "https://i.ytimg.com/vi/9RinIXTFqDQ/hqdefault.jpg"
+      "actividad": "Actividades paquete 4",
+      "costo": "costo"
     }
   ],
   "culturales": [
@@ -245,15 +201,6 @@
       "servicio": "Servicios exp-3",
       "contacto": "Contacto exp-3",
       "costo": "Costo exp-3"
-    },
-    {
-      "id": "exp-4",
-      "nombre": "Feria de las nieves 4",
-      "descripcion": "Descripcion exp-4",
-      "accesibilidad": "Accesibilidad exp-4",
-      "servicio": "Servicios exp-4",
-      "contacto": "Contacto exp-4",
-      "costo": "Costo exp-4"
     }
   ],
   "naturales": [
@@ -376,17 +323,6 @@
       "red_social": "https://www.facebook.com/IndependenciaTouristicServicestouristicservicesindependencia.com",
       "correo": "independenciatouristicservices@gmail.com",
       "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMPAa4y3slsy6dnLGuWQ_1ExJDew_UF1WMw&s"
-    },
-    {
-      "id": "prueba",
-      "nombre": "Tu Pvta Madre",
-      "tipo": "Agencia",
-      "ubicacion": "Mi casa",
-      "direccion": "La casa del mencho",
-      "contactos": "000000000",
-      "red_social": "instagram",
-      "correo": "ejemplo@supvtamadre.com",
-      "alt_img": "https://i1.sndcdn.com/avatars-000073010001-joo1m3-t240x240.jpg"
     }
   ],
   "guias": [

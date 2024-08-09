@@ -1,19 +1,22 @@
 <br>
-<h1>Listado de Naturales</h1>
+<h1>Listado de Hoteles</h1>
 <mat-divider></mat-divider>
 <div class="grid bm-8">
-  <div *ngFor="let natural of naturales"
+  <div *ngFor="let hotel of hoteles"
   class="col-12 sm:col-4 md:col-3 xl:col-2">
-   <naturales-natural-card [natural]="natural"></naturales-natural-card>
+    <hoteles-hotel-card [hotel]="hotel"></hoteles-hotel-card>
 <!-- Llama al card.component.ts -->
   </div>
 </div>
 
-<h1>Listado de Culturales</h1>
+<hr>
+
+<h1>Listado de Restaurantes</h1>
 <mat-divider></mat-divider>
 <div class="grid bm-8">
-  <div *ngFor="let cultural of culturales" class="col-12 sm:col-3 xl:col-2">
-    <culturales-cultural-card [cultural]="cultural"></culturales-cultural-card>
+  <div *ngFor="let restaurante of restaurantes"
+  class="col-12 sm:col-4 md:col-3 xl:col-2">
+    <restaurantes-restaurante-card [restaurante]="restaurante"></restaurantes-restaurante-card>
+<!-- Llama al card.component.ts -->
   </div>
-
 </div>

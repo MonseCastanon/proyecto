@@ -22,6 +22,7 @@ export class NuevopaqComponent implements OnInit {
   public paqueteForm = new FormGroup({
     id: new FormControl<number>(0),
     nombre: new FormControl<string>(''),
+
     descripcion: new FormControl<string>(''),
     dia: new FormControl<number>(0),
     noche: new FormControl<number>(0),
@@ -60,8 +61,21 @@ export class NuevopaqComponent implements OnInit {
         if (!paquete) {
           return this.router.navigateByUrl('/');
         }
-        this.paqueteForm.patchValue(paquete);
-        return;
+        const paqueteFormData = {
+      id: paquete.id,
+      nombre: paquete.nombre,
+      descripcion: paquete.descripcion,
+      dia: paquete.dia,
+      noche: paquete.noche,
+      hotel: paquete.hotel,
+      restaurante: paquete.restaurante,
+      experiencia: paquete.experiencia,
+      actividad: paquete.actividad,
+      costo: paquete.costo,
+      alt_img: paquete.alt_img,
+    };
+    this.paqueteForm.patchValue(paqueteFormData);
+    return;
       });
   }
 
