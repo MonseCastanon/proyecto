@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -8,7 +9,8 @@ import { Error404PageComponent } from './pages/error404-page/error404-page.compo
     Error404PageComponent
   ],
   exports: [
-    Error404PageComponent
+    Error404PageComponent,
+    FormsModule
   ]
 })
 export class SharedModule { }
