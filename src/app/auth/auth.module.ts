@@ -37,6 +37,8 @@ import { PersonalizadoCulturalComponent } from './components/card/personalizado-
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { AtractivosComponent } from './pages/atractivos/atractivos.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -81,7 +83,8 @@ import { InfoitiComponent } from './pages/infoiti/infoiti.component';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class AuthModule { }
