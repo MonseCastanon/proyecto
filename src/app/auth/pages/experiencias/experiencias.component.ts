@@ -2,10 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from "../../interfaces/experiencia.interface";
 import { ExperienciasService } from '../../services/experiencias.service';
-import { Hotel } from '../../interfaces/hotel.interface';
-import { Restaurante } from '../../interfaces/restaurante.interface';
-import { HotelesService } from '../../services/hotel.service';
-import { RestaurantesService } from '../../services/restaurante.service';
+import { Atractivo } from '../../interfaces/atractivo.interface';
+import { AtractivosService } from '../../services/atractivo.service';
 
 @Component({
   selector: 'app-experiencias',
@@ -13,27 +11,24 @@ import { RestaurantesService } from '../../services/restaurante.service';
   styleUrl: './experiencias.component.css'
 })
 export class ExperienciasComponent implements OnInit {
-  public hoteles: Hotel[] = [];
-  public restaurantes: Restaurante[] = [];
   public experiencias: Experiencia[] = [];
+  public atractivos: Atractivo[] = [];
+
 
 
 
   constructor(
-    private hotelesService: HotelesService,
-    private restaurantesService: RestaurantesService,
+
     private experienciasService: ExperienciasService,
+    private atractivosService: AtractivosService,  //Add this line.
   ){}
   ngOnInit(): void {
 
-    this.hotelesService.getHoteles()
-    .subscribe(hoteles => this.hoteles = hoteles);
-
-    this.restaurantesService.getRestaurantes()
-    .subscribe(restaurantes => this.restaurantes = restaurantes);
-
     this.experienciasService.getExperiencias()
     .subscribe(experiencias => this.experiencias = experiencias);
+
+    this.atractivosService.getAtractivos()  //Add this line.
+    .subscribe(atractivos => this.atractivos = atractivos);
     //Add 'implements OnInit' to the class.
 
 

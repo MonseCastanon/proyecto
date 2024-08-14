@@ -1,5 +1,5 @@
 <br>
-<h1>Listado de Paquetes</h1>
+<h1>Paquetes</h1>
 <mat-divider></mat-divider>
 <br>
 <div class="grid bm-8">
@@ -10,3 +10,12 @@
   </div>
 </div>
 
+<h1>Itinerarios</h1>
+<mat-divider></mat-divider>
+<div class="grid bm-8">
+  <div *ngFor="let itinerario of itinerarios"
+  class="col-12 sm:col-4 md:col-3 xl:col-2">
+    <itinerarios-itinerario-card [itinerario]="itinerario"></itinerarios-itinerario-card>
+<!-- Llama al card.component.ts -->
+  </div>
+</div>

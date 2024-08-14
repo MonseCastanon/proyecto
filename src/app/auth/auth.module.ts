@@ -20,7 +20,7 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
 import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
-import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+
 import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 import { NaturalImagePipe } from './pipes/natural-image.pipe';
@@ -35,8 +35,13 @@ import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
 import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/personalizado-cultural.component';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
-import { AtractivosComponent } from './pages/atractivos/atractivos.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
+import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
+import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
+import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
+import { ListalugarComponent } from './pages/listalugar/listalugar.component';
+import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+
 
 
 @NgModule({
@@ -54,8 +59,8 @@ import { InfoitiComponent } from './pages/infoiti/infoiti.component';
     RestauranteComponent,
     RestauranteImagePipe,
     InfoatraComponent,
-    ExperienciaImagePipe,
     ExperienciaComponent,
+    ExperienciaImagePipe,
     InfoexpComponent,
     PersonalizadoHotelComponent,
     PersonalizadoRestauranteComponent,
@@ -75,8 +80,12 @@ import { InfoitiComponent } from './pages/infoiti/infoiti.component';
     InfoageComponent,
     AgenciaImagePipe,
     AtractivoImagePipe,
-    AtractivosComponent,
     InfoitiComponent,
+    AtractivoComponent,
+    ItinerarioComponent,
+    ItinerarioImagePipe,
+    ListalugarComponent,
+
   ],
   imports: [
     CommonModule,

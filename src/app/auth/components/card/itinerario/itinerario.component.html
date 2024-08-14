@@ -1,20 +1,18 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title> {{ agencia.nombre }} </mat-card-title>
+    <mat-card-title> {{ itinerario.nombre }} </mat-card-title>
   </mat-card-header>
 
-  <img mat-card-image [src]="agencia | agenciaImage" [alt]="agencia.nombre">
+  <img mat-card-image [src]="itinerario | itinerarioImage" [alt]="itinerario.nombre">
 
 
   <mat-card-content class="mt-2">
-    <h4> {{ agencia.tipo }} </h4>
     <p>
-      <strong>Ubicación:</strong> {{ agencia.ubicacion }}
+      <strong>Nombre</strong> {{ itinerario.nombre }}
       <br>
-      <strong>Dirección:</strong> {{ agencia.direccion }}
       <mat-chip-listbox>
         <mat-chip *ngFor="let name of
-        agencia.nombre.split(',') | slice:0:3">
+        itinerario.nombre.split(',') | slice:0:3">
         {{ name }}
         </mat-chip>
       </mat-chip-listbox>
@@ -24,11 +22,9 @@
 
   <mat-divider></mat-divider>
   <mat-card-actions>
-
-    <span class="spacer"></span>
     <button mat-button
     mat-raised
-    [routerLink]="['/auth/agencias',agencia.id]">
+    [routerLink]="['/administrador/itinerarios',itinerario.id]">
     <mat-icon>more_horiz</mat-icon>
     Más
     </button>

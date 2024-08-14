@@ -30,7 +30,7 @@ export class InfohotelComponent implements  OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('auth/atractivos')
+    this.router.navigateByUrl('auth/listalugar')
   }
 
 
