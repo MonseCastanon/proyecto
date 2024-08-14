@@ -8,7 +8,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card/card.component';
 import { HotelImagePipe } from './pipes/hotel-image.pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { BuscarresComponent } from './pages/buscarres/buscarres.component';
 import { InforesComponent } from './pages/infores/infores.component';
@@ -45,6 +45,8 @@ import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
 import { ListatraComponent } from './pages/listatra/listatra.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+
 
 
 @NgModule({
@@ -90,12 +92,14 @@ import { ListatraComponent } from './pages/listatra/listatra.component';
     AtractivoImagePipe,
     AtractivoComponent,
     ListatraComponent,
+    RegistroComponent,
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     AdministradorRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
   ]
 })
 export class AdministradorModule { }

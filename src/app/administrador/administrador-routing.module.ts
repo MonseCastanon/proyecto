@@ -26,12 +26,15 @@ import { NuevoatraComponent } from './pages/nuevoatra/nuevoatra.component';
 import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
 import { InfoatraComponent } from './pages/infoatra/infoatra.component';
 import { ListatraComponent } from './pages/listatra/listatra.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutPageComponent,
     children:[
+      { path: 'registro', component: RegistroComponent},
+
       { path: 'listado', component: ListadoComponent },
       { path: 'listatra', component: ListatraComponent },
       { path: 'listpaq', component: ListpaqComponent },
