@@ -1,11 +1,13 @@
-import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { catchError, map, Observable, of } from "rxjs";
-import { usuarios } from "../interfaces/users.interface";
+import { Injectable } from "@angular/core";
+import { Observable, map, catchError, of } from "rxjs";
+import { usuarios } from "../../auth/interfaces/users.interface";
 
 @Injectable({ providedIn: "root" })
 
-export class AuthServices {
+export class AdministradorServices {
+
+
 
   // Base URL backend
   private baseUrl: string = 'http://localhost:3000';
@@ -13,11 +15,11 @@ export class AuthServices {
   constructor ( private http: HttpClient ) { }
 
   // * Metodo para hacer el Login
-  login(usuario: string, pass: string): Observable<usuarios | null>{
-    const url = `${this.baseUrl}/login`;
+  register(usuario: string, email: string,  pass: string): Observable<usuarios | null>{
+    const url = `${this.baseUrl}/registro`;
 
     // * Datos a enviar
-    const body = { usuario, pass };
+    const body = { usuario, email, pass };
 
     const httpOptions = {
       headers: new HttpHeaders({
