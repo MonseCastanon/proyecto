@@ -14,16 +14,17 @@ import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
 import { OlvidarpassComponent } from './pages/olvidarpass/olvidarpass.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
-import { AtractivosComponent } from './pages/atractivos/atractivos.component';
 import { InforesComponent } from './pages/infores/infores.component';
+import { ListalugarComponent } from './pages/listalugar/listalugar.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutPageComponent,
     children:[
-      { path: 'atractivos', component: AtractivosComponent},
       { path: 'experiencias', component: ExperienciasComponent },
+      { path: 'atractivos/:id', component: InfoatraComponent },
+      { path: 'listalugar', component: ListalugarComponent },
       { path: 'restaurantes/:id', component: InforesComponent },
       { path: 'experiencias/:id', component: InfoexpComponent },
       { path: 'hoteles/:id', component: InfohotelComponent },

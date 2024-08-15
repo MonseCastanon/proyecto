@@ -20,7 +20,7 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
 import { InfopaqComponent } from './pages/infopaq/infopaq.component';
 import { PersonalizadoHotelComponent } from './components/card/personalizado-hotel/personalizado.hotel';
 import { PersonalizadoRestauranteComponent } from './components/card/personalizado-restaurante/personalizado.rest';
-import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+
 import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
 import { InforesComponent } from './pages/infores/infores.component';
@@ -30,10 +30,15 @@ import { InfoageComponent } from './pages/infoage/infoage.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
-import { AtractivosComponent } from './pages/atractivos/atractivos.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
+import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
+import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
+import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
+import { ListalugarComponent } from './pages/listalugar/listalugar.component';
+import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
 import { FormsModule } from '@angular/forms';
 import { PersonalizadoAtractivoComponent } from './components/card/personalizado-atractivo/personalizado-atractivo.component';
+
 
 
 
@@ -52,8 +57,8 @@ import { PersonalizadoAtractivoComponent } from './components/card/personalizado
     RestauranteComponent,
     RestauranteImagePipe,
     InfoatraComponent,
-    ExperienciaImagePipe,
     ExperienciaComponent,
+    ExperienciaImagePipe,
     InfoexpComponent,
     PersonalizadoHotelComponent,
     PersonalizadoRestauranteComponent,
@@ -68,9 +73,13 @@ import { PersonalizadoAtractivoComponent } from './components/card/personalizado
     InfoageComponent,
     AgenciaImagePipe,
     AtractivoImagePipe,
-    AtractivosComponent,
     InfoitiComponent,
+    AtractivoComponent,
+    ItinerarioComponent,
+    ItinerarioImagePipe,
+    ListalugarComponent,
     PersonalizadoAtractivoComponent,
+
   ],
   imports: [
     CommonModule,

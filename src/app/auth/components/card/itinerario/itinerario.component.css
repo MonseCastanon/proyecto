@@ -29,11 +29,6 @@
   padding: 15px;
 }
 
-.agency-card-type {
-  color: #00bcd4; /* Color claro para el tipo de agencia */
-  font-weight: bold;
-}
-
 .agency-chip-list {
   display: flex;
   flex-wrap: wrap;

@@ -184,6 +184,59 @@
       "actividad": "Actividades paquete 4"
     }
   ],
+  "atractivos": [
+    {
+
+      "id": "atr-1",
+      "nombre": "Atractivo 1",
+      "categoria": "Num cat",
+      "tipologia": "Tip-atr",
+      "localizacion": "Calle de Atractivo",
+      "descripcion": "Atractivos - 1 ",
+      "accesibilidad": "Atractivo - 1",
+      "actividades": "Atractivo - 1",
+      "num_visitante_ideal": "Atractivo - 1",
+      "fecha_ideal_visita": "Atractivo - 1 ",
+      "segmento_mercado_potencial": "string - 1",
+      "costo": "string - 1",
+      "servicio": "string - 1",
+      "alt_img": "string - 1"
+
+    },
+    {
+      "id": "atr-1",
+      "nombre": "string",
+      "categoria": "string",
+      "tipologia": "string",
+      "localizacion": "string",
+      "descripcion": "string",
+      "accesibilidad": "string",
+      "actividades": "string",
+      "num_visitante_ideal": "string",
+      "fecha_ideal_visita": "string",
+      "segmento_mercado_potencial": "string",
+      "costo": "string",
+      "servicio": "string",
+      "alt_img": "string"
+
+    },
+    {
+      "id": "atr-1",
+      "nombre": "string",
+      "categoria": "string",
+      "tipologia": "string",
+      "localizacion": "string",
+      "descripcion": "string",
+      "accesibilidad": "string",
+      "actividades": "string",
+      "num_visitante_ideal": "string",
+      "fecha_ideal_visita": "string",
+      "segmento_mercado_potencial": "string",
+      "costo": "string",
+      "servicio": "string",
+      "alt_img": "string"
+
+    }],
   "culturales": [
     {
       "id": "cul-1",

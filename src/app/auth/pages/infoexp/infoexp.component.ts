@@ -9,7 +9,8 @@ import { switchMap } from 'rxjs';
   templateUrl: './infoexp.component.html',
   styles: ``
 })
-export class InfoexpComponent implements OnInit{
+export class InfoexpComponent
+implements OnInit{
   public experiencia?: Experiencia;
   constructor(
     private experienciasService:ExperienciasService,

@@ -96,12 +96,12 @@ export class NuevoatraComponent implements OnInit{
         tap( wasDeleted => console.log({ wasDeleted})),
        )
        .subscribe(result =>{
-          this.router.navigate(['/administrador/listado'])
+          this.router.navigate(['/administrador/listatra'])
        })
   }
 
   goBack():void{
-    this.router.navigateByUrl('administrador/listado')
+    this.router.navigateByUrl('administrador/listatra')
   }
 
 }

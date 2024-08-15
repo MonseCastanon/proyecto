@@ -31,7 +31,6 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
 import { BuscaritiComponent } from './pages/buscariti/buscariti.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
-import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
@@ -45,7 +44,9 @@ import { BuscaratraComponent } from './pages/buscaratra/buscaratra.component';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
 import { ListatraComponent } from './pages/listatra/listatra.component';
+import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+
 
 
 
@@ -78,7 +79,6 @@ import { RegistroComponent } from './pages/registro/registro.component';
     BuscaritiComponent,
     InfoitiComponent,
     NuevoitiComponent,
-    ItinerarioComponent,
     ItinerarioImagePipe,
     AgenciaComponent,
     AgenciaImagePipe,
@@ -92,7 +92,9 @@ import { RegistroComponent } from './pages/registro/registro.component';
     AtractivoImagePipe,
     AtractivoComponent,
     ListatraComponent,
+    ItinerarioComponent,
     RegistroComponent,
+
   ],
   imports: [
     CommonModule,
