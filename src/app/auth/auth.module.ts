@@ -37,11 +37,7 @@ import { ItinerarioComponent } from './components/card/itinerario/itinerario.com
 import { ListalugarComponent } from './pages/listalugar/listalugar.component';
 import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
 import { FormsModule } from '@angular/forms';
-<<<<<<< HEAD
-=======
 import { PersonalizadoAtractivoComponent } from './components/card/personalizado-atractivo/personalizado-atractivo.component';
-
->>>>>>> 8e900c8751e8dde744623760f06303723251aeca
 
 
 
