@@ -1,7 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Hotel } from '../../../interfaces/hotel.interface';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Restaurante } from '../../../interfaces/restaurante.interface';
-
 
 @Component({
   selector: 'personalizado-restaurante-card',
@@ -12,7 +10,15 @@ export class PersonalizadoRestauranteComponent implements OnInit {
 
   @Input()
   public restaurante!: Restaurante;
+
+  @Output() seleccionado = new EventEmitter<Restaurante>();
+
   ngOnInit(): void {
-    if ( !this.restaurante ) throw Error('Restaurante property is required')
+    if (!this.restaurante) throw Error('Restaurante property is required');
+  }
+
+  onSelect(event: any): void {
+    this.restaurante.selected = event.target.checked;
+    this.seleccionado.emit(this.restaurante);
   }
 }

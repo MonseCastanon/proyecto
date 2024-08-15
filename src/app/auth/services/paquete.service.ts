@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { enviroments } from "../../../enviroments/enviroments";
-import { catchError, map, Observable, of } from "rxjs";
+import { catchError, Observable, of } from "rxjs";
 import { Paquete } from "../interfaces/paquete.interface";
 
 @Injectable({ providedIn: "root" })
