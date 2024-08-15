@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { PaquetesService } from '../../services/paquete.service';
@@ -11,15 +12,20 @@ import { Paquete } from '../../interfaces/paquete.interface';
 @Component({
   selector: 'app-nuevopaq',
   templateUrl: './nuevopaq.component.html',
-  styles: ``
+  styles: []
 })
-export class NuevopaqComponent implements OnInit{
-  //formulario reactivo
+export class NuevopaqComponent implements OnInit {
+  public hoteles: any[] = [];
+  public restaurantes: any[] = [];
+  public experiencias: any[] = [];
+
+  // Formulario reactivo
   public paqueteForm = new FormGroup({
     id: new FormControl<string>(''),
     nombre: new FormControl<string>(''),
-    incluye: new FormControl<string>(''),
-    tiempo: new FormControl<string>(''),
+    descripcion: new FormControl<string>(''),
+    dia: new FormControl<string>(''),
+    noche:new  FormControl<string>(''),
     hotel: new FormControl<string>(''),
     restaurante: new FormControl<string>(''),
     experiencia: new FormControl<string>(''),
@@ -27,6 +33,7 @@ export class NuevopaqComponent implements OnInit{
     costo: new FormControl<string>(''),
     alt_img: new FormControl<string>(''),
   });
+
   constructor(
     private paquetesService: PaquetesService,
     private activatedRoute: ActivatedRoute,
@@ -35,71 +42,77 @@ export class NuevopaqComponent implements OnInit{
     private dialog: MatDialog,
   ){}
 
-  get currentPaquete():Paquete{
+  get currentPaquete(): Paquete {
     const paquete = this.paqueteForm.value as Paquete;
     return paquete;
   }
 
-  ngOnInit():void {
+  ngOnInit(): void {
+    this.paquetesService.getHoteles().subscribe(data => this.hoteles = data);
+    this.paquetesService.getRestaurantes().subscribe(data => this.restaurantes = data);
+    this.paquetesService.getExperiencias().subscribe(data => this.experiencias = data);
 
-    if (!this.router.url.includes('editarpaq') ) return;
+    if (!this.router.url.includes('editarpaq')) return;
 
     this.activatedRoute.params
-    .pipe(
-      switchMap( ({ id }) => this.paquetesService.getPaqueteById( id) ),
-    ).subscribe(paquete =>{
-
-      if ( !paquete ) {
-        return this.router.navigateByUrl('/');
-      }
-      this.paqueteForm.reset( paquete );
-      return;
-    });
-
+      .pipe(
+        switchMap(({ id }) => this.paquetesService.getPaqueteById(id)),
+      ).subscribe(paquete => {
+        if (!paquete) {
+          return this.router.navigateByUrl('/');
+        }
+        this.paqueteForm.patchValue(paquete);
+        return;
+      });
   }
-  onSubmit():void {
-    if ( this.paqueteForm.invalid ) return;
-    if ( this.currentPaquete.id) {
-      this.paquetesService.updatePaquete( this.currentPaquete )
-      .subscribe( paquete => {
-        this.showSnackbar(`${ paquete.nombre } updated`);
-      } );
+
+  onSubmit(): void {
+    if (this.paqueteForm.invalid) return;
+
+    if (this.currentPaquete.id) {
+      this.paquetesService.updatePaquete(this.currentPaquete)
+        .subscribe(paquete => {
+          this.showSnackbar(`${paquete.nombre} Actualizado`);
+          this.router.navigate(['/administrador/listpaq']);
+        });
       return;
     }
-    this.paquetesService.addPaquete( this.currentPaquete )
-    .subscribe( paquete => {
-      // TODO: mostrar snackbar y navegar a administrador/editar/paquete.id
-      this.router.navigate(['/administrador/editarpaq', paquete.id]);
-      this.showSnackbar(`${ paquete.nombre } created`);
+
+    this.paquetesService.addPaquete(this.currentPaquete)
+      .subscribe(paquete => {
+        this.router.navigate(['/administrador/editarpaq', paquete.id]);
+        this.showSnackbar(`${paquete.nombre} Guardado`);
+      });
+  }
+
+  showSnackbar(message: string): void {
+    this.snackbar.open(message, 'done', {
+      duration: 2500,
+    });
+  }
+  onDeletePaquete(): void {
+    if (!this.currentPaquete.id) return;
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: {
+        title: 'Eliminar Paquete',
+        message: `¿Estás seguro de eliminar el paquete ${this.currentPaquete.nombre}?`,
+      },
     });
 
-  }
-  showSnackbar(message: string ):void{
-    this.snackbar.open( message, 'done',{
-      duration: 2500,
-    })
-  }
-  onDeletePaquete(){
-    if ( !this.currentPaquete.id ) throw Error('Paquete id es required')
-      const dialogRef = this.dialog.open(ConfirmDialogComponent, {
-        data:this.paqueteForm.value
-      });
-
-      dialogRef.afterClosed()
-       .pipe(
-        filter((result: boolean) => result),
-        switchMap( () => this.paquetesService.deletePaqueteById( this.currentPaquete.id)),
-        tap( wasDeleted => console.log({ wasDeleted})),
-       )
-       .subscribe(result =>{
-          this.router.navigate(['administrador/listpaq'])
-       })
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.paquetesService.deletePaqueteById(this.currentPaquete.id)
+          .subscribe(() => {
+            this.showSnackbar(`Paquete eliminado`);
+            this.router.navigateByUrl('/administrador');
+          });
+      }
+    });
   }
 
-  goBack():void{
-    this.router.navigateByUrl('administrador/listpaq')
+  goBack(): void {
+    this.router.navigateByUrl('/administrador/listpaq');
   }
-
 }
-
 

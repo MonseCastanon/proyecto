@@ -22,7 +22,8 @@
       "fecha_ideal_visita": "fecha_ideal_visita h-1",
       "segmento_mercado_potencial": "segmento_mercado_potencial h-1",
       "costo": "costo h-1",
-      "contacto": "Contacto h-1"
+      "contacto": "Contacto h-1",
+      "alt_img": null
     },
     {
       "id": "h-casamia",
@@ -296,7 +297,7 @@
       "nombre": "Turismo Gilca",
       "tipo": "Agencia minorista autorizada por SECTUR",
       "ubicacion": "Dolores Hidalgo, CIN. Gto.",
-      "direccion": "Yucatán # 20 centro",
+      "direccion": "Yucatán # 20 centroooo",
       "contactos": "4181822986 / 4181845804",
       "red_social": "https://www.facebook.com › tgilca",
       "correo": "",

@@ -9,6 +9,7 @@ export interface Natural{
   contacto:string;
   costo:string;
   alt_img?: string;
+  selected?: boolean; // Propiedad opcional para manejar la selección
 
 
 }

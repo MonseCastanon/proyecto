@@ -41,6 +41,7 @@ import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { ListalugarComponent } from './pages/listalugar/listalugar.component';
 import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -90,7 +91,8 @@ import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class AuthModule { }

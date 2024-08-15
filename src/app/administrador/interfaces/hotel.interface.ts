@@ -15,4 +15,5 @@ export interface Hotel {
   costo:string;
   contacto:string;
   alt_img?:string;
+
 }
