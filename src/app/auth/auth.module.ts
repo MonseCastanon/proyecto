@@ -23,17 +23,12 @@ import { PersonalizadoRestauranteComponent } from './components/card/personaliza
 
 import { ExperienciaComponent } from './components/card/experiencia/experiencia.component';
 import { InfoexpComponent } from './pages/infoexp/infoexp.component';
-import { NaturalImagePipe } from './pipes/natural-image.pipe';
-import { NaturalComponent } from './components/card/natural/natural.component';
-import { CulturalComponent } from './components/card/cultural/cultural.component';
-import { CulturalImagePipe } from './pipes/cultural-image.pipe';
 import { InforesComponent } from './pages/infores/infores.component';
 import { InfohotelComponent } from './pages/infohotel/infohotel.component';
 import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { InfoageComponent } from './pages/infoage/infoage.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { PersonalizadoAgenciaComponent } from './components/card/personalizado-agencia/personalizado.agencia';
-import { PersonalizadoCulturalComponent } from './components/card/personalizado-cultural/personalizado-cultural.component';
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
@@ -41,6 +36,9 @@ import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { ListalugarComponent } from './pages/listalugar/listalugar.component';
 import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
+import { FormsModule } from '@angular/forms';
+import { PersonalizadoAtractivoComponent } from './components/card/personalizado-atractivo/personalizado-atractivo.component';
+
 
 
 
@@ -65,14 +63,9 @@ import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
     PersonalizadoHotelComponent,
     PersonalizadoRestauranteComponent,
     PersonalizadoAgenciaComponent,
-    PersonalizadoCulturalComponent,
     PaqueteImagePipe,
     PaqueteComponent,
     InfopaqComponent,
-    NaturalImagePipe,
-    NaturalComponent,
-    CulturalComponent,
-    CulturalImagePipe,
     InforesComponent,
     AgenciasComponent,
     InfohotelComponent,
@@ -85,12 +78,14 @@ import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
     ItinerarioComponent,
     ItinerarioImagePipe,
     ListalugarComponent,
+    PersonalizadoAtractivoComponent,
 
   ],
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class AuthModule { }

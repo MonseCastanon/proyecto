@@ -8,4 +8,5 @@ export interface Agencia {
   red_social: string;
   correo: string;
   alt_img?: string;
+  selected?: boolean; // Propiedad opcional para manejar la selección
 }
