@@ -13,7 +13,7 @@ export class AuthServices {
   constructor ( private http: HttpClient ) { }
 
   // * Metodo para hacer el Login
-  login(usuario: string, pass: string): Observable<usuarios | null>{
+  login(usuario: string, pass: string): Observable<{autenticado:boolean, token:string|null} | null>{
     const url = `${this.baseUrl}/login`;
 
     // * Datos a enviar
@@ -25,7 +25,7 @@ export class AuthServices {
       })
     };
 
-    return this.http.post<usuarios>(url, body, httpOptions)
+    return this.http.post<{autenticado:boolean, token:string|null}>(url, body, httpOptions)
       .pipe(
         map(response => {
           // ? Se puede guardar el token y la sesion aqui c:

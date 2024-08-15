@@ -17,7 +17,7 @@ export class LoginComponent {
 
   onLogin() {
     this.authServices.login(this.usuario, this.pass).subscribe(response => {
-      if (response) {
+      if (response && response.autenticado) {
         // ? Redirigir al usuario a la página principal o a la ruta que corresponda
         this.router.navigate(['/administrador/listado']);
       } else {
