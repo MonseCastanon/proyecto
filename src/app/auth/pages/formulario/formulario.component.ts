@@ -1,18 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'; // Asegúrate de importar HttpClient
 import { Hotel } from '../../interfaces/hotel.interface';
 import { Restaurante } from '../../interfaces/restaurante.interface';
-import { Cultural } from '../../interfaces/cultural.interface';
 import { Agencia } from '../../interfaces/agencia.interface';
-import { Natural } from '../../interfaces/natural.interface'; // Si se usa
-import { Experiencia } from '../../interfaces/experiencia.interface'; // Si se usa
 import { HotelesService } from '../../services/hotel.service';
 import { RestaurantesService } from '../../services/restaurante.service';
-import { CulturalesService } from '../../services/cultural.service';
 import { AgenciasService } from '../../services/agencia.service';
-import { NaturalesService } from '../../services/natural.service'; // Si se usa
-import { ExperienciasService } from '../../services/experiencias.service';
-
+import { Atractivo } from '../../interfaces/atractivo.interface';
+import { AtractivosService } from '../../services/atractivo.service';
 
 @Component({
   selector: 'app-formulario',
@@ -20,22 +14,29 @@ import { ExperienciasService } from '../../services/experiencias.service';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+
   public hoteles: Hotel[] = [];
   public restaurantes: Restaurante[] = [];
-  public culturales: Cultural[] = [];
   public agencias: Agencia[] = [];
-  public naturales: Natural[] = []; // Si se usa
-  public experiencias: Experiencia[] = []; // Si se usa
+  public atractivos: Atractivo[] = [];
+
+  // Nuevas propiedades para los campos adicionales
+  public dias: number = 0;
+  public noches: number = 0;
+  public adultos: number = 0;
+  public ninos: number = 0;
+  public nombre: string = '';
+  public correo: string = '';
+  public telefono: string = '';
+  public fechaInicial: Date = new Date();
+  public transporte: string = '';
 
   constructor(
     private hotelesService: HotelesService,
     private restaurantesService: RestaurantesService,
-    private culturalesService: CulturalesService,
     private agenciasService: AgenciasService,
-    private naturalesService: NaturalesService, // Si se usa
-    private experienciasService: ExperienciasService, // Si se usa
-    private http: HttpClient // Asegúrate de inyectar HttpClient
-  ) {}
+    private atractivosService: AtractivosService,
+  ) { }
 
   ngOnInit(): void {
     this.hotelesService.getHoteles()
@@ -44,41 +45,54 @@ export class FormularioComponent implements OnInit {
     this.restaurantesService.getRestaurantes()
       .subscribe(restaurantes => this.restaurantes = restaurantes);
 
-    this.culturalesService.getCulturales()
-      .subscribe(culturales => this.culturales = culturales);
+    this.atractivosService.getAtractivos()
+      .subscribe(atractivos => this.atractivos = atractivos);
 
     this.agenciasService.getAgencias()
       .subscribe(agencias => {
         this.agencias = agencias;
         this.agencias.forEach(agencia => agencia.selected = false);
       });
+  }
 
-    // Si se usa, cargar otros datos
-    if (this.naturalesService) {
-      this.naturalesService.getNaturales()
-        .subscribe(naturales => this.naturales = naturales);
+  actualizarSeleccion(hotel: Hotel) {
+    const index = this.hoteles.findIndex(h => h.id === hotel.id);
+    if (index !== -1) {
+      this.hoteles[index] = hotel;
     }
+  }
 
-    if (this.experienciasService) {
-      this.experienciasService.getExperiencias()
-        .subscribe(experiencias => this.experiencias = experiencias);
+  actualizarSeleccionRestaurante(restaurante: Restaurante) {
+    const index = this.restaurantes.findIndex(r => r.id === restaurante.id);
+    if (index !== -1) {
+      this.restaurantes[index] = restaurante;
+    }
+  }
+
+  actualizarSeleccionAtractivo(atractivo: Atractivo) {
+    const index = this.atractivos.findIndex(a => a.id === atractivo.id);
+    if (index !== -1) {
+      this.atractivos[index] = atractivo;
     }
   }
 
   enviarFormulario(): void {
-    // Recolectar datos del formulario
     const seleccionados = {
       hoteles: this.hoteles.filter(h => h.selected),
       restaurantes: this.restaurantes.filter(r => r.selected),
-      culturales: this.culturales.filter(c => c.selected),
-      agencia: this.agencias.find(a => a.selected)?.nombre
+      agencia: this.agencias.find(a => a.selected)?.correo,
+      atractivos: this.atractivos.filter(at => at.selected),
+      // Nuevos campos
+      dias: this.dias,
+      noches: this.noches,
+      adultos: this.adultos,
+      ninos: this.ninos,
+      nombre: this.nombre,
+      correo: this.correo,
+      telefono: this.telefono,
+      fechaInicial: this.fechaInicial,
+      transporte: this.transporte,
     };
-
-    // Enviar datos al servidor
-    this.http.post('/api/enviar-correo', seleccionados)
-      .subscribe(
-        response => alert('Correo enviado exitosamente'),
-        error => alert('Error al enviar el correo')
-      );
+    console.log(seleccionados);
   }
 }

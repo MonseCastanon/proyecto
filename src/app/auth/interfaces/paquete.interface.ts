@@ -1,8 +1,9 @@
 export interface Paquete {
   id: string;
   nombre: string;
-  incluye: string;
-  tiempo: string;
+  descripcion: string;
+  dia: string;
+  noche: string;
   hotel: string;
   restaurante: string;
   experiencia: string;
@@ -10,3 +11,5 @@ export interface Paquete {
   costo: string;
   alt_img?:string;
 }
+
+

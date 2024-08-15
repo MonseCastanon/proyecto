@@ -6,13 +6,21 @@
     <img mat-card-image [src]="paquete | paqueteImage" [alt]="paquete.nombre">
 
 
-  <mat-card-content class="mt-2">
-    <strong>Tiempo</strong> {{ paquete.tiempo }}
-      <br>
-    <strong>Incluye</strong>
-    <br>
-    {{ paquete.incluye }}
-  </mat-card-content>
+    <mat-card-content class="mt-2">
+      <p>
+        <strong>Dias:</strong> {{ paquete.dia }}
+        <br>
+        <strong>Noches:</strong> {{ paquete.noche }}
+        <br />
+        <mat-chip-listbox>
+          <mat-chip
+            *ngFor="let name of paquete.nombre.split(',') | slice : 0 : 3"
+          >
+            {{ name }}
+          </mat-chip>
+        </mat-chip-listbox>
+      </p>
+    </mat-card-content>
 <br>
   <mat-divider></mat-divider>
   <mat-card-actions>
