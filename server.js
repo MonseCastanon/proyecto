@@ -8,9 +8,9 @@ app.use(bodyParser.json());
 
 // Conectar a la base de datos MySQL
 const sequelize = new Sequelize('proyecto', 'root', '123456', {
-  host: 'localhost', // Reemplaza si tu host es diferente
-  dialect: 'mysql',
-  port: 3000 // Reemplaza si tu puerto es diferente
+  host: 'localhost',
+  dialect: 'mysql', //Creo que es la version de la base de datos
+  port: 3000 // Puerto de la base de datos
 });
 
 // Definir el modelo para la Agencia
@@ -44,15 +44,15 @@ app.post('/api/enviar-correo', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'Gmail', // Puedes usar otros servicios
       auth: {
-        user: 'tuemail@gmail.com', // REEMPLAZAR CON TU EMAIL para autenticación
-        pass: 'tucontraseña' // REEMPLAZAR CON TU CONTRASEÑA
+        user: 'explora.dolores.hidalgo@gmail.com', // correo desde el cual se enviaran los correos
+        pass: 'Expl0r@Dolor3sH!dalgo#' // contraseña del correo
       }
     });
 
     const mailOptions = {
-      from: 'tuemail@gmail.com', // REEMPLAZAR CON TU EMAIL que aparecerá como remitente
+      from: 'explora.dolores.hidalgo@gmail.com', // email que aparecera como remitente
       to: email,
-      subject: 'Paquete Turístico Personalizado',
+      subject: 'Paquete Turístico Personalizado Para Dolores Hidalgo C.I.N.',
       text: `Hoteles seleccionados: ${hoteles.map(h => h.nombre).join(', ')}\nRestaurantes seleccionados: ${restaurantes.map(r => r.nombre).join(', ')}\nAtractivos Culturales seleccionados: ${culturales.map(c => c.nombre).join(', ')}`
     };
 
@@ -67,6 +67,6 @@ app.post('/api/enviar-correo', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Servidor escuchando en el puerto 3000');
+app.listen(3001, () => {
+  console.log('Servidor escuchando en el puerto 3001');
 });

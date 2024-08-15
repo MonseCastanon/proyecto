@@ -12,5 +12,6 @@ export interface Atractivo {
 	segmento_mercado_potencial: string;
 	costo: string;
 	servicio: string;
-  alt_img: string;
+  alt_img?: string;
+  selected?: boolean;
 }

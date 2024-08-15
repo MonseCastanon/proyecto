@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { AgenciasService } from '../../services/agencia.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Agencia } from '../../interfaces/agencia.interface';
 import { filter, switchMap, tap } from 'rxjs';
 import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
+import { AgenciasService } from '../../services/agencia.service';
+import { Agencia } from '../../interfaces/agencia.interface';
 
 @Component({
   selector: 'app-nuevoage',
@@ -61,7 +61,7 @@ export class NuevoageComponent implements OnInit{
     if ( this.currentAgencia.id) {
       this.agenciasService.updateAgencia( this.currentAgencia )
       .subscribe( agencia => {
-        this.showSnackbar(`${ agencia.nombre } actualizada`);
+        this.showSnackbar(`Actualizada Correctamente`);
       } );
       return;
     }

@@ -1,9 +1,3 @@
-/* Estilos generales de la página */
-body {
-  background: linear-gradient(10deg, #92d3ff, #d9f0ff); /*Color del fondo de la página*/
-  background-attachment: fixed; /*Fijar el color de fondo*/
-}
-
 .introduccion {
   padding: 20px; /*Espacio en los costados*/
   text-align: center; /*Alineación del texto*/
@@ -25,58 +19,9 @@ body {
   text-align: justify; /*Alineación del texto*/
 }
 
-/* Modificaciones del carrusel */
-.carousel-container {
-  width: 80%; /* Ajusta el tamaño del carrusel */
-  max-width: 100px; /* Tamaño máximo del carrusel */
-  margin-left: 50%; /*Espacio en el margen izquierdo*/
-  margin: 0 auto; /* Centrar el carrusel */
-}
-.carousel-inner img {
-  height: 550px; /* Altura fija de las imágenes */
-  object-fit: cover; /* Asegurar que las imágenes se ajusten */
-  margin-bottom: 10%; /*Espacio en el margen inferior*/
-}
-
-/* Estilos para la sección de galería */
-.galeria {
-  margin: 20px 30px;
-}
-
-.galeria h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.galeria-item {
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.galeria-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.galeria-item img:hover {
-  transform: scale(1.05);
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 600px; /* Ajusta la altura según tus necesidades */
-  object-fit: cover; /* Ajusta esta propiedad según tus necesidades (cover, contain, fill, etc.) */
-}
-.inicio{
-  margin-top: -20px;
+body{
+  background-color: #2381a1; /*Color del fondo*/
+  font-family: Arial, sans-serif; /*Estilo de fuente*/
+  margin-top: -15px;
+  z-index: -1000;
 }
