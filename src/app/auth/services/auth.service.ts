@@ -1,43 +1,48 @@
-import { Injectable } from "@angular/core";
+import { Injectable, NgZone } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { catchError, map, Observable, of } from "rxjs";
-import { usuarios } from "../interfaces/users.interface";
+import { Router } from "@angular/router";
 
 @Injectable({ providedIn: "root" })
-
 export class AuthServices {
 
-  // Base URL backend
   private baseUrl: string = 'http://localhost:3000';
 
-  constructor ( private http: HttpClient ) { }
+  constructor(private http: HttpClient,
+              private router: Router,
+              private ngZone: NgZone ) { }
 
-  // * Metodo para hacer el Login
-  login(usuario: string, pass: string): Observable<{autenticado:boolean, token:string|null} | null>{
+  logout(){
+    localStorage.removeItem('token');
+    this.router.navigateByUrl('/auth/login');
+  }
+
+  login(usuario: string, pass: string): Observable<{ autenticado: boolean, token: string | null } | null> {
     const url = `${this.baseUrl}/login`;
-
-    // * Datos a enviar
     const body = { usuario, pass };
-
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
       })
     };
 
-    return this.http.post<{autenticado:boolean, token:string|null}>(url, body, httpOptions)
+    return this.http.post<{ autenticado: boolean, token: string | null }>(url, body, httpOptions)
       .pipe(
         map(response => {
-          // ? Se puede guardar el token y la sesion aqui c:
-          console.log(response)
+          if (response.autenticado && response.token) {
+            localStorage.setItem('token', response.token);
+          }
           return response;
-
         }),
-        // ! Manejo de errores
         catchError(error => {
           console.error('Error de la autenticación', error);
           return of(null);
         })
-      )
+      );
+  }
+
+  isAuthenticated(): boolean {
+    const token = localStorage.getItem('token');
+    return !!token; // Verifica si el token existe y es válido (podrías agregar más lógica aquí)
   }
 }
