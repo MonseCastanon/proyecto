@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class LayoutPageComponent {
-openDialog(arg0: string,arg1: string) {
-throw new Error('Method not implemented.');
-}
+
   public sidebarItem=[
     {label:'Agencias', icon:'label', url:'./listage'},
     {label:'Lugares', icon:'label', url:'./listado'},

@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Hotel } from '../../../interfaces/hotel.interface';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Atractivo } from '../../../interfaces/atractivo.interface';
 
 @Component({

@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, NgModel } from '@angular/forms';
-import { FormularioComponent } from './auth/pages/formulario/formulario.component';
+import { FormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //FormularioComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,6 +19,7 @@ import { FormularioComponent } from './auth/pages/formulario/formulario.componen
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
     provideAnimationsAsync()
