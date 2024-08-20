@@ -1,3 +1,112 @@
+// import { AfterViewInit, Component, OnInit } from '@angular/core';
+// import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { ItinerariosService } from '../../services/itinerario.service';
+// import { switchMap } from 'rxjs';
+// import { ActivatedRoute, Router } from '@angular/router';
+// import { Actividad } from '../../interfaces/actividad.interface';
+// import { Itinerario } from '../../interfaces/itinerario.interface';
+
+// @Component({
+//   selector: 'app-nuevoiti',
+//   templateUrl: './nuevoiti.component.html',
+//   styles: ``
+// })
+// export class NuevoitiComponent implements OnInit{
+
+//   public form:FormGroup | undefined;
+//   public actividadesArray:Actividad[] | undefined
+
+
+//   constructor(
+//     private fb:FormBuilder,
+//     private itinerariosService:ItinerariosService,
+//     private activatedRoute: ActivatedRoute,
+//     private router: Router,
+//   )
+//     {
+//     this.formInit();
+//   }
+//   // ngAfterViewInit(): void {
+//   // this.actividadesArray!.forEach(itinerario=> this.fillActividad(itinerario))
+//   // }
+
+//   ngOnInit(): void {
+
+//     if (!this.router.url.includes('editariti')) return;
+
+//     this.activatedRoute.params
+//       .pipe(
+//         switchMap(({ id }) => this.itinerariosService.getItinerarioById(id)),
+//       ).subscribe(itinerario => {
+//         if (!itinerario) {
+//           return this.router.navigateByUrl('/');
+//         }
+//         console.log(itinerario);
+
+//         // this.form!.patchValue(itinerario);
+//         this.actividadesArray = itinerario.actividades;
+//         // itinerario.actividades.forEach(itinerario=> this.fillActividad(itinerario))
+//         this.form!.patchValue({nombre:itinerario.nombre,actividades:itinerario.actividades})
+
+//         return;
+//       });
+
+//   }
+
+//   private formInit(){
+//     this.form = this.fb.group({
+//       nombre: ['',[Validators.required]],
+//       actividades: this.fb.array([
+//         this.fb.group({
+//           actividad:['', [Validators.required]],
+//           dia:['', [Validators.required]],
+//           hora:['', [Validators.required]]
+//         })
+//       ])
+//     });
+//   }
+
+//   public get actividades(){
+//     return this.form!.get('actividades') as FormArray;
+//   }
+
+//   // get currentItinerario(): Itinerario {
+//   //   const paquete = this.form!.value as Itinerario;
+//   //   return paquete;
+//   // }
+
+//   public addActividad(){
+//     const actividad = this.fb.group({
+//       actividad:['', [Validators.required]],
+//       dia:['', [Validators.required]],
+//       hora:['', [Validators.required]]
+//     })
+//     this.actividades.push(actividad)
+//   }
+
+//   public fillActividad(actividad:Actividad){
+//     const objetoactividad = this.fb.group({
+//       actividad:[`${actividad.actividad}`, [Validators.required]],
+//       dia:[`${actividad.dia}`, [Validators.required]],
+//       hora:[`${actividad.hora}`, [Validators.required]]
+//     })
+//     this.actividades.push(actividad)
+//   }
+
+//   public removeActividad(index: number){
+//     this.actividades.removeAt(index)
+//   }
+
+//   public submitForm(){
+//     console.log(this.form);
+//     console.log(this.form!.getRawValue());
+//     this.itinerariosService.addItinerario(this.form!.value)
+//     .subscribe(
+//       itinerario => console.log(itinerario)
+//     )
+//   }
+
+// }
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ItinerariosService } from '../../services/itinerario.service';
@@ -63,7 +172,7 @@ export class NuevoitiComponent implements OnInit{
     if ( this.currentItinerario.id) {
       this.itinerariosService.updateItinerario( this.currentItinerario )
       .subscribe( itinerario => {
-        this.showSnackbar(`${ itinerario.nombre } updated`);
+        this.showSnackbar(`${ itinerario.nombre } Actualizado`);
       } );
       return;
     }
@@ -71,7 +180,7 @@ export class NuevoitiComponent implements OnInit{
     .subscribe( itinerario => {
       // TODO: mostrar snackbar y navegar a administrador/editar/itinerario.id
       this.router.navigate(['/administrador/editariti', itinerario.id]);
-      this.showSnackbar(`${ itinerario.nombre } created`);
+      this.showSnackbar(`${ itinerario.nombre } Creado`);
     });
 
   }

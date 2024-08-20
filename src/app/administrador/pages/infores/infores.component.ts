@@ -7,7 +7,7 @@ import { switchMap } from 'rxjs';
 @Component({
   selector: 'app-infores',
   templateUrl: './infores.component.html',
-  styles: ``
+  styleUrl: './infores.component.css'
 })
 export class InforesComponent implements OnInit{
   public restaurante?: Restaurante;

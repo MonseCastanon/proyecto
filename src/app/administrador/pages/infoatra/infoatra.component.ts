@@ -7,7 +7,7 @@ import { AtractivosService } from '../../services/atractivo.service';
 @Component({
   selector: 'app-infoatra',
   templateUrl: './infoatra.component.html',
-  styles: ``
+  styleUrl: './infoatra.component.css'
 })
 export class InfoatraComponent implements OnInit{
   public atractivo?: Atractivo;

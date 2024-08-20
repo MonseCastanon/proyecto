@@ -25,8 +25,10 @@ export class ItinerariosService {    /*Recuerden que lleva 2 "S" */
   }
 
   addItinerario( itinerario:Itinerario):Observable<Itinerario> {
+    console.log(itinerario)
     return this.httpClient.post<Itinerario>(`${this.baseUrl}/itinerarios`, itinerario);
   }
+
 
   updateItinerario( itinerario:Itinerario):Observable<Itinerario> {
     if (!itinerario.id) throw Error('Itinerario id is required');

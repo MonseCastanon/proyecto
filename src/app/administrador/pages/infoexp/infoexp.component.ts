@@ -7,7 +7,7 @@ import { switchMap } from 'rxjs';
 @Component({
   selector: 'app-infoexp',
   templateUrl: './infoexp.component.html',
-  styles: ``
+  styleUrl: './infoexp.component.css'
 })
 export class InfoexpComponent implements OnInit{
   public experiencia?: Experiencia;

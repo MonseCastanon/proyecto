@@ -2,8 +2,8 @@
   <mat-card-header>
     <mat-card-title> {{ itinerario.nombre }} </mat-card-title>
   </mat-card-header>
-
-  <img mat-card-image [src]="itinerario | itinerarioImage" [alt]="itinerario.nombre">
+<!--
+  <img mat-card-image [src]="itinerario | itinerarioImage" [alt]="itinerario.nombre"> -->
 
 
   <mat-card-content class="mt-2">
@@ -24,7 +24,7 @@
   <mat-card-actions>
     <button mat-button
     mat-raised
-    [routerLink]="['/administrador/itinerarios',itinerario.id]">
+    [routerLink]="['/auth/paquetes',itinerario.id]">
     <mat-icon>more_horiz</mat-icon>
     Más
     </button>

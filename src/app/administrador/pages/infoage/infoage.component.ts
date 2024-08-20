@@ -7,7 +7,7 @@ import { switchMap } from 'rxjs';
 @Component({
   selector: 'app-infoage',
   templateUrl: './infoage.component.html',
-  styles: ``
+  styleUrl: './infoage.component.css'
 })
 export class InfoageComponent implements OnInit{
   public agencia?: Agencia;

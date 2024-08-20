@@ -7,7 +7,7 @@ import { AgenciasService } from "../../services/agencia.service";
 @Component({
   selector: 'app-infoage',
   templateUrl: './infoage.component.html',
-  styles: ``
+  styleUrl: './infoage.component.css'
 })
 export class InfoageComponent implements OnInit{
   public agencia?: Agencia;
@@ -30,6 +30,6 @@ export class InfoageComponent implements OnInit{
       })
   }
   goBack():void{
-    this.router.navigateByUrl('administrador/listage')
+    this.router.navigateByUrl('auth/agencias')
   }
 }

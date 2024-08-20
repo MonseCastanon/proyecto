@@ -3,14 +3,17 @@ import { Itinerario } from '../../interfaces/itinerario.interface';
 import { ItinerariosService } from '../../services/itinerario.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
+import { Actividad } from '../../interfaces/actividad.interface';
 
 @Component({
   selector: 'app-infoiti',
   templateUrl: './infoiti.component.html',
-  styles: ``
+  styleUrl: './infoiti.component.css'
 })
 export class InfoitiComponent implements OnInit{
   public itinerario?: Itinerario;
+  public actividadesArray:Actividad[] | undefined
+  
   constructor(
     private itinerariosService:ItinerariosService,
     private activateRoute: ActivatedRoute,

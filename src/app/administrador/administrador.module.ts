@@ -8,7 +8,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card/card.component';
 import { HotelImagePipe } from './pipes/hotel-image.pipe';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { BuscarresComponent } from './pages/buscarres/buscarres.component';
 import { InforesComponent } from './pages/infores/infores.component';
@@ -31,7 +31,6 @@ import { PaqueteComponent } from './components/card/paquete/paquete.component';
 import { BuscaritiComponent } from './pages/buscariti/buscariti.component';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 import { NuevoitiComponent } from './pages/nuevoiti/nuevoiti.component';
-import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 import { AgenciaComponent } from './components/card/agencia/agencia.component';
 import { AgenciaImagePipe } from './pipes/agencia-image.pipe';
 import { BuscarageComponent } from './pages/buscarage/buscarage.component';
@@ -79,7 +78,6 @@ import { RegistroComponent } from './pages/registro/registro.component';
     BuscaritiComponent,
     InfoitiComponent,
     NuevoitiComponent,
-    ItinerarioImagePipe,
     AgenciaComponent,
     AgenciaImagePipe,
     BuscarageComponent,
