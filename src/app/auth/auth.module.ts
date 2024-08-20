@@ -32,7 +32,6 @@ import { PersonalizadoAgenciaComponent } from './components/card/personalizado-a
 import { AtractivoImagePipe } from './pipes/atractivo-image.pipe';
 import { InfoitiComponent } from './pages/infoiti/infoiti.component';
 import { AtractivoComponent } from './components/card/atractivo/atractivo.component';
-import { ItinerarioImagePipe } from './pipes/itinerario-image.pipe';
 import { ItinerarioComponent } from './components/card/itinerario/itinerario.component';
 import { ListalugarComponent } from './pages/listalugar/listalugar.component';
 import { ExperienciaImagePipe } from './pipes/experiencia-image.pipe';
@@ -75,7 +74,6 @@ import { PersonalizadoAtractivoComponent } from './components/card/personalizado
     InfoitiComponent,
     AtractivoComponent,
     ItinerarioComponent,
-    ItinerarioImagePipe,
     ListalugarComponent,
     PersonalizadoAtractivoComponent,
 

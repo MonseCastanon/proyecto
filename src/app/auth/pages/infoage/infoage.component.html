@@ -25,14 +25,14 @@
 
           <mat-card-content>
             <mat-list>
-              <p>Tipo</p><mat-list-item>{{agencia.tipo}}</mat-list-item>
-              <p>Ubicación</p><mat-list-item>{{agencia.ubicacion}}</mat-list-item>
-              <p>Dirección</p><mat-list-item>{{agencia.direccion}}</mat-list-item>
-              <p>Contactos</p><mat-list-item>{{agencia.contactos}}</mat-list-item>
-              <p>Redes Sociales</p><mat-list-item>{{agencia.red_social}}</mat-list-item>
-              <p>Correo</p><mat-list-item>{{agencia.correo}}</mat-list-item>
+              <p><b>Tipo</b></p><div class="texto">{{agencia.tipo}}</div><br>
+              <p><b>Ubicación</b></p><div class="texto">{{agencia.ubicacion}}</div><br>
+              <p><b>Dirección</b></p><div class="texto">{{agencia.direccion}}</div><br>
+              <p><b>Contactos</b></p><div class="texto">{{agencia.contactos}}</div><br>
+              <p><b>Redes Sociales</b></p><div class="texto">{{agencia.red_social}}</div><br>
+              <p><b>Correo</b></p><div class="texto">{{agencia.correo}}</div>
             </mat-list>
-            
+
             <button mat-flat-button color="primary" (click)="goBack()">Regresar</button>
 
           </mat-card-content>

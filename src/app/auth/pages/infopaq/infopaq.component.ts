@@ -7,7 +7,7 @@ import { switchMap } from 'rxjs';
 @Component({
   selector: 'app-infopaq',
   templateUrl: './infopaq.component.html',
-  styles: ``
+  styleUrl: './infopaq.component.css'
 })
 export class InfopaqComponent implements OnInit{
   public paquete?: Paquete;

@@ -1,27 +1,111 @@
-.introduccion {
-  padding: 20px; /*Espacio en los costados*/
-  text-align: center; /*Alineación del texto*/
-  font-size: 40px; /*Tamaño de letra*/
-  font-weight: bold; /*Modifica el texto*/
-  margin-top: 15px; /*Espacio en el margen superior*/
-  font-family: Constantia; /*Estilo del texto*/
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* Gris claro */
+}
+
+/* Introducción */
+
+.introduccion {
+  background-size: cover;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333; /* Negro */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.introduccion p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #666; /* Gris oscuro */
+  text-align: center;
+}
+
+/* Presentación */
 
 .presentacion {
-  margin-top: -15px; /*Distancia del navbar*/
-  padding: 10px; /*Espacio en los costados*/
-  font-size: 16px; /*Tamaño de letra*/
-  line-height: 1.5; /*Espaciado entre renglones*/
-  color: #333; /*Color del texto*/
-  margin-left: 10%; /*Espacio en el margen izquierdo*/
-  margin-right: 10%; /*Espacio en el margen derecho*/
-  font-family: 'Constantia'; /*Estilo del texto*/
-  text-align: justify; /*Alineación del texto*/
+  padding: 20px;
+  background-color: #fff; /* Blanco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-body{
-  background-color: #2381a1; /*Color del fondo*/
-  font-family: Arial, sans-serif; /*Estilo de fuente*/
-  margin-top: -15px;
-  z-index: -1000;
+.presentacion p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #444; /* Gris medio */
+  text-align: justify;
+}
+
+/* Imágenes */
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagenes img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; /* Gris claro */
+  border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .introduccion {
+    height: 250px;
+  }
+  .imagenes img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .introduccion {
+    height: 200px;
+  }
+  .imagenes img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduccion {
+    height: 150px;
+  }
+  .imagenes img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduccion {
+    height: 100px;
+  }
+  .imagenes img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .introduccion {
+    height: 80px;
+  }
+  .imagenes img {
+    width: 90%;
+  }
 }

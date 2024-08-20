@@ -1,9 +1,10 @@
 .texto{
   display: -webkit-box;
-  max-width: 200px;
+  max-width: 600px;
   -webkit-line-clamp: auto;
   line-clamp: auto;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  
 }
 
